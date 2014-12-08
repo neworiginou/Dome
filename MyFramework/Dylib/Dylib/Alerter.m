@@ -9,5 +9,8 @@
 #import "Alerter.h"
 
 @implementation Alerter
-
+- (void)show{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Framewrok" message:@"message" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:nil];
+    [alertView show];
+}
 @end

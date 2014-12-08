@@ -6,14 +6,38 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		55C418F31A359B850087CD0C /* CommitDylib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 55C418F41A359B850087CD0C /* Build configuration list for PBXAggregateTarget "CommitDylib" */;
+			buildPhases = (
+				55C418F71A359B8A0087CD0C /* ShellScript */,
+			);
+			dependencies = (
+				55C418FD1A359DAE0087CD0C /* PBXTargetDependency */,
+			);
+			name = CommitDylib;
+			productName = CommitDylib;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		55C418DD1A359B5B0087CD0C /* Dylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C418DC1A359B5B0087CD0C /* Dylib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55C418E31A359B5B0087CD0C /* Dylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C418D71A359B5B0087CD0C /* Dylib.framework */; };
 		55C418EA1A359B5B0087CD0C /* DylibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C418E91A359B5B0087CD0C /* DylibTests.m */; };
+		55C418FA1A359CEA0087CD0C /* Alerter.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C418F81A359CEA0087CD0C /* Alerter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55C418FB1A359CEA0087CD0C /* Alerter.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C418F91A359CEA0087CD0C /* Alerter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		55C418E41A359B5B0087CD0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C418CE1A359B5B0087CD0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C418D61A359B5B0087CD0C;
+			remoteInfo = Dylib;
+		};
+		55C418FC1A359DAE0087CD0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 55C418CE1A359B5B0087CD0C /* Project object */;
 			proxyType = 1;
@@ -29,6 +53,8 @@
 		55C418E21A359B5B0087CD0C /* DylibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DylibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C418E81A359B5B0087CD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C418E91A359B5B0087CD0C /* DylibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DylibTests.m; sourceTree = "<group>"; };
+		55C418F81A359CEA0087CD0C /* Alerter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alerter.h; sourceTree = "<group>"; };
+		55C418F91A359CEA0087CD0C /* Alerter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alerter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +99,8 @@
 			children = (
 				55C418DC1A359B5B0087CD0C /* Dylib.h */,
 				55C418DA1A359B5B0087CD0C /* Supporting Files */,
+				55C418F81A359CEA0087CD0C /* Alerter.h */,
+				55C418F91A359CEA0087CD0C /* Alerter.m */,
 			);
 			path = Dylib;
 			sourceTree = "<group>";
@@ -109,6 +137,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C418FA1A359CEA0087CD0C /* Alerter.h in Headers */,
 				55C418DD1A359B5B0087CD0C /* Dylib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +196,9 @@
 					55C418E11A359B5B0087CD0C = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
+					55C418F31A359B850087CD0C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 				};
 			};
 			buildConfigurationList = 55C418D11A359B5B0087CD0C /* Build configuration list for PBXProject "Dylib" */;
@@ -183,6 +215,7 @@
 			targets = (
 				55C418D61A359B5B0087CD0C /* Dylib */,
 				55C418E11A359B5B0087CD0C /* DylibTests */,
+				55C418F31A359B850087CD0C /* CommitDylib */,
 			);
 		};
 /* End PBXProject section */
@@ -204,11 +237,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55C418F71A359B8A0087CD0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=${PROJECT_NAME}\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		55C418D21A359B5B0087CD0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C418FB1A359CEA0087CD0C /* Alerter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +277,11 @@
 			isa = PBXTargetDependency;
 			target = 55C418D61A359B5B0087CD0C /* Dylib */;
 			targetProxy = 55C418E41A359B5B0087CD0C /* PBXContainerItemProxy */;
+		};
+		55C418FD1A359DAE0087CD0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55C418D61A359B5B0087CD0C /* Dylib */;
+			targetProxy = 55C418FC1A359DAE0087CD0C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -375,6 +430,20 @@
 			};
 			name = Release;
 		};
+		55C418F51A359B850087CD0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55C418F61A359B850087CD0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -394,6 +463,7 @@
 				55C418EF1A359B5B0087CD0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55C418F01A359B5B0087CD0C /* Build configuration list for PBXNativeTarget "DylibTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +472,16 @@
 				55C418F21A359B5B0087CD0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C418F41A359B850087CD0C /* Build configuration list for PBXAggregateTarget "CommitDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C418F51A359B850087CD0C /* Debug */,
+				55C418F61A359B850087CD0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

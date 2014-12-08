@@ -9,5 +9,7 @@
 #import "Alerter.h"
 
 @implementation Alerter
-
+- (void)show{
+    
+}
 @end
