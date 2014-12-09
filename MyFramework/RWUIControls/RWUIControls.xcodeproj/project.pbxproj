@@ -10,13 +10,19 @@
 		55CB4AF31A35D4EC00475274 /* RWUIControls.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CB4AD51A35D2D900475274 /* RWUIControls.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55CB4AFE1A35D5A900475274 /* RWKnobControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CB4AF51A35D55F00475274 /* RWKnobControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55CB4AFF1A35D5AD00475274 /* RWKnobRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CB4AF71A35D55F00475274 /* RWKnobRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55CB4B001A35D5B000475274 /* RWRotationGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CB4AF91A35D55F00475274 /* RWRotationGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55CB4B001A35D5B000475274 /* RWRotationGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CB4AF91A35D55F00475274 /* RWRotationGestureRecognizer.h */; };
 		55CB4B261A35DA3500475274 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CB4AEE1A35D38400475274 /* Foundation.framework */; };
 		55CB4B271A35DA3A00475274 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CB4AEC1A35D37A00475274 /* UIKit.framework */; };
 		55CB4B281A35DAC300475274 /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CB4AF61A35D55F00475274 /* RWKnobControl.m */; };
 		55CB4B291A35DAC700475274 /* RWKnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CB4AF81A35D55F00475274 /* RWKnobRenderer.m */; };
 		55CB4B2A1A35DACB00475274 /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CB4AFA1A35D56000475274 /* RWRotationGestureRecognizer.m */; };
 		55CB4C001A36D12300475274 /* RWUIControls.h in Sources */ = {isa = PBXBuildFile; fileRef = 55CB4AD51A35D2D900475274 /* RWUIControls.h */; };
+		55CB4CF91A36EA6100475274 /* RWUIControls.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55CB4AD51A35D2D900475274 /* RWUIControls.h */; };
+		55CB4CFF1A36EC1800475274 /* RWRibbon.png in Resources */ = {isa = PBXBuildFile; fileRef = 55CB4CFB1A36EC1800475274 /* RWRibbon.png */; };
+		55CB4D001A36EC1800475274 /* RWRibbon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55CB4CFC1A36EC1800475274 /* RWRibbon@2x.png */; };
+		55CB4D011A36EC1800475274 /* RWRibbonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CB4CFD1A36EC1800475274 /* RWRibbonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55CB4D021A36EC1800475274 /* RWRibbonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CB4CFE1A36EC1800475274 /* RWRibbonView.m */; };
+		55CB4D031A36EC1800475274 /* RWRibbonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CB4CFE1A36EC1800475274 /* RWRibbonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +34,19 @@
 			remoteInfo = RWUIControls;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55CB4CF81A36EA5900475274 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PROJECT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				55CB4CF91A36EA6100475274 /* RWUIControls.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		55CB4AD21A35D2D900475274 /* libRWUIControls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRWUIControls.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +61,10 @@
 		55CB4AF81A35D55F00475274 /* RWKnobRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobRenderer.m; sourceTree = "<group>"; };
 		55CB4AF91A35D55F00475274 /* RWRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRotationGestureRecognizer.h; sourceTree = "<group>"; };
 		55CB4AFA1A35D56000475274 /* RWRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRotationGestureRecognizer.m; sourceTree = "<group>"; };
+		55CB4CFB1A36EC1800475274 /* RWRibbon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RWRibbon.png; sourceTree = "<group>"; };
+		55CB4CFC1A36EC1800475274 /* RWRibbon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RWRibbon@2x.png"; sourceTree = "<group>"; };
+		55CB4CFD1A36EC1800475274 /* RWRibbonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRibbonView.h; sourceTree = "<group>"; };
+		55CB4CFE1A36EC1800475274 /* RWRibbonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRibbonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				55CB4AD51A35D2D900475274 /* RWUIControls.h */,
+				55CB4CFA1A36EC1800475274 /* RWRibbon */,
 				55CB4AF41A35D55F00475274 /* RWKnobControl */,
 			);
 			path = RWUIControls;
@@ -122,6 +146,17 @@
 			path = RWKnobControl;
 			sourceTree = "<group>";
 		};
+		55CB4CFA1A36EC1800475274 /* RWRibbon */ = {
+			isa = PBXGroup;
+			children = (
+				55CB4CFB1A36EC1800475274 /* RWRibbon.png */,
+				55CB4CFC1A36EC1800475274 /* RWRibbon@2x.png */,
+				55CB4CFD1A36EC1800475274 /* RWRibbonView.h */,
+				55CB4CFE1A36EC1800475274 /* RWRibbonView.m */,
+			);
+			path = RWRibbon;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -129,6 +164,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CB4D011A36EC1800475274 /* RWRibbonView.h in Headers */,
 				55CB4AF31A35D4EC00475274 /* RWUIControls.h in Headers */,
 				55CB4AFE1A35D5A900475274 /* RWKnobControl.h in Headers */,
 				55CB4AFF1A35D5AD00475274 /* RWKnobRenderer.h in Headers */,
@@ -146,6 +182,7 @@
 				55CB4ACE1A35D2D900475274 /* Sources */,
 				55CB4ACF1A35D2D900475274 /* Frameworks */,
 				55CB4AF21A35D4DF00475274 /* Headers */,
+				55CB4CF81A36EA5900475274 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -214,6 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CB4CFF1A36EC1800475274 /* RWRibbon.png in Resources */,
+				55CB4D001A36EC1800475274 /* RWRibbon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CB4D021A36EC1800475274 /* RWRibbonView.m in Sources */,
 				55CB4C001A36D12300475274 /* RWUIControls.h in Sources */,
 				55CB4B281A35DAC300475274 /* RWKnobControl.m in Sources */,
 				55CB4B2A1A35DACB00475274 /* RWRotationGestureRecognizer.m in Sources */,
@@ -235,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CB4D031A36EC1800475274 /* RWRibbonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +371,7 @@
 				DEAD_CODE_STRIPPING = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = "non-global";
@@ -344,7 +385,7 @@
 				DEAD_CODE_STRIPPING = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = "non-global";

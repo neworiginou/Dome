@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>04CB1BDB-46B8-4759-BB8E-BB4E3CE49DDC</string>
+	<string>FBA1D6C3-4F7F-401D-AC2A-5DDABCB4B6FA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>RWUIControls</string>
+	<string>UIControlDevApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>DF7F7FB70A0BC4920948668314C75B1E4DF4D6A5</key>
 		<string>https://github.com/lbencs/Dome.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MyFramework/RWUIControls/RWUIControls.xcodeproj</string>
+	<string>MyFramework/UIControlDevApp/UIControlDevApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DF7F7FB70A0BC4920948668314C75B1E4DF4D6A5</key>

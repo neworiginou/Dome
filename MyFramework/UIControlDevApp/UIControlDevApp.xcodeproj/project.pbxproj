@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55CB4C1B1A36D70100475274 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CB4C1A1A36D70100475274 /* main.m */; };
+		55CB4C1E1A36D70100475274 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CB4C1D1A36D70100475274 /* AppDelegate.m */; };
+		55CB4C261A36D70100475274 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CB4C251A36D70100475274 /* Images.xcassets */; };
+		55CB4C351A36D70100475274 /* UIControlDevAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CB4C341A36D70100475274 /* UIControlDevAppTests.m */; };
+		55CB4C4A1A36D77700475274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CB4C471A36D77700475274 /* Main.storyboard */; };
+		55CB4C4B1A36D77700475274 /* RWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CB4C491A36D77700475274 /* RWViewController.m */; };
+		55CB4C7C1A36DFB700475274 /* libRWUIControls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CB4C771A36DFA300475274 /* libRWUIControls.a */; };
+		55CB4D061A36EC2E00475274 /* sampleImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55CB4D051A36EC2E00475274 /* sampleImage.jpg */; };
+		55CB4D3F1A36F69F00475274 /* XCodeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CB4D3A1A36F51F00475274 /* XCodeFramework.framework */; };
+		55CB4D401A36F77700475274 /* XCodeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CB4D3A1A36F51F00475274 /* XCodeFramework.framework */; };
+		55CB4D411A36F77700475274 /* XCodeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55CB4D3A1A36F51F00475274 /* XCodeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55CB4C2F1A36D70100475274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55CB4C0D1A36D70100475274 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55CB4C141A36D70100475274;
+			remoteInfo = UIControlDevApp;
+		};
+		55CB4C761A36DFA300475274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55CB4C711A36DFA300475274 /* RWUIControls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55CB4AD21A35D2D900475274;
+			remoteInfo = RWUIControls;
+		};
+		55CB4C781A36DFA300475274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55CB4C711A36DFA300475274 /* RWUIControls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55CB4ADD1A35D2D900475274;
+			remoteInfo = RWUIControlsTests;
+		};
+		55CB4C7A1A36DFB100475274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55CB4C711A36DFA300475274 /* RWUIControls.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55CB4AD11A35D2D900475274;
+			remoteInfo = RWUIControls;
+		};
+		55CB4D391A36F51F00475274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55CB4D331A36F51F00475274 /* XCodeFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55CB4D121A36F35600475274;
+			remoteInfo = XCodeFramework;
+		};
+		55CB4D3B1A36F51F00475274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55CB4D331A36F51F00475274 /* XCodeFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55CB4D1D1A36F35700475274;
+			remoteInfo = XCodeFrameworkTests;
+		};
+		55CB4D3D1A36F69900475274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55CB4D331A36F51F00475274 /* XCodeFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55CB4D111A36F35600475274;
+			remoteInfo = XCodeFramework;
+		};
+		55CB4D421A36F77700475274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55CB4D331A36F51F00475274 /* XCodeFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55CB4D111A36F35600475274;
+			remoteInfo = XCodeFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55CB4D441A36F77700475274 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55CB4D411A36F77700475274 /* XCodeFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		55CB4C151A36D70100475274 /* UIControlDevApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIControlDevApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CB4C191A36D70100475274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55CB4C1A1A36D70100475274 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55CB4C1C1A36D70100475274 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		55CB4C1D1A36D70100475274 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		55CB4C251A36D70100475274 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		55CB4C2E1A36D70100475274 /* UIControlDevAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIControlDevAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CB4C331A36D70100475274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55CB4C341A36D70100475274 /* UIControlDevAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIControlDevAppTests.m; sourceTree = "<group>"; };
+		55CB4C471A36D77700475274 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		55CB4C481A36D77700475274 /* RWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWViewController.h; sourceTree = "<group>"; };
+		55CB4C491A36D77700475274 /* RWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWViewController.m; sourceTree = "<group>"; };
+		55CB4C711A36DFA300475274 /* RWUIControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RWUIControls.xcodeproj; path = ../../RWUIControls/RWUIControls.xcodeproj; sourceTree = "<group>"; };
+		55CB4D051A36EC2E00475274 /* sampleImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sampleImage.jpg; sourceTree = "<group>"; };
+		55CB4D331A36F51F00475274 /* XCodeFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XCodeFramework.xcodeproj; path = ../../XCodeFramework/XCodeFramework.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55CB4C121A36D70100475274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CB4D401A36F77700475274 /* XCodeFramework.framework in Frameworks */,
+				55CB4D3F1A36F69F00475274 /* XCodeFramework.framework in Frameworks */,
+				55CB4C7C1A36DFB700475274 /* libRWUIControls.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55CB4C2B1A36D70100475274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55CB4C0C1A36D70100475274 = {
+			isa = PBXGroup;
+			children = (
+				55CB4C171A36D70100475274 /* UIControlDevApp */,
+				55CB4C311A36D70100475274 /* UIControlDevAppTests */,
+				55CB4C161A36D70100475274 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55CB4C161A36D70100475274 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55CB4C151A36D70100475274 /* UIControlDevApp.app */,
+				55CB4C2E1A36D70100475274 /* UIControlDevAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55CB4C171A36D70100475274 /* UIControlDevApp */ = {
+			isa = PBXGroup;
+			children = (
+				55CB4D331A36F51F00475274 /* XCodeFramework.xcodeproj */,
+				55CB4D041A36EC2E00475274 /* ImageViewer */,
+				55CB4C711A36DFA300475274 /* RWUIControls.xcodeproj */,
+				55CB4C471A36D77700475274 /* Main.storyboard */,
+				55CB4C481A36D77700475274 /* RWViewController.h */,
+				55CB4C491A36D77700475274 /* RWViewController.m */,
+				55CB4C1C1A36D70100475274 /* AppDelegate.h */,
+				55CB4C1D1A36D70100475274 /* AppDelegate.m */,
+				55CB4C251A36D70100475274 /* Images.xcassets */,
+				55CB4C181A36D70100475274 /* Supporting Files */,
+			);
+			path = UIControlDevApp;
+			sourceTree = "<group>";
+		};
+		55CB4C181A36D70100475274 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55CB4C191A36D70100475274 /* Info.plist */,
+				55CB4C1A1A36D70100475274 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55CB4C311A36D70100475274 /* UIControlDevAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				55CB4C341A36D70100475274 /* UIControlDevAppTests.m */,
+				55CB4C321A36D70100475274 /* Supporting Files */,
+			);
+			path = UIControlDevAppTests;
+			sourceTree = "<group>";
+		};
+		55CB4C321A36D70100475274 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55CB4C331A36D70100475274 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55CB4C721A36DFA300475274 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55CB4C771A36DFA300475274 /* libRWUIControls.a */,
+				55CB4C791A36DFA300475274 /* RWUIControlsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55CB4D041A36EC2E00475274 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				55CB4D051A36EC2E00475274 /* sampleImage.jpg */,
+			);
+			path = ImageViewer;
+			sourceTree = "<group>";
+		};
+		55CB4D341A36F51F00475274 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55CB4D3A1A36F51F00475274 /* XCodeFramework.framework */,
+				55CB4D3C1A36F51F00475274 /* XCodeFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55CB4C141A36D70100475274 /* UIControlDevApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55CB4C381A36D70100475274 /* Build configuration list for PBXNativeTarget "UIControlDevApp" */;
+			buildPhases = (
+				55CB4C111A36D70100475274 /* Sources */,
+				55CB4C121A36D70100475274 /* Frameworks */,
+				55CB4C131A36D70100475274 /* Resources */,
+				55CB4D441A36F77700475274 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55CB4D3E1A36F69900475274 /* PBXTargetDependency */,
+				55CB4C7B1A36DFB100475274 /* PBXTargetDependency */,
+				55CB4D431A36F77700475274 /* PBXTargetDependency */,
+			);
+			name = UIControlDevApp;
+			productName = UIControlDevApp;
+			productReference = 55CB4C151A36D70100475274 /* UIControlDevApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55CB4C2D1A36D70100475274 /* UIControlDevAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55CB4C3B1A36D70100475274 /* Build configuration list for PBXNativeTarget "UIControlDevAppTests" */;
+			buildPhases = (
+				55CB4C2A1A36D70100475274 /* Sources */,
+				55CB4C2B1A36D70100475274 /* Frameworks */,
+				55CB4C2C1A36D70100475274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55CB4C301A36D70100475274 /* PBXTargetDependency */,
+			);
+			name = UIControlDevAppTests;
+			productName = UIControlDevAppTests;
+			productReference = 55CB4C2E1A36D70100475274 /* UIControlDevAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55CB4C0D1A36D70100475274 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = lbencs;
+				TargetAttributes = {
+					55CB4C141A36D70100475274 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					55CB4C2D1A36D70100475274 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 55CB4C141A36D70100475274;
+					};
+				};
+			};
+			buildConfigurationList = 55CB4C101A36D70100475274 /* Build configuration list for PBXProject "UIControlDevApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55CB4C0C1A36D70100475274;
+			productRefGroup = 55CB4C161A36D70100475274 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55CB4C721A36DFA300475274 /* Products */;
+					ProjectRef = 55CB4C711A36DFA300475274 /* RWUIControls.xcodeproj */;
+				},
+				{
+					ProductGroup = 55CB4D341A36F51F00475274 /* Products */;
+					ProjectRef = 55CB4D331A36F51F00475274 /* XCodeFramework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				55CB4C141A36D70100475274 /* UIControlDevApp */,
+				55CB4C2D1A36D70100475274 /* UIControlDevAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		55CB4C771A36DFA300475274 /* libRWUIControls.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRWUIControls.a;
+			remoteRef = 55CB4C761A36DFA300475274 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55CB4C791A36DFA300475274 /* RWUIControlsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RWUIControlsTests.xctest;
+			remoteRef = 55CB4C781A36DFA300475274 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55CB4D3A1A36F51F00475274 /* XCodeFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCodeFramework.framework;
+			remoteRef = 55CB4D391A36F51F00475274 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55CB4D3C1A36F51F00475274 /* XCodeFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XCodeFrameworkTests.xctest;
+			remoteRef = 55CB4D3B1A36F51F00475274 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55CB4C131A36D70100475274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CB4C261A36D70100475274 /* Images.xcassets in Resources */,
+				55CB4C4A1A36D77700475274 /* Main.storyboard in Resources */,
+				55CB4D061A36EC2E00475274 /* sampleImage.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55CB4C2C1A36D70100475274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55CB4C111A36D70100475274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CB4C4B1A36D77700475274 /* RWViewController.m in Sources */,
+				55CB4C1E1A36D70100475274 /* AppDelegate.m in Sources */,
+				55CB4C1B1A36D70100475274 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55CB4C2A1A36D70100475274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CB4C351A36D70100475274 /* UIControlDevAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55CB4C301A36D70100475274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55CB4C141A36D70100475274 /* UIControlDevApp */;
+			targetProxy = 55CB4C2F1A36D70100475274 /* PBXContainerItemProxy */;
+		};
+		55CB4C7B1A36DFB100475274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RWUIControls;
+			targetProxy = 55CB4C7A1A36DFB100475274 /* PBXContainerItemProxy */;
+		};
+		55CB4D3E1A36F69900475274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XCodeFramework;
+			targetProxy = 55CB4D3D1A36F69900475274 /* PBXContainerItemProxy */;
+		};
+		55CB4D431A36F77700475274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XCodeFramework;
+			targetProxy = 55CB4D421A36F77700475274 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		55CB4C361A36D70100475274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55CB4C371A36D70100475274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55CB4C391A36D70100475274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$SOURCE_ROOT/usr/local/include/**",
+				);
+				INFOPLIST_FILE = UIControlDevApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55CB4C3A1A36D70100475274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$SOURCE_ROOT/usr/local/include/**",
+				);
+				INFOPLIST_FILE = UIControlDevApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55CB4C3C1A36D70100475274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UIControlDevAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIControlDevApp.app/UIControlDevApp";
+			};
+			name = Debug;
+		};
+		55CB4C3D1A36D70100475274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UIControlDevAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIControlDevApp.app/UIControlDevApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55CB4C101A36D70100475274 /* Build configuration list for PBXProject "UIControlDevApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55CB4C361A36D70100475274 /* Debug */,
+				55CB4C371A36D70100475274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55CB4C381A36D70100475274 /* Build configuration list for PBXNativeTarget "UIControlDevApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55CB4C391A36D70100475274 /* Debug */,
+				55CB4C3A1A36D70100475274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55CB4C3B1A36D70100475274 /* Build configuration list for PBXNativeTarget "UIControlDevAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55CB4C3C1A36D70100475274 /* Debug */,
+				55CB4C3D1A36D70100475274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55CB4C0D1A36D70100475274 /* Project object */;
+}
