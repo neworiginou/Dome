@@ -1,0 +1,24 @@
+
+/* Class = "IBUILabel"; text = "电子邮箱"; ObjectID = "Bdg-jc-Cyv"; */
+"Bdg-jc-Cyv.text" = "电子邮箱";
+
+/* Class = "IBUILabel"; text = "确认密码"; ObjectID = "IQa-bW-BYC"; */
+"IQa-bW-BYC.text" = "确认密码";
+
+/* Class = "IBUILabel"; text = "电话"; ObjectID = "MqR-Q0-ItB"; */
+"MqR-Q0-ItB.text" = "电话";
+
+/* Class = "IBUILabel"; text = "注册"; ObjectID = "R4T-tb-1FK"; */
+"R4T-tb-1FK.text" = "注册";
+
+/* Class = "IBUILabel"; text = "使用条款"; ObjectID = "TU1-Pm-app"; */
+"TU1-Pm-app.text" = "使用条款";
+
+/* Class = "IBUILabel"; text = "地址"; ObjectID = "WiS-VW-DS1"; */
+"WiS-VW-DS1.text" = "地址";
+
+/* Class = "IBUILabel"; text = "密码"; ObjectID = "Wwd-qy-1Kt"; */
+"Wwd-qy-1Kt.text" = "密码";
+
+/* Class = "IBUILabel"; text = "姓名"; ObjectID = "XkQ-T1-bAz"; */
+"XkQ-T1-bAz.text" = "姓名";
