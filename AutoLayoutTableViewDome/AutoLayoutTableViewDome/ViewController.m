@@ -43,9 +43,9 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    if ([[UIDevice currentDevice] systemVersion].floatValue >= 8.0) {
-        return UITableViewAutomaticDimension;
-    }
+//    if ([[UIDevice currentDevice] systemVersion].floatValue >= 8.0) {
+//        return UITableViewAutomaticDimension;
+//    }
     
     static NSString *reuseIdentifier = @"cells";
     
@@ -59,13 +59,14 @@
     cell.contextLabel.text = [self.items objectAtIndex:indexPath.row];
     cell.nameLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non quam ac massa viverra semper.";
     
+    
     [cell setNeedsUpdateConstraints];
     [cell updateConstraintsIfNeeded];
     
-    cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
+//    cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
+    
     cell.contextLabel.preferredMaxLayoutWidth = CGRectGetWidth(cell.contextLabel.frame);
     cell.nameLabel.preferredMaxLayoutWidth = CGRectGetWidth(cell.nameLabel.frame);
-    
     [cell setNeedsDisplay]; //自动调用drawRect方法
     [cell layoutIfNeeded];  //默认调用layoutSubviews方法
     
@@ -75,7 +76,11 @@
 
 - (NSString *)randomLorumIpsum {
     
-    NSString *lorumIpsum = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non quam ac massa viverra semper. Maecenas mattis justo ac augue volutpat congue. Maecenas laoreet, nulla eu faucibus gravida, felis orci dictum risus, sed sodales sem eros eget risus. Morbi imperdiet sed diam et sodales. Vestibulum ut est id mauris ultrices gravida. Nulla malesuada metus ut erat malesuada, vitae ornare neque semper. Aenean a commodo justo, vel placerat odio. Curabitur vitae consequat tortor. Aenean eu magna ante. Integer tristique elit ac augue laoreet, eget pulvinar lacus dictum. Cras eleifend lacus eget pharetra elementum. Etiam fermentum eu felis eu tristique. Integer eu purus vitae turpis blandit consectetur. Nulla facilisi. Praesent bibendum massa eu metus pulvinar, quis tristique nunc commodo. Ut varius aliquam elit, a tincidunt elit aliquam non. Nunc ac leo purus. Proin condimentum placerat ligula, at tristique neque scelerisque ut. Suspendisse ut congue enim. Integer id sem nisl. Nam dignissim, lectus et dictum sollicitudin, libero augue ullamcorper justo, nec consectetur dolor arcu sed justo. Proin rutrum pharetra lectus, vel gravida ante venenatis sed. Mauris lacinia urna vehicula felis aliquet venenatis. Suspendisse non pretium sapien. Proin id dolor ultricies, dictum augue non, euismod ante. Vivamus et luctus augue, a luctus mi. Maecenas sit amet felis in magna vestibulum viverra vel ut est. Suspendisse potenti. Morbi nec odio pretium lacus laoreet volutpat sit amet at ipsum. Etiam pretium purus vitae tortor auctor, quis cursus metus vehicula. Integer ultricies facilisis arcu, non congue orci pharetra quis. Vivamus pulvinar ligula neque, et vehicula ipsum euismod quis.";
+    NSString *lorumIpsum = @"今年21岁的小丽是湘潭人，上个月24号晚，她接到电话说男友袁某因车祸重伤住院。心急火燎的小丽赶紧去探视，可她怎么也没想到，袁某的病床前围了十几名自称是男友“妻子”的女子。\
+    　　为了弄清缘由，小丽主动建了一个微信群，将前来探视的女子微信都加了进来，一共17人！大家一沟通才发现，袁某竟是他们共^672937&*^*(&)@(&*&*(#QQ同的男友……\
+    　　17个女友都这么死心塌地的跟着他，  难不成男子是王思聪这样的国民老公？\
+    　　小编的高能密探告诉小编，袁某只是长沙县一个普通的男子，能同时交17个女友，而且女友们各自都不知道对方的存在，这位满哥的段位……小编表示拜服！\
+    　　虽说谁年轻时没爱过几个渣#WR@Q%Q男，可同时交17个女友，这男的，也特么实在太渣了吧……都说渣男有百种，而这种劈腿惯犯，则是所有女性最为痛恨的&*^&Q%^&#*！可因    为这种渣男有着对付女人的丰富经验，所以也是最难辨别的！姐姐妹妹们表怕！小编这就教你们辨别渣男的“七十二式”，保准打得渣男屁滚尿流";
     
     // Split lorum ipsum words into an array
     //
