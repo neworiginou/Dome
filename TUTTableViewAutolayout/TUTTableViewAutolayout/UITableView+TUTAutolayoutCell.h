@@ -1,0 +1,16 @@
+//
+//  UITableView+TUTAutolayoutCell.h
+//  TUTTableViewAutolayout
+//
+//  Created by lbencs on 15/4/24.
+//  Copyright (c) 2015年 lbencs. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UITableView (TUTAutolayoutCell)
+
+
+- (CGFloat)tut_cellHeightWithIdentify:(NSString *)cellIdentify indexPath:(NSIndexPath *)indexPath configuration:(void (^)())configurationBlock;
+- (CGFloat)tut_cellHeightWithIdentify:(NSString *)cellIdentify configuration:(void(^)())configurationBlock;
+@end

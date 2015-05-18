@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		326A6B4D0F1564D7BBACB8ED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6064753518388D3EDEE7AF /* libPods.a */; };
+		551BF1611AEB814A00B457DF /* TUTCircleMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BF1601AEB814A00B457DF /* TUTCircleMessage.m */; };
+		551BF1641AEB81C400B457DF /* TUTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BF1631AEB81C400B457DF /* TUTUser.m */; };
 		55EAE8E31AEA1D87009E77DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EAE8E21AEA1D87009E77DB /* main.m */; };
 		55EAE8E61AEA1D87009E77DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EAE8E51AEA1D87009E77DB /* AppDelegate.m */; };
 		55EAE8E91AEA1D87009E77DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EAE8E81AEA1D87009E77DB /* ViewController.m */; };
@@ -14,6 +17,12 @@
 		55EAE8EE1AEA1D87009E77DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EAE8ED1AEA1D87009E77DB /* Images.xcassets */; };
 		55EAE8F11AEA1D87009E77DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55EAE8EF1AEA1D87009E77DB /* LaunchScreen.xib */; };
 		55EAE8FD1AEA1D88009E77DB /* TUTTableViewAutolayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EAE8FC1AEA1D88009E77DB /* TUTTableViewAutolayoutTests.m */; };
+		55EAE90E1AEA1E3D009E77DB /* UITableView+TUTAutolayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EAE90D1AEA1E3D009E77DB /* UITableView+TUTAutolayoutCell.m */; };
+		55EAE9121AEA1EF8009E77DB /* TUTCircleMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EAE9101AEA1EF8009E77DB /* TUTCircleMessageCell.m */; };
+		55EAE9131AEA1EF8009E77DB /* TUTCircleMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55EAE9111AEA1EF8009E77DB /* TUTCircleMessageCell.xib */; };
+		55EAE9171AEA1F52009E77DB /* TUTCircleHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EAE9151AEA1F52009E77DB /* TUTCircleHeadCell.m */; };
+		55EAE9181AEA1F52009E77DB /* TUTCircleHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55EAE9161AEA1F52009E77DB /* TUTCircleHeadCell.xib */; };
+		55EAE91B1AEA43DD009E77DB /* TUTBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EAE91A1AEA43DD009E77DB /* TUTBaseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B1DEFA5AA676BEF9C438791 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		551BF15F1AEB814A00B457DF /* TUTCircleMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTCircleMessage.h; sourceTree = "<group>"; };
+		551BF1601AEB814A00B457DF /* TUTCircleMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTCircleMessage.m; sourceTree = "<group>"; };
+		551BF1621AEB81C400B457DF /* TUTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTUser.h; sourceTree = "<group>"; };
+		551BF1631AEB81C400B457DF /* TUTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTUser.m; sourceTree = "<group>"; };
 		55EAE8DD1AEA1D87009E77DB /* TUTTableViewAutolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUTTableViewAutolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EAE8E11AEA1D87009E77DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55EAE8E21AEA1D87009E77DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +54,18 @@
 		55EAE8F61AEA1D88009E77DB /* TUTTableViewAutolayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUTTableViewAutolayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EAE8FB1AEA1D88009E77DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55EAE8FC1AEA1D88009E77DB /* TUTTableViewAutolayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUTTableViewAutolayoutTests.m; sourceTree = "<group>"; };
+		55EAE90C1AEA1E3D009E77DB /* UITableView+TUTAutolayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+TUTAutolayoutCell.h"; sourceTree = "<group>"; };
+		55EAE90D1AEA1E3D009E77DB /* UITableView+TUTAutolayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TUTAutolayoutCell.m"; sourceTree = "<group>"; };
+		55EAE90F1AEA1EF8009E77DB /* TUTCircleMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTCircleMessageCell.h; sourceTree = "<group>"; };
+		55EAE9101AEA1EF8009E77DB /* TUTCircleMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTCircleMessageCell.m; sourceTree = "<group>"; };
+		55EAE9111AEA1EF8009E77DB /* TUTCircleMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TUTCircleMessageCell.xib; sourceTree = "<group>"; };
+		55EAE9141AEA1F52009E77DB /* TUTCircleHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTCircleHeadCell.h; sourceTree = "<group>"; };
+		55EAE9151AEA1F52009E77DB /* TUTCircleHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTCircleHeadCell.m; sourceTree = "<group>"; };
+		55EAE9161AEA1F52009E77DB /* TUTCircleHeadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TUTCircleHeadCell.xib; sourceTree = "<group>"; };
+		55EAE9191AEA43DD009E77DB /* TUTBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTBaseCell.h; sourceTree = "<group>"; };
+		55EAE91A1AEA43DD009E77DB /* TUTBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTBaseCell.m; sourceTree = "<group>"; };
+		99FFAA9AFD54B8EAC9AAB4E7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CB6064753518388D3EDEE7AF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326A6B4D0F1564D7BBACB8ED /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +87,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185F3A34B6B9370F3FD8EF0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB6064753518388D3EDEE7AF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		55EAE8D41AEA1D87009E77DB = {
 			isa = PBXGroup;
 			children = (
 				55EAE8DF1AEA1D87009E77DB /* TUTTableViewAutolayout */,
 				55EAE8F91AEA1D88009E77DB /* TUTTableViewAutolayoutTests */,
 				55EAE8DE1AEA1D87009E77DB /* Products */,
+				AA5706CF98F9B568F9DE4FBF /* Pods */,
+				185F3A34B6B9370F3FD8EF0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +118,8 @@
 		55EAE8DF1AEA1D87009E77DB /* TUTTableViewAutolayout */ = {
 			isa = PBXGroup;
 			children = (
+				55EAE90C1AEA1E3D009E77DB /* UITableView+TUTAutolayoutCell.h */,
+				55EAE90D1AEA1E3D009E77DB /* UITableView+TUTAutolayoutCell.m */,
 				55EAE8E41AEA1D87009E77DB /* AppDelegate.h */,
 				55EAE8E51AEA1D87009E77DB /* AppDelegate.m */,
 				55EAE8E71AEA1D87009E77DB /* ViewController.h */,
@@ -89,6 +128,18 @@
 				55EAE8ED1AEA1D87009E77DB /* Images.xcassets */,
 				55EAE8EF1AEA1D87009E77DB /* LaunchScreen.xib */,
 				55EAE8E01AEA1D87009E77DB /* Supporting Files */,
+				55EAE90F1AEA1EF8009E77DB /* TUTCircleMessageCell.h */,
+				55EAE9101AEA1EF8009E77DB /* TUTCircleMessageCell.m */,
+				55EAE9111AEA1EF8009E77DB /* TUTCircleMessageCell.xib */,
+				55EAE9141AEA1F52009E77DB /* TUTCircleHeadCell.h */,
+				55EAE9151AEA1F52009E77DB /* TUTCircleHeadCell.m */,
+				55EAE9161AEA1F52009E77DB /* TUTCircleHeadCell.xib */,
+				55EAE9191AEA43DD009E77DB /* TUTBaseCell.h */,
+				55EAE91A1AEA43DD009E77DB /* TUTBaseCell.m */,
+				551BF15F1AEB814A00B457DF /* TUTCircleMessage.h */,
+				551BF1601AEB814A00B457DF /* TUTCircleMessage.m */,
+				551BF1621AEB81C400B457DF /* TUTUser.h */,
+				551BF1631AEB81C400B457DF /* TUTUser.m */,
 			);
 			path = TUTTableViewAutolayout;
 			sourceTree = "<group>";
@@ -119,6 +170,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AA5706CF98F9B568F9DE4FBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DEFA5AA676BEF9C438791 /* Pods.debug.xcconfig */,
+				99FFAA9AFD54B8EAC9AAB4E7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55EAE9001AEA1D88009E77DB /* Build configuration list for PBXNativeTarget "TUTTableViewAutolayout" */;
 			buildPhases = (
+				569312C68D8A66D5BC22ADB6 /* Check Pods Manifest.lock */,
 				55EAE8D91AEA1D87009E77DB /* Sources */,
 				55EAE8DA1AEA1D87009E77DB /* Frameworks */,
 				55EAE8DB1AEA1D87009E77DB /* Resources */,
+				DA99D4419BDC6B0D86BB7673 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +261,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55EAE9181AEA1F52009E77DB /* TUTCircleHeadCell.xib in Resources */,
+				55EAE9131AEA1EF8009E77DB /* TUTCircleMessageCell.xib in Resources */,
 				55EAE8EC1AEA1D87009E77DB /* Main.storyboard in Resources */,
 				55EAE8F11AEA1D87009E77DB /* LaunchScreen.xib in Resources */,
 				55EAE8EE1AEA1D87009E77DB /* Images.xcassets in Resources */,
@@ -214,6 +278,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		569312C68D8A66D5BC22ADB6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA99D4419BDC6B0D86BB7673 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		55EAE8D91AEA1D87009E77DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +318,12 @@
 			files = (
 				55EAE8E91AEA1D87009E77DB /* ViewController.m in Sources */,
 				55EAE8E61AEA1D87009E77DB /* AppDelegate.m in Sources */,
+				55EAE9121AEA1EF8009E77DB /* TUTCircleMessageCell.m in Sources */,
+				55EAE9171AEA1F52009E77DB /* TUTCircleHeadCell.m in Sources */,
+				551BF1611AEB814A00B457DF /* TUTCircleMessage.m in Sources */,
+				55EAE91B1AEA43DD009E77DB /* TUTBaseCell.m in Sources */,
+				551BF1641AEB81C400B457DF /* TUTUser.m in Sources */,
+				55EAE90E1AEA1E3D009E77DB /* UITableView+TUTAutolayoutCell.m in Sources */,
 				55EAE8E31AEA1D87009E77DB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +450,7 @@
 		};
 		55EAE9011AEA1D88009E77DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B1DEFA5AA676BEF9C438791 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TUTTableViewAutolayout/Info.plist;
@@ -357,6 +461,7 @@
 		};
 		55EAE9021AEA1D88009E77DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99FFAA9AFD54B8EAC9AAB4E7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TUTTableViewAutolayout/Info.plist;
@@ -418,6 +523,7 @@
 				55EAE9021AEA1D88009E77DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55EAE9031AEA1D88009E77DB /* Build configuration list for PBXNativeTarget "TUTTableViewAutolayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +532,7 @@
 				55EAE9051AEA1D88009E77DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
