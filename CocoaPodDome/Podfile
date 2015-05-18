@@ -1,0 +1,18 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+nhibit_all_warnings!
+use_frameworks!
+
+pod 'LoopingVideoView', '~> 1.0.0'
+pod 'AFNetworking', '~> 2.5.3'
+
+
+target 'CocoaPodDome' do
+
+end
+
+target 'CocoaPodDomeTests' do
+
+end
+

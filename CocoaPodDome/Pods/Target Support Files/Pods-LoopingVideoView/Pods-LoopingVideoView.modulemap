@@ -1,0 +1,6 @@
+framework module LoopingVideoView {
+  umbrella header "Pods-LoopingVideoView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1 @@
+PODS_COCOAPODDOME_LOOPINGVIDEOVIEW_OTHER_LDFLAGS = -framework "AVFoundation" -framework "UIKit"
