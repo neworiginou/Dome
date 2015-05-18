@@ -14,6 +14,7 @@
 		BDE1B85B1B09ACB200A17D69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE1B85A1B09ACB200A17D69 /* Images.xcassets */; };
 		BDE1B85E1B09ACB200A17D69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE1B85C1B09ACB200A17D69 /* LaunchScreen.xib */; };
 		BDE1B86A1B09ACB200A17D69 /* TUTTCategoryNSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE1B8691B09ACB200A17D69 /* TUTTCategoryNSStringTests.m */; };
+		BDE1B8761B09AD9F00A17D69 /* NSString+TUTTExtendAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE1B8751B09AD9F00A17D69 /* NSString+TUTTExtendAttribute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		BDE1B8631B09ACB200A17D69 /* TUTTCategoryNSStringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUTTCategoryNSStringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE1B8681B09ACB200A17D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDE1B8691B09ACB200A17D69 /* TUTTCategoryNSStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUTTCategoryNSStringTests.m; sourceTree = "<group>"; };
+		BDE1B8741B09AD9F00A17D69 /* NSString+TUTTExtendAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TUTTExtendAttribute.h"; sourceTree = "<group>"; };
+		BDE1B8751B09AD9F00A17D69 /* NSString+TUTTExtendAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TUTTExtendAttribute.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		BDE1B84C1B09ACB200A17D69 /* TUTTCategoryNSString */ = {
 			isa = PBXGroup;
 			children = (
+				BDE1B8731B09ACFA00A17D69 /* Class */,
 				BDE1B8511B09ACB200A17D69 /* AppDelegate.h */,
 				BDE1B8521B09ACB200A17D69 /* AppDelegate.m */,
 				BDE1B8541B09ACB200A17D69 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				BDE1B8681B09ACB200A17D69 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDE1B8731B09ACFA00A17D69 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				BDE1B8741B09AD9F00A17D69 /* NSString+TUTTExtendAttribute.h */,
+				BDE1B8751B09AD9F00A17D69 /* NSString+TUTTExtendAttribute.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDE1B8561B09ACB200A17D69 /* ViewController.m in Sources */,
+				BDE1B8761B09AD9F00A17D69 /* NSString+TUTTExtendAttribute.m in Sources */,
 				BDE1B8531B09ACB200A17D69 /* AppDelegate.m in Sources */,
 				BDE1B8501B09ACB200A17D69 /* main.m in Sources */,
 			);
