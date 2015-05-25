@@ -10,7 +10,10 @@
 #import "XIBDetailViewController.h"
 #import "XIBNoNaviDetailViewController.h"
 
+#import "UINavigationController+TVTTNavigationControllerTransform.h"
+
 @interface XIBSecondViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -18,7 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+//    self.navigationController.hidesBottomBarWhenPushed = YES;
+//    self.navigationController.hidesBarsWhenVerticallyCompact = YES;
+//    self.navigationController.navigationBar.translucent = YES;
+//    [[UIApplication sharedApplication]
+//     setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(-20.f, 0, 0, 0);
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,7 +42,6 @@
 - (void)viewWillDisappear:(BOOL)animated{
     self.navigationController.navigationBarHidden = NO;
 }
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
@@ -59,14 +68,17 @@
     return 44;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     if (indexPath.row % 2 == 0) {
         XIBNoNaviDetailViewController * vc = [[XIBNoNaviDetailViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else{
         
         XIBDetailViewController * vc = [[XIBDetailViewController alloc] initWithNibName:@"XIBDetailViewController" bundle:nil];
-        [self.navigationController pushViewController:vc animated:YES];
+//        [self.navigationController pushViewController:vc animated:YES];
+        [self.navigationController tvtt_pushViewController:vc animated:YES];
     }
+    
     UITableViewCell * cell = [tableView cellForRowAtIndexPath:indexPath];
     [cell setSelected:NO animated:YES];
 }

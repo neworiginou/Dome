@@ -7,6 +7,8 @@
 //
 
 #import "XIBDetailViewController.h"
+#import "UINavigationController+TVTTNavigationControllerTransform.h"
+#import "UIViewController+BackButtonHandler.h"
 
 @interface XIBDetailViewController ()
 
@@ -16,12 +18,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+-(BOOL) navigationShouldPopOnBackButton ///在这个方法里写返回按钮的事
+{
+    
+    [self.navigationController tvtt_popViewControllerAnimated:YES];
+    
+    return YES;
+    
 }
 
 /*

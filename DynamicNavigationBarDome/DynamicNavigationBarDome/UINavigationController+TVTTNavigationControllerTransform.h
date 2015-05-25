@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface UINavigationController (TVTTNavigationControllerTransform)
-- (void)tott_pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
+- (void)tvtt_pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
+- (UIViewController *)tvtt_popViewControllerAnimated:(BOOL)animated;
 @end
