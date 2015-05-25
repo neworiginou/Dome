@@ -398,7 +398,7 @@ static CGFloat kBorderWidth = 10;
     [self removeObservers];
     
     [webView stopLoading];
-    
+
     [self performSelectorOnMainThread:@selector(_hide) withObject:nil waitUntilDone:NO];
 }
 

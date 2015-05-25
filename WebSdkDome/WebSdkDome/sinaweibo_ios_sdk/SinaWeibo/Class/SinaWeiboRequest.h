@@ -63,6 +63,7 @@
                                       params:(NSDictionary *)params
                                     delegate:(id<SinaWeiboRequestDelegate>)delegate;
 
+
 + (NSString *)getParamValueFromUrl:(NSString*)url paramName:(NSString *)paramName;
 + (NSString *)serializeURL:(NSString *)baseURL params:(NSDictionary *)params httpMethod:(NSString *)httpMethod;
 

@@ -69,6 +69,11 @@
                          httpMethod:(NSString *)httpMethod
                            delegate:(id<SinaWeiboRequestDelegate>)delegate;
 
+- (SinaWeiboRequest *)requestWithURL:(NSString *)url
+                             params:(NSMutableDictionary *)params
+                         httpMethod:(NSString *)httpMethod
+                            success:(void(^)(id responseObject))success
+                            failure:(void(^)(NSError *error))failure;
 @end
 
 

@@ -42,12 +42,12 @@
         b.tag = 100+i;
         [b setTitle:arr[i] forState:UIControlStateNormal];
     }
-    
+
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 50, 320, 480-50) style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
-    
+
     _dataArr = [NSMutableArray array];
 }
 
@@ -58,7 +58,7 @@
         // 登录 必须先登录才能发送微博
         [weibo logIn];
     }else if(b.tag == 101){
-        
+
         // 发微博 向新浪微博服务器发起一个异步请求
         UIImage * image = [UIImage imageNamed:@"123"];
         NSMutableDictionary * dic = [[NSMutableDictionary alloc] init];
@@ -72,8 +72,9 @@
         // 获取粉丝
 //        [weibo requestWithURL:@"friendships/followers.json" params:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"3488442751",@"uid",nil] httpMethod:@"GET" delegate:self];
         [weibo requestWithURL:@"statuses/user_timeline.json" params:nil httpMethod:@"GET" delegate:self];
+        [weibo requestWithURL:@"friendships/followers.json" params:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"996540367",@"uid",nil] httpMethod:@"GET" delegate:self];
     }
-    
+
 }
 
 - (SinaWeibo *)sinaweibo
@@ -106,6 +107,9 @@
     NSLog(@"微博发送失败 %@",error);
 }
 
+
+
+
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -119,12 +123,12 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
     }
-    
+
     FansModel * model = _dataArr[indexPath.row];
     cell.textLabel.text = model.name;
     cell.detailTextLabel.text = model.desStr;
     [cell.imageView sd_setImageWithURL:[NSURL URLWithString:model.imgURL]];
-    
+
     return cell;
 }
 

@@ -22,6 +22,10 @@
 		55610E4C1B0EA60500CDB5F6 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55610E461B0EA60500CDB5F6 /* SinaWeiboAuthorizeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		55610E4D1B0EA60500CDB5F6 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 55610E491B0EA60500CDB5F6 /* SinaWeiboRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		55610E501B0EA65F00CDB5F6 /* TUTTWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 55610E4F1B0EA65F00CDB5F6 /* TUTTWeibo.m */; };
+		BD48C23D1B104BDE0052F7B3 /* TUTTHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BD48C23C1B104BDE0052F7B3 /* TUTTHttpRequest.m */; };
+		BD48C2401B104BF40052F7B3 /* TUTTHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BD48C23F1B104BF40052F7B3 /* TUTTHttpClient.m */; };
+		BD48C2441B104D800052F7B3 /* TUTTUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD48C2431B104D800052F7B3 /* TUTTUserManager.m */; };
+		BD48C2471B104DA20052F7B3 /* TUTTBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD48C2461B104DA20052F7B3 /* TUTTBaseManager.m */; };
 		E538349097F9D9436A6313DA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C8D8DCE4B23156D8BBBF82 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +71,14 @@
 		55610E4F1B0EA65F00CDB5F6 /* TUTTWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTTWeibo.m; sourceTree = "<group>"; };
 		89C8D8DCE4B23156D8BBBF82 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		95033804731596044285C591 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BD48C23B1B104BDE0052F7B3 /* TUTTHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTTHttpRequest.h; sourceTree = "<group>"; };
+		BD48C23C1B104BDE0052F7B3 /* TUTTHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTTHttpRequest.m; sourceTree = "<group>"; };
+		BD48C23E1B104BF40052F7B3 /* TUTTHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTTHttpClient.h; sourceTree = "<group>"; };
+		BD48C23F1B104BF40052F7B3 /* TUTTHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTTHttpClient.m; sourceTree = "<group>"; };
+		BD48C2421B104D800052F7B3 /* TUTTUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTTUserManager.h; sourceTree = "<group>"; };
+		BD48C2431B104D800052F7B3 /* TUTTUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTTUserManager.m; sourceTree = "<group>"; };
+		BD48C2451B104DA20052F7B3 /* TUTTBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTTBaseManager.h; sourceTree = "<group>"; };
+		BD48C2461B104DA20052F7B3 /* TUTTBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTTBaseManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,11 +186,14 @@
 		554AF57E1B0E340200BB4A2D /* SinaWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				BD48C2411B104D670052F7B3 /* User */,
+				BD48C23A1B104B770052F7B3 /* Class_ */,
 				55610E421B0EA60500CDB5F6 /* Class */,
-				55610E4A1B0EA60500CDB5F6 /* Class_ */,
 				554AF57F1B0E340200BB4A2D /* SinaWeibo.bundle */,
 				55610E4E1B0EA65F00CDB5F6 /* TUTTWeibo.h */,
 				55610E4F1B0EA65F00CDB5F6 /* TUTTWeibo.m */,
+				BD48C2451B104DA20052F7B3 /* TUTTBaseManager.h */,
+				BD48C2461B104DA20052F7B3 /* TUTTBaseManager.m */,
 			);
 			path = SinaWeibo;
 			sourceTree = "<group>";
@@ -197,19 +212,32 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
-		55610E4A1B0EA60500CDB5F6 /* Class_ */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Class_;
-			sourceTree = "<group>";
-		};
 		671F9F2710C40717DBA827B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				89C8D8DCE4B23156D8BBBF82 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD48C23A1B104B770052F7B3 /* Class_ */ = {
+			isa = PBXGroup;
+			children = (
+				BD48C23B1B104BDE0052F7B3 /* TUTTHttpRequest.h */,
+				BD48C23C1B104BDE0052F7B3 /* TUTTHttpRequest.m */,
+				BD48C23E1B104BF40052F7B3 /* TUTTHttpClient.h */,
+				BD48C23F1B104BF40052F7B3 /* TUTTHttpClient.m */,
+			);
+			path = Class_;
+			sourceTree = "<group>";
+		};
+		BD48C2411B104D670052F7B3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BD48C2421B104D800052F7B3 /* TUTTUserManager.h */,
+				BD48C2431B104D800052F7B3 /* TUTTUserManager.m */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		D4517F0E2A516FF2023F42AE /* Pods */ = {
@@ -358,14 +386,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD48C2401B104BF40052F7B3 /* TUTTHttpClient.m in Sources */,
 				554AF5871B0E340200BB4A2D /* JSONKit.m in Sources */,
 				55610E4B1B0EA60500CDB5F6 /* SinaWeibo.m in Sources */,
+				BD48C2441B104D800052F7B3 /* TUTTUserManager.m in Sources */,
 				554AF52D1B0E33A600BB4A2D /* ViewController.m in Sources */,
 				55610E4C1B0EA60500CDB5F6 /* SinaWeiboAuthorizeView.m in Sources */,
 				554AF52A1B0E33A600BB4A2D /* AppDelegate.m in Sources */,
 				554AF5271B0E33A600BB4A2D /* main.m in Sources */,
 				554AF5901B0E352300BB4A2D /* FansModel.m in Sources */,
 				55610E501B0EA65F00CDB5F6 /* TUTTWeibo.m in Sources */,
+				BD48C2471B104DA20052F7B3 /* TUTTBaseManager.m in Sources */,
+				BD48C23D1B104BDE0052F7B3 /* TUTTHttpRequest.m in Sources */,
 				55610E4D1B0EA60500CDB5F6 /* SinaWeiboRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

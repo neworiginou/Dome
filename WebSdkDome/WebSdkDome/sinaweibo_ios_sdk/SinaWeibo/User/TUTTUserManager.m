@@ -10,4 +10,8 @@
 
 @implementation TUTTUserManager
 
+- (void)loginSuccess:(void (^)(id))success failure:(void (^)(NSError *))failure{
+    
+}
+
 @end

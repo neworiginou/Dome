@@ -10,4 +10,13 @@
 
 @implementation TUTTBaseManager
 
++ (TUTTBaseManager *)manager{
+    static TUTTBaseManager * _baseManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _baseManager = [[[self class] alloc] init];
+    });
+    return _baseManager;
+}
+
 @end
