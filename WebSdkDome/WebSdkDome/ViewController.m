@@ -70,7 +70,7 @@
                          delegate:self];
     }else{
         // 获取粉丝
-        [weibo requestWithURL:@"friendships/followers.json" params:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"3488442751",@"uid",nil] httpMethod:@"GET" delegate:self];
+        [weibo requestWithURL:@"friendships/followers.json" params:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"996540367",@"uid",nil] httpMethod:@"GET" delegate:self];
     }
     
 }
@@ -104,6 +104,9 @@
 {
     NSLog(@"微博发送失败 %@",error);
 }
+
+
+
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

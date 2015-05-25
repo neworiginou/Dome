@@ -10,4 +10,6 @@
 
 @interface TUTTHttpRequest : NSObject
 
++ (TUTTHttpRequest *)request;
+
 @end

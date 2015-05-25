@@ -6,8 +6,10 @@
 //  Copyright (c) 2015年 lbencs. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "TUTTBaseManager.h"
 
-@interface TUTTUserManager : NSObject
+@interface TUTTUserManager : TUTTBaseManager
+
+- (void)loginSuccess:(void(^)(id responseObject))success failure:(void(^)(NSError * error))failure;
 
 @end
