@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+//#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
 
@@ -16,7 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CALayer * layer = [[CALayer alloc] init];
+    layer.frame = CGRectMake(100, 200, 100, 100);
+    layer.backgroundColor = [[UIColor blueColor] CGColor];
+    [self.view.layer addSublayer:layer];
+    
+    
+    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(250, 200, 100, 100)];
+    view.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:view];
+    
+    
+    CALayer * mainLayer = [[CALayer alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {

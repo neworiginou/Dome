@@ -33,7 +33,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSArray * arr = @[@"Login",@"Post",@"Fans"];
+    NSArray * arr = @[@"Login",@"Post",@"Fans",@"getMyWebo"];
     for (int i = 0; i < arr.count; i++) {
         UIButton * b = [UIButton buttonWithType:UIButtonTypeSystem];
         b.frame = CGRectMake(100*i, 20, 100, 30);
@@ -70,7 +70,8 @@
                          delegate:self];
     }else{
         // 获取粉丝
-        [weibo requestWithURL:@"friendships/followers.json" params:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"3488442751",@"uid",nil] httpMethod:@"GET" delegate:self];
+//        [weibo requestWithURL:@"friendships/followers.json" params:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"3488442751",@"uid",nil] httpMethod:@"GET" delegate:self];
+        [weibo requestWithURL:@"statuses/user_timeline.json" params:nil httpMethod:@"GET" delegate:self];
     }
     
 }
@@ -122,7 +123,7 @@
     FansModel * model = _dataArr[indexPath.row];
     cell.textLabel.text = model.name;
     cell.detailTextLabel.text = model.desStr;
-    [cell.imageView setImageWithURL:[NSURL URLWithString:model.imgURL]];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:model.imgURL]];
     
     return cell;
 }
