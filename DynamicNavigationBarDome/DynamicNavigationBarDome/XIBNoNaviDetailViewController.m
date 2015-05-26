@@ -7,7 +7,7 @@
 //
 
 #import "XIBNoNaviDetailViewController.h"
-
+#import "UINavigationController+TVTTNavigationControllerTransform.h"
 @interface XIBNoNaviDetailViewController ()
 
 @end
@@ -21,7 +21,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*
@@ -34,7 +33,7 @@
 }
 */
 - (IBAction)backBtnClick:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController tvtt_popViewControllerAnimated:YES];
 }
 - (void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBarHidden = YES;
@@ -42,5 +41,4 @@
 - (void)viewWillDisappear:(BOOL)animated{
     self.navigationController.navigationBarHidden = NO;
 }
-
 @end

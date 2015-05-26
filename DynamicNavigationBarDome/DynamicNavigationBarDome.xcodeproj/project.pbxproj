@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		554957421B1371080006CBF5 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 554957411B1371080006CBF5 /* UIViewController+BackButtonHandler.m */; };
+		BD52F1B51B145D2F0055BEE2 /* CABasicAnimation+TVTTAnimationDelegateBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BD52F1B41B145D2F0055BEE2 /* CABasicAnimation+TVTTAnimationDelegateBlock.m */; };
 		BDAEB6D11B131CFB0046D1E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB6D01B131CFB0046D1E7 /* main.m */; };
 		BDAEB6D41B131CFB0046D1E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB6D31B131CFB0046D1E7 /* AppDelegate.m */; };
 		BDAEB6D71B131CFB0046D1E7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB6D61B131CFB0046D1E7 /* FirstViewController.m */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		554957401B1371080006CBF5 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		554957411B1371080006CBF5 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		BD52F1B31B145D2F0055BEE2 /* CABasicAnimation+TVTTAnimationDelegateBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CABasicAnimation+TVTTAnimationDelegateBlock.h"; sourceTree = "<group>"; };
+		BD52F1B41B145D2F0055BEE2 /* CABasicAnimation+TVTTAnimationDelegateBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CABasicAnimation+TVTTAnimationDelegateBlock.m"; sourceTree = "<group>"; };
 		BDAEB6CB1B131CFB0046D1E7 /* DynamicNavigationBarDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicNavigationBarDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAEB6CF1B131CFB0046D1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDAEB6D01B131CFB0046D1E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				BDDB56451B13286000E67C54 /* XIBNoNaviDetailViewController.xib */,
 				BDDB56481B132A4F00E67C54 /* UINavigationController+TVTTNavigationControllerTransform.h */,
 				BDDB56491B132A4F00E67C54 /* UINavigationController+TVTTNavigationControllerTransform.m */,
+				BD52F1B31B145D2F0055BEE2 /* CABasicAnimation+TVTTAnimationDelegateBlock.h */,
+				BD52F1B41B145D2F0055BEE2 /* CABasicAnimation+TVTTAnimationDelegateBlock.m */,
 			);
 			path = DynamicNavigationBarDome;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				TargetAttributes = {
 					BDAEB6CA1B131CFB0046D1E7 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 38ZB8SW96P;
 					};
 					BDAEB6E61B131CFB0046D1E7 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				554957421B1371080006CBF5 /* UIViewController+BackButtonHandler.m in Sources */,
+				BD52F1B51B145D2F0055BEE2 /* CABasicAnimation+TVTTAnimationDelegateBlock.m in Sources */,
 				BDDB564A1B132A4F00E67C54 /* UINavigationController+TVTTNavigationControllerTransform.m in Sources */,
 				BDDB56411B13277F00E67C54 /* XIBDetailViewController.m in Sources */,
 				BDDB56371B13236E00E67C54 /* XIBFirstViewController.m in Sources */,
@@ -360,6 +367,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b22808d1-408f-49bd-94b3-e86e1b495df1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -397,6 +405,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "b22808d1-408f-49bd-94b3-e86e1b495df1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -407,9 +416,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DynamicNavigationBarDome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -417,9 +429,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DynamicNavigationBarDome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

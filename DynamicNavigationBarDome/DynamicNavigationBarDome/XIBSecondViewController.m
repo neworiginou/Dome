@@ -26,7 +26,6 @@
 //    self.navigationController.navigationBar.translucent = YES;
 //    [[UIApplication sharedApplication]
 //     setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
-    
     self.tableView.contentInset = UIEdgeInsetsMake(-20.f, 0, 0, 0);
 
 }
@@ -75,7 +74,6 @@
     }else{
         
         XIBDetailViewController * vc = [[XIBDetailViewController alloc] initWithNibName:@"XIBDetailViewController" bundle:nil];
-//        [self.navigationController pushViewController:vc animated:YES];
         [self.navigationController tvtt_pushViewController:vc animated:YES];
     }
     

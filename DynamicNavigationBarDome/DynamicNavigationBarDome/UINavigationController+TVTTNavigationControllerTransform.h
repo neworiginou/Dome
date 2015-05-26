@@ -10,6 +10,8 @@
 
 
 @interface UINavigationController (TVTTNavigationControllerTransform)
+
 - (void)tvtt_pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
 - (UIViewController *)tvtt_popViewControllerAnimated:(BOOL)animated;
+
 @end
