@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0630"
-   version = "1.8">
+   version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDAEB6CA1B131CFB0046D1E7"
-               BuildableName = "DynamicNavigationBarDome.app"
-               BlueprintName = "DynamicNavigationBarDome"
-               ReferencedContainer = "container:DynamicNavigationBarDome.xcodeproj">
+               BlueprintIdentifier = "554F79E11AE080F3009A4113"
+               BuildableName = "CustiomView.app"
+               BlueprintName = "CustiomView"
+               ReferencedContainer = "container:CustiomView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDAEB6E61B131CFB0046D1E7"
-               BuildableName = "DynamicNavigationBarDomeTests.xctest"
-               BlueprintName = "DynamicNavigationBarDomeTests"
-               ReferencedContainer = "container:DynamicNavigationBarDome.xcodeproj">
+               BlueprintIdentifier = "554F79FA1AE080F4009A4113"
+               BuildableName = "CustiomViewTests.xctest"
+               BlueprintName = "CustiomViewTests"
+               ReferencedContainer = "container:CustiomView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDAEB6E61B131CFB0046D1E7"
-               BuildableName = "DynamicNavigationBarDomeTests.xctest"
-               BlueprintName = "DynamicNavigationBarDomeTests"
-               ReferencedContainer = "container:DynamicNavigationBarDome.xcodeproj">
+               BlueprintIdentifier = "554F79FA1AE080F4009A4113"
+               BuildableName = "CustiomViewTests.xctest"
+               BlueprintName = "CustiomViewTests"
+               ReferencedContainer = "container:CustiomView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BDAEB6CA1B131CFB0046D1E7"
-            BuildableName = "DynamicNavigationBarDome.app"
-            BlueprintName = "DynamicNavigationBarDome"
-            ReferencedContainer = "container:DynamicNavigationBarDome.xcodeproj">
+            BlueprintIdentifier = "554F79E11AE080F3009A4113"
+            BuildableName = "CustiomView.app"
+            BlueprintName = "CustiomView"
+            ReferencedContainer = "container:CustiomView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BDAEB6CA1B131CFB0046D1E7"
-            BuildableName = "DynamicNavigationBarDome.app"
-            BlueprintName = "DynamicNavigationBarDome"
-            ReferencedContainer = "container:DynamicNavigationBarDome.xcodeproj">
+            BlueprintIdentifier = "554F79E11AE080F3009A4113"
+            BuildableName = "CustiomView.app"
+            BlueprintName = "CustiomView"
+            ReferencedContainer = "container:CustiomView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BDAEB6CA1B131CFB0046D1E7"
-            BuildableName = "DynamicNavigationBarDome.app"
-            BlueprintName = "DynamicNavigationBarDome"
-            ReferencedContainer = "container:DynamicNavigationBarDome.xcodeproj">
+            BlueprintIdentifier = "554F79E11AE080F3009A4113"
+            BuildableName = "CustiomView.app"
+            BlueprintName = "CustiomView"
+            ReferencedContainer = "container:CustiomView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

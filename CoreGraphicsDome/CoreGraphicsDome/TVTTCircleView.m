@@ -13,6 +13,7 @@
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
+    
     [super drawRect:rect];
     
     CGRect drawRect = rect;
@@ -37,6 +38,38 @@
     [self drawCurveAtX:rect.size.width/2.0 Y:20];
     
 }
+- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx{
+    
+}
+- (void)drawRect:(CGRect)rect forViewPrintFormatter:(UIViewPrintFormatter *)formatter{
+    
+}
+- (BOOL)drawViewHierarchyInRect:(CGRect)rect afterScreenUpdates:(BOOL)afterUpdates{
+    return YES;
+}
+
+
+
+
+
+- (CALayer *)layer{
+    return [super layer];
+}
+- (void)layoutSubviews{
+    [super layoutSubviews];
+}
+- (void)layoutIfNeeded{
+    [super layoutIfNeeded];
+}
+- (void)layoutSublayersOfLayer:(CALayer *)layer{
+    [super layoutSublayersOfLayer:layer];
+}
+- (void)layoutMarginsDidChange{
+    [super layoutMarginsDidChange];
+}
+
+
+
 
 - (void)drawRectangle:(CGRect)rect color:(CGColorRef)color{
     CGContextRef bgCtx =  UIGraphicsGetCurrentContext();

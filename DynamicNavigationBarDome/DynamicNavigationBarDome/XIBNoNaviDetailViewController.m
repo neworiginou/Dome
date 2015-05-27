@@ -34,6 +34,7 @@
 */
 - (IBAction)backBtnClick:(id)sender {
     [self.navigationController tvtt_popViewControllerAnimated:YES];
+//    [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBarHidden = YES;

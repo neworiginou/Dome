@@ -68,26 +68,6 @@ static const char * kBottomScreenMirrorImageViewKey = "TVTT_BOTTOM_SCREEN_MIRROR
     objc_setAssociatedObject(self, kBottomScreenMirrorImageViewKey, ttBottomScreenMirrorImageView, OBJC_ASSOCIATION_RETAIN);
 }
 
-
-#pragma mark  - UINavigationControllerAnimationDelegate
-
-//- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
-//    
-//    if ([self tvtt_animationDidFinishedBlock]) {
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self tvtt_animationDidFinishedBlock](anim,flag);
-//        });
-//    }
-//    
-//    [self.ttTopScreenMirrorImageView removeFromSuperlayer];
-//    [self.ttBottomScreenMirrorImageView removeFromSuperlayer];
-////    self.ttBottomScreenMirrorImageView = nil;
-////    self.ttTopScreenMirrorImageView = nil;
-//}
-//- (void)animationDidStart:(CAAnimation *)anim{
-//    
-//}
-
 #pragma mark - push pop
 
 - (void)tvtt_pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
@@ -116,13 +96,6 @@ static const char * kBottomScreenMirrorImageViewKey = "TVTT_BOTTOM_SCREEN_MIRROR
     
     __weak typeof(self) wSelf = self;
     
-//    [self.ttBottomScreenMirrorImageView addAnimation:[self tvtt_animationWithTranslation:-CGRectGetWidth(self.view.bounds) speed:TVTTTransitionSpeed/3.0 animationFinished:^(CAAnimation *animation, BOOL flag) {
-//        [wSelf.ttTopScreenMirrorImageView removeAllAnimations];
-//        [wSelf.ttBottomScreenMirrorImageView removeFromSuperlayer];
-//    }] forKey:nil];
-    
-//    [self.ttBottomScreenMirrorImageView addAnimation:[self tvtt_animationWithTranslation:-CGRectGetWidth(self.view.bounds)/3 animationFinished:^(CAAnimation *animation, BOOL flag) {
-//    }] forKey:nil];
     [self.ttBottomScreenMirrorImageView addAnimation: [self tvtt_animationWithTranslation:-CGRectGetWidth(self.view.bounds) animationFinished:^(CAAnimation *animation, BOOL flag) {
         [wSelf.ttBottomScreenMirrorImageView removeAllAnimations];
         [wSelf.ttBottomScreenMirrorImageView removeFromSuperlayer];
@@ -153,7 +126,6 @@ static const char * kBottomScreenMirrorImageViewKey = "TVTT_BOTTOM_SCREEN_MIRROR
         self.view.bounds.size
     };
     
-    [self tvtt_popViewController];
     
     [self.view.layer addSublayer:self.ttBottomScreenMirrorImageView];
     [self.view.layer addSublayer:self.ttTopScreenMirrorImageView];
@@ -167,19 +139,11 @@ static const char * kBottomScreenMirrorImageViewKey = "TVTT_BOTTOM_SCREEN_MIRROR
         [wSelf.ttBottomScreenMirrorImageView removeFromSuperlayer];
     }] forKey:nil];
     
-//    [self.ttBottomScreenMirrorImageView addAnimation:[self tvtt_animationWithTranslation:CGRectGetWidth(self.view.frame)/3.0 duration:TVTTTransitionDuration animationFinished:^(CAAnimation *animation, BOOL flag) {
-//        [wSelf.ttTopScreenMirrorImageView removeAllAnimations];
-//        [wSelf.ttBottomScreenMirrorImageView removeFromSuperlayer];
-//    }] forKey:nil];
-    
-//    [self.ttTopScreenMirrorImageView addAnimation:[self tvtt_animationWithTranslation:CGRectGetWidth(self.view.bounds) duration:TVTTTransitionDuration animationFinished:^(CAAnimation *animation, BOOL flag) {
-//        [wSelf.ttTopScreenMirrorImageView removeAllAnimations];
-//        [wSelf.ttTopScreenMirrorImageView removeFromSuperlayer];
-//    }] forKey:nil];
-//    
     [self.ttTopScreenMirrorImageView addAnimation:[self tvtt_animationWithTranslation:CGRectGetWidth(self.view.bounds) animationFinished:^(CAAnimation *animation, BOOL flag) {
         [wSelf.ttTopScreenMirrorImageView removeAllAnimations];
         [wSelf.ttTopScreenMirrorImageView removeFromSuperlayer];
+        [self tvtt_popViewController];
+        
     }]forKey:nil];
     
     self.interactivePopGestureRecognizer.enabled = YES;
@@ -230,13 +194,8 @@ static const char * kBottomScreenMirrorImageViewKey = "TVTT_BOTTOM_SCREEN_MIRROR
         TVTTStartTouchPoint = touchPoint;
        
         _isGestureMoving = TVTTStartTouchPoint.x <= TVTTTransitionMargin;
-//       _isGestureMoving = YES;
        
        self.ttBottomScreenMirrorImageView = [[self ttMirrorImageViews] lastObject];
-       
-       
-//       self.ttBottomScreenMirrorImageView.frame = CGRectMake(0, 0, 100, 200);
-//       self.ttTopScreenMirrorImageView.frame = CGRectMake(220, 0, 100, 200);
        
        if (_isGestureMoving) {
            [self.view.layer addSublayer:self.ttBottomScreenMirrorImageView];
