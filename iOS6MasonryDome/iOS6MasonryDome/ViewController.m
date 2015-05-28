@@ -42,7 +42,6 @@
         }];
         view;
     });
-    view2 = nil;
     
     UIView * view3 = ({
         UIView * view = [[UIView alloc] init];
@@ -50,61 +49,67 @@
         [self.view addSubview:view];
         [view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.sizeOffset(CGSizeMake(100, 100));
+            make.top.equalTo(view2.mas_bottom);
         }];
         view;
     });
     
-//    [@[view2,view] mas_updateConstraints:^(MASConstraintMaker *make) {
-//        make.leading.offset(10);
-//    }];
+    [@[view2,view3] mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.leading.offset(0);
+    }];
+
+    
     UIButton * leftButton = ({
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:button];
         [button mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.view.mas_leading).offset(120);
-            make.top.equalTo(self.view.mas_top).offset(10);
+            make.top.equalTo(self.view.mas_top).offset(30);
             make.width.equalTo(@80);
             make.height.equalTo(@20);
         }];
         button;
     });
+    
     UIButton * leftButton2 = ({
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:button];
         [button mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.view.mas_leading).offset(120);
             make.top.equalTo(leftButton.mas_bottom).offset(5);
             make.width.equalTo(@80);
             make.height.equalTo(@20);
         }];
         button;
     });
+    
     UIButton * leftButton3 = ({
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:button];
         [button mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.view.mas_leading).offset(120);
             make.top.equalTo(leftButton2.mas_bottom).offset(5);
             make.width.equalTo(@80);
             make.height.equalTo(@20);
         }];
         button;
     });
+    
     UIButton * leftButton4 = ({
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:button];
         [button mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.view.mas_leading).offset(120);
             make.top.equalTo(leftButton3.mas_bottom).offset(5);
             make.width.equalTo(@80);
             make.height.equalTo(@20);
         }];
         button;
     });
+    
+    [@[leftButton,leftButton2,leftButton3,leftButton4] mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.view.mas_leading).offset(120);
+    }];
     
     UILabel * _rightLabel = nil;
     UILabel * _leftLabel = nil;
