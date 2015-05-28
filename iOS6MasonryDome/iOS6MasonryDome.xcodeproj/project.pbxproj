@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD48D3351B17009100BF3759 /* UIButton+TVTTButtonBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BD48D3341B17009100BF3759 /* UIButton+TVTTButtonBlock.m */; };
 		BD8AC3261B16A7FB00287362 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8AC3251B16A7FB00287362 /* Foundation.framework */; };
 		BD8AC3281B16A7FB00287362 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8AC3271B16A7FB00287362 /* CoreGraphics.framework */; };
 		BD8AC32A1B16A7FB00287362 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8AC3291B16A7FB00287362 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		1BEA87526531D5A0CF156D3F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BD48D3331B17009100BF3759 /* UIButton+TVTTButtonBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TVTTButtonBlock.h"; sourceTree = "<group>"; };
+		BD48D3341B17009100BF3759 /* UIButton+TVTTButtonBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TVTTButtonBlock.m"; sourceTree = "<group>"; };
 		BD8AC3221B16A7FB00287362 /* iOS6MasonryDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS6MasonryDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8AC3251B16A7FB00287362 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BD8AC3271B16A7FB00287362 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 				BD8AC33E1B16A7FB00287362 /* ViewController.m */,
 				BD8AC3401B16A7FB00287362 /* Images.xcassets */,
 				BD8AC32C1B16A7FB00287362 /* Supporting Files */,
+				BD48D3331B17009100BF3759 /* UIButton+TVTTButtonBlock.h */,
+				BD48D3341B17009100BF3759 /* UIButton+TVTTButtonBlock.m */,
 			);
 			path = iOS6MasonryDome;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				BD8AC33F1B16A7FB00287362 /* ViewController.m in Sources */,
 				BD8AC3361B16A7FB00287362 /* AppDelegate.m in Sources */,
 				BD8AC3321B16A7FB00287362 /* main.m in Sources */,
+				BD48D3351B17009100BF3759 /* UIButton+TVTTButtonBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
