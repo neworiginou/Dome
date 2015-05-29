@@ -38,35 +38,34 @@
     [self drawCurveAtX:rect.size.width/2.0 Y:20];
     
 }
-- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx{
-    
-}
-- (void)drawRect:(CGRect)rect forViewPrintFormatter:(UIViewPrintFormatter *)formatter{
-    
-}
-- (BOOL)drawViewHierarchyInRect:(CGRect)rect afterScreenUpdates:(BOOL)afterUpdates{
-    return YES;
-}
+//- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx{
+//    
+//}
+//- (void)drawRect:(CGRect)rect forViewPrintFormatter:(UIViewPrintFormatter *)formatter{
+//    
+//}
+//- (BOOL)drawViewHierarchyInRect:(CGRect)rect afterScreenUpdates:(BOOL)afterUpdates{
+//    
+//    return YES;
+//}
 
 
 
-
-
-- (CALayer *)layer{
-    return [super layer];
-}
-- (void)layoutSubviews{
-    [super layoutSubviews];
-}
-- (void)layoutIfNeeded{
-    [super layoutIfNeeded];
-}
-- (void)layoutSublayersOfLayer:(CALayer *)layer{
-    [super layoutSublayersOfLayer:layer];
-}
-- (void)layoutMarginsDidChange{
-    [super layoutMarginsDidChange];
-}
+//- (CALayer *)layer{
+//    return [super layer];
+//}
+//- (void)layoutSubviews{
+//    [super layoutSubviews];
+//}
+//- (void)layoutIfNeeded{
+//    [super layoutIfNeeded];
+//}
+//- (void)layoutSublayersOfLayer:(CALayer *)layer{
+//    [super layoutSublayersOfLayer:layer];
+//}
+//- (void)layoutMarginsDidChange{
+//    [super layoutMarginsDidChange];
+//}
 
 
 

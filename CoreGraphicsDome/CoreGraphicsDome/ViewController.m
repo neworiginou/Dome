@@ -8,11 +8,14 @@
 
 #import "ViewController.h"
 #import "TVTTCircleView.h"
+#import "TVTTProgressBar.h"
+#import "TVTTProgressView.h"
 #import "TVTTAffineTransformView.h"
 
 
 @interface ViewController ()
-
+@property (weak, nonatomic) TVTTProgressBar * progressBar;
+@property (weak, nonatomic) TVTTProgressView * progressView;
 @end
 
 @implementation ViewController
@@ -54,6 +57,7 @@
                                                               constant:0]]];
     
     
+    
     TVTTAffineTransformView * transformView = [[TVTTAffineTransformView alloc] init];
     transformView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:transformView];
@@ -68,8 +72,42 @@
 
     
     
+    TVTTProgressBar * progressBar = [[TVTTProgressBar alloc] init];
+    progressBar.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:progressBar];
+    NSDictionary * views_1 = NSDictionaryOfVariableBindings(transformView,progressBar);
+    NSString * p_h_vfl = @"H:[progressBar(==100.0)]";
+    NSString * p_v_vfl = @"V:[transformView]-padding-[progressBar(==100.0)]";
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:p_h_vfl options:0 metrics:metrics views:views_1]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:p_v_vfl options:0 metrics:metrics views:views_1]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:progressBar attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+    _progressBar = progressBar;
+    _progressBar.progress = .9;
     
-
+    TVTTProgressView * progressView = [[TVTTProgressView alloc] init];
+//    progressView.backgroundColor = [UIColor blackColor];
+    progressView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:progressView];
+    NSDictionary * views_2 = NSDictionaryOfVariableBindings(progressView,progressBar);
+    NSString * p_2_h_vfl = @"H:[progressView(==100.0)]";
+    NSString * p_2_v_vfl = @"V:[progressBar]-padding-[progressView(==100.0)]";
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:p_2_h_vfl options:0 metrics:metrics views:views_2]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:p_2_v_vfl options:0 metrics:metrics views:views_2]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:progressView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+    [progressView setProgress:.3];
+    _progressView = progressView;
+    _progressView.displayText = @"1000\n哈哈哈";
+    
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"OK" style:0 target:self action:@selector(leftBarButtonItemBtnClick)];
+    
+    
+}
+- (void)leftBarButtonItemBtnClick{
+//    [_progressBar setNeedsDisplay];
+//    [_progressBar setNeedsLayout];
+    _progressBar.progress = .3;
+    _progressView.progress = .9;
 }
 
 - (void)didReceiveMemoryWarning {
