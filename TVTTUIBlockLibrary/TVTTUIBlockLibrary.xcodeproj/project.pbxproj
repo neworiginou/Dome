@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		554958511B19CCF10006CBF5 /* TVTTUIBlockLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 554958501B19CCF10006CBF5 /* TVTTUIBlockLibrary.h */; };
+		554958531B19CCF10006CBF5 /* TVTTUIBlockLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 554958521B19CCF10006CBF5 /* TVTTUIBlockLibrary.m */; };
+		554958591B19CCF10006CBF5 /* libTVTTUIBlockLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5549584D1B19CCF10006CBF5 /* libTVTTUIBlockLibrary.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5549585A1B19CCF10006CBF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554958451B19CCF10006CBF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5549584C1B19CCF10006CBF5;
+			remoteInfo = TVTTUIBlockLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5549584B1B19CCF10006CBF5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				554958511B19CCF10006CBF5 /* TVTTUIBlockLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5549584D1B19CCF10006CBF5 /* libTVTTUIBlockLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTVTTUIBlockLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		554958501B19CCF10006CBF5 /* TVTTUIBlockLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVTTUIBlockLibrary.h; sourceTree = "<group>"; };
+		554958521B19CCF10006CBF5 /* TVTTUIBlockLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVTTUIBlockLibrary.m; sourceTree = "<group>"; };
+		554958581B19CCF10006CBF5 /* TVTTUIBlockLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTTUIBlockLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5549585E1B19CCF10006CBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5549584A1B19CCF10006CBF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554958551B19CCF10006CBF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554958591B19CCF10006CBF5 /* libTVTTUIBlockLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		554958441B19CCF10006CBF5 = {
+			isa = PBXGroup;
+			children = (
+				5549584F1B19CCF10006CBF5 /* TVTTUIBlockLibrary */,
+				5549585C1B19CCF10006CBF5 /* TVTTUIBlockLibraryTests */,
+				5549584E1B19CCF10006CBF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5549584E1B19CCF10006CBF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5549584D1B19CCF10006CBF5 /* libTVTTUIBlockLibrary.a */,
+				554958581B19CCF10006CBF5 /* TVTTUIBlockLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5549584F1B19CCF10006CBF5 /* TVTTUIBlockLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				554958501B19CCF10006CBF5 /* TVTTUIBlockLibrary.h */,
+				554958521B19CCF10006CBF5 /* TVTTUIBlockLibrary.m */,
+			);
+			path = TVTTUIBlockLibrary;
+			sourceTree = "<group>";
+		};
+		5549585C1B19CCF10006CBF5 /* TVTTUIBlockLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				5549585D1B19CCF10006CBF5 /* Supporting Files */,
+			);
+			path = TVTTUIBlockLibraryTests;
+			sourceTree = "<group>";
+		};
+		5549585D1B19CCF10006CBF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5549585E1B19CCF10006CBF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5549584C1B19CCF10006CBF5 /* TVTTUIBlockLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554958611B19CCF10006CBF5 /* Build configuration list for PBXNativeTarget "TVTTUIBlockLibrary" */;
+			buildPhases = (
+				554958491B19CCF10006CBF5 /* Sources */,
+				5549584A1B19CCF10006CBF5 /* Frameworks */,
+				5549584B1B19CCF10006CBF5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVTTUIBlockLibrary;
+			productName = TVTTUIBlockLibrary;
+			productReference = 5549584D1B19CCF10006CBF5 /* libTVTTUIBlockLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		554958571B19CCF10006CBF5 /* TVTTUIBlockLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554958641B19CCF10006CBF5 /* Build configuration list for PBXNativeTarget "TVTTUIBlockLibraryTests" */;
+			buildPhases = (
+				554958541B19CCF10006CBF5 /* Sources */,
+				554958551B19CCF10006CBF5 /* Frameworks */,
+				554958561B19CCF10006CBF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5549585B1B19CCF10006CBF5 /* PBXTargetDependency */,
+			);
+			name = TVTTUIBlockLibraryTests;
+			productName = TVTTUIBlockLibraryTests;
+			productReference = 554958581B19CCF10006CBF5 /* TVTTUIBlockLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		554958451B19CCF10006CBF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = lbencs;
+				TargetAttributes = {
+					5549584C1B19CCF10006CBF5 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					554958571B19CCF10006CBF5 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 554958481B19CCF10006CBF5 /* Build configuration list for PBXProject "TVTTUIBlockLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 554958441B19CCF10006CBF5;
+			productRefGroup = 5549584E1B19CCF10006CBF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5549584C1B19CCF10006CBF5 /* TVTTUIBlockLibrary */,
+				554958571B19CCF10006CBF5 /* TVTTUIBlockLibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		554958561B19CCF10006CBF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		554958491B19CCF10006CBF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554958531B19CCF10006CBF5 /* TVTTUIBlockLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554958541B19CCF10006CBF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5549585B1B19CCF10006CBF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5549584C1B19CCF10006CBF5 /* TVTTUIBlockLibrary */;
+			targetProxy = 5549585A1B19CCF10006CBF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5549585F1B19CCF10006CBF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		554958601B19CCF10006CBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		554958621B19CCF10006CBF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		554958631B19CCF10006CBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		554958651B19CCF10006CBF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TVTTUIBlockLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		554958661B19CCF10006CBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TVTTUIBlockLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		554958481B19CCF10006CBF5 /* Build configuration list for PBXProject "TVTTUIBlockLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5549585F1B19CCF10006CBF5 /* Debug */,
+				554958601B19CCF10006CBF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554958611B19CCF10006CBF5 /* Build configuration list for PBXNativeTarget "TVTTUIBlockLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554958621B19CCF10006CBF5 /* Debug */,
+				554958631B19CCF10006CBF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		554958641B19CCF10006CBF5 /* Build configuration list for PBXNativeTarget "TVTTUIBlockLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554958651B19CCF10006CBF5 /* Debug */,
+				554958661B19CCF10006CBF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 554958451B19CCF10006CBF5 /* Project object */;
+}

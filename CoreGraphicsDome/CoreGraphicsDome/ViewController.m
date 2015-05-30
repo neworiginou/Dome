@@ -94,10 +94,10 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:p_2_h_vfl options:0 metrics:metrics views:views_2]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:p_2_v_vfl options:0 metrics:metrics views:views_2]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:progressView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
-    [progressView setProgress:.3];
+    [progressView setProgress:.9];
     _progressView = progressView;
-    _progressView.displayText = @"1000\n哈哈哈";
-    
+//    _progressView.displayText = @"1000\n哈哈哈";
+//    [progressView]
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"OK" style:0 target:self action:@selector(leftBarButtonItemBtnClick)];
     

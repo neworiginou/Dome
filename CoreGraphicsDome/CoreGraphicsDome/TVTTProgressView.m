@@ -8,6 +8,8 @@
 
 #import "TVTTProgressView.h"
 
+#import "BlockLib/BlockLib.h"
+#import "BlockLib/BlockLibHead.h"
 
 @interface TVTTProgressView (){
     CAShapeLayer *_testLayer;
@@ -17,6 +19,8 @@
 @property (weak, nonatomic) CAShapeLayer * progressLayer;
 @property (strong, nonatomic) UIBezierPath * progressPath;
 @property (weak, nonatomic) CATextLayer * textLayer;
+
+@property (strong, nonatomic) NSTimer * progressTimer;
 @end
 
 @implementation TVTTProgressView
@@ -41,7 +45,16 @@
 
 
 - (void)makeLayer{
+    
+    print();
+    
     __weak typeof(self) weakSelf = self;
+    
+    if (!self.progressTimer) {
+//        self.progressTimer = [NSTimer bl_scheduledTimerWithTimeInterval:0.1 userInfo:nil repeats:YES action:^{
+        
+//        }];
+    }
     
     if (!self.trackLayer) {
         [self makeTrackLayerFinished:^(CAShapeLayer *layer, UIBezierPath *path) {
@@ -59,6 +72,22 @@
     }
     
     if (self.displayText && [self.displayText length] > 0) {
+        CATextLayer * textLayer = [[CATextLayer alloc] init];
+        textLayer.font = (__bridge CFTypeRef)([UIFont systemFontOfSize:14]);
+        textLayer.fontSize = 14;
+        textLayer.alignmentMode = @"center";
+        textLayer.foregroundColor = [UIColor blueColor].CGColor;
+        UIFont * font = [UIFont systemFontOfSize:14];
+        NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+        [style setAlignment:NSTextAlignmentCenter];
+        NSDictionary * attributes = @{NSFontAttributeName:font,
+                                      NSParagraphStyleAttributeName:style};
+        CGSize  textSize = [self.displayText sizeWithAttributes:attributes];
+        textLayer.frame = (CGRect){(CGRectGetWidth(self.frame) - textSize.width)/2.0, (CGRectGetHeight(self.frame) - textSize.height)/2.0,textSize};
+        textLayer.string = self.displayText;
+        [self.layer addSublayer:textLayer];
+    }else{
+        self.displayText = @"%90";
         CATextLayer * textLayer = [[CATextLayer alloc] init];
         textLayer.font = (__bridge CFTypeRef)([UIFont systemFontOfSize:14]);
         textLayer.fontSize = 14;

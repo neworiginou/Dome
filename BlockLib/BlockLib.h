@@ -6,8 +6,9 @@
 //  Copyright (c) 2015年 lbencs. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef BlockLib_BlockLib_h
+#define BlockLib_BlockLib_h
 
-@interface BlockLib : NSObject
+#import "NSTimer+BlockLib.h"
 
-@end
+#endif

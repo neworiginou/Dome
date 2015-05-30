@@ -1,5 +1,5 @@
 //
-//  BlockLib.h
+//  BlockLibHead.h
 //  BlockLib
 //
 //  Created by lbencs on 15/5/30.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BlockLib : NSObject
+@interface BlockLibHead : NSObject
 
 @end
