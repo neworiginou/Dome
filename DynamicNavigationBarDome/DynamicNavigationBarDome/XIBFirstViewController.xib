@@ -13,7 +13,24 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EWZ-vl-dJT">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PIY-HQ-UwP"/>
+                        <outlet property="delegate" destination="-1" id="AS1-dD-cRm"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EWZ-vl-dJT" secondAttribute="trailing" id="DeM-5A-Ahy"/>
+                <constraint firstAttribute="bottom" secondItem="EWZ-vl-dJT" secondAttribute="bottom" id="S2O-pt-6dM"/>
+                <constraint firstItem="EWZ-vl-dJT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WXs-Rw-9Bo"/>
+                <constraint firstItem="EWZ-vl-dJT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oMl-OD-Vqs"/>
+            </constraints>
+            <point key="canvasLocation" x="308" y="299"/>
         </view>
     </objects>
 </document>

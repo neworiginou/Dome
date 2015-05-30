@@ -21,13 +21,17 @@
     // Override point for customization after application launch.
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor blueColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
     UITabBarController * tabBarController = [[UITabBarController alloc] init];
     UINavigationController * nvc = [[UINavigationController alloc] initWithRootViewController:tabBarController];
     
     XIBFirstViewController * fv = [[XIBFirstViewController alloc] initWithNibName:@"XIBFirstViewController" bundle:nil];
     fv.title = @"11";
+    fv.navigationItem.title = @"dd";
+    
     XIBSecondViewController * sv = [[XIBSecondViewController alloc] initWithNibName:@"XIBSecondViewController" bundle:nil];
+    
     sv.title = @"22";
     tabBarController.viewControllers = @[fv,sv];
     

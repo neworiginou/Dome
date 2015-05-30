@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD94BB1C1B18066E00745146 /* TVTTProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BD94BB1B1B18066E00745146 /* TVTTProgressBar.m */; };
+		BD94BB1F1B180D5C00745146 /* UIView+TVTTDrawTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BD94BB1E1B180D5C00745146 /* UIView+TVTTDrawTools.m */; };
 		BDAEB6671B12F2D90046D1E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB6661B12F2D90046D1E7 /* main.m */; };
 		BDAEB66A1B12F2D90046D1E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB6691B12F2D90046D1E7 /* AppDelegate.m */; };
 		BDAEB66D1B12F2D90046D1E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB66C1B12F2D90046D1E7 /* ViewController.m */; };
@@ -16,6 +18,7 @@
 		BDAEB6811B12F2D90046D1E7 /* CoreGraphicsDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB6801B12F2D90046D1E7 /* CoreGraphicsDomeTests.m */; };
 		BDAEB68C1B12F3F00046D1E7 /* TVTTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB68B1B12F3F00046D1E7 /* TVTTCircleView.m */; };
 		BDAEB68F1B1309040046D1E7 /* TVTTAffineTransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB68E1B1309040046D1E7 /* TVTTAffineTransformView.m */; };
+		BDF2DB5D1B184CD900D842CD /* TVTTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2DB5C1B184CD900D842CD /* TVTTProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD94BB181B18039000745146 /* TVTTProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTProgressBar.h; sourceTree = "<group>"; };
+		BD94BB1B1B18066E00745146 /* TVTTProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTProgressBar.m; sourceTree = "<group>"; };
+		BD94BB1D1B180D5C00745146 /* UIView+TVTTDrawTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TVTTDrawTools.h"; sourceTree = "<group>"; };
+		BD94BB1E1B180D5C00745146 /* UIView+TVTTDrawTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TVTTDrawTools.m"; sourceTree = "<group>"; };
 		BDAEB6611B12F2D90046D1E7 /* CoreGraphicsDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreGraphicsDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAEB6651B12F2D90046D1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDAEB6661B12F2D90046D1E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +53,8 @@
 		BDAEB68B1B12F3F00046D1E7 /* TVTTCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTCircleView.m; sourceTree = "<group>"; };
 		BDAEB68D1B1309040046D1E7 /* TVTTAffineTransformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTAffineTransformView.h; sourceTree = "<group>"; };
 		BDAEB68E1B1309040046D1E7 /* TVTTAffineTransformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTAffineTransformView.m; sourceTree = "<group>"; };
+		BDF2DB5B1B184CD900D842CD /* TVTTProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTProgressView.h; sourceTree = "<group>"; };
+		BDF2DB5C1B184CD900D842CD /* TVTTProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +108,12 @@
 				BDAEB68B1B12F3F00046D1E7 /* TVTTCircleView.m */,
 				BDAEB68D1B1309040046D1E7 /* TVTTAffineTransformView.h */,
 				BDAEB68E1B1309040046D1E7 /* TVTTAffineTransformView.m */,
+				BD94BB181B18039000745146 /* TVTTProgressBar.h */,
+				BD94BB1B1B18066E00745146 /* TVTTProgressBar.m */,
+				BD94BB1D1B180D5C00745146 /* UIView+TVTTDrawTools.h */,
+				BD94BB1E1B180D5C00745146 /* UIView+TVTTDrawTools.m */,
+				BDF2DB5B1B184CD900D842CD /* TVTTProgressView.h */,
+				BDF2DB5C1B184CD900D842CD /* TVTTProgressView.m */,
 			);
 			path = CoreGraphicsDome;
 			sourceTree = "<group>";
@@ -229,11 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD94BB1F1B180D5C00745146 /* UIView+TVTTDrawTools.m in Sources */,
+				BD94BB1C1B18066E00745146 /* TVTTProgressBar.m in Sources */,
 				BDAEB66D1B12F2D90046D1E7 /* ViewController.m in Sources */,
 				BDAEB66A1B12F2D90046D1E7 /* AppDelegate.m in Sources */,
 				BDAEB68C1B12F3F00046D1E7 /* TVTTCircleView.m in Sources */,
 				BDAEB6671B12F2D90046D1E7 /* main.m in Sources */,
 				BDAEB68F1B1309040046D1E7 /* TVTTAffineTransformView.m in Sources */,
+				BDF2DB5D1B184CD900D842CD /* TVTTProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -349,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreGraphicsDome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -372,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreGraphicsDome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -430,6 +450,7 @@
 				BDAEB6861B12F2D90046D1E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDAEB6871B12F2D90046D1E7 /* Build configuration list for PBXNativeTarget "CoreGraphicsDomeTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +459,7 @@
 				BDAEB6891B12F2D90046D1E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

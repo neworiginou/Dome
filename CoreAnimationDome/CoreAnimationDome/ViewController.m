@@ -7,13 +7,16 @@
 //
 
 #import "ViewController.h"
-//#import <QuartzCore/QuartzCore.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
 
+#import <QuartzCore/CALayer.h>
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,7 +33,9 @@
 
 
     CALayer * mainLayer = [[CALayer alloc] init];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self.view.layer addSublayer:mainLayer];
+    
+    [mainLayer addSublayer:nil];
 
     layer.backgroundColor = [[UIColor blueColor]CGColor];
     layer.frame = CGRectMake(0, 0, 100, 100);
@@ -43,12 +48,19 @@
     controlLayer.backgroundColor = [[UIColor redColor] CGColor];
     [control.layer addSublayer:controlLayer];
     [self.view addSubview:control];
-    UIView;
+    
 }
 
+
+
+- (void)viewDidLayoutSubviews{
+    
+}
+- (void)layoutSublayersOfLayer:(CALayer *)layer{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

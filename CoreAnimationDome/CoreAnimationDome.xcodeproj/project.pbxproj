@@ -14,6 +14,7 @@
 		55A659701B0AAFCD00333CAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A6596F1B0AAFCD00333CAF /* Images.xcassets */; };
 		55A659731B0AAFCD00333CAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55A659711B0AAFCD00333CAF /* LaunchScreen.xib */; };
 		55A6597F1B0AAFCD00333CAF /* CoreAnimationDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A6597E1B0AAFCD00333CAF /* CoreAnimationDomeTests.m */; };
+		BDE5CA371B15ECF500231FE2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE5CA361B15ECF500231FE2 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		55A659781B0AAFCD00333CAF /* CoreAnimationDomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationDomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A6597D1B0AAFCD00333CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55A6597E1B0AAFCD00333CAF /* CoreAnimationDomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationDomeTests.m; sourceTree = "<group>"; };
+		BDE5CA361B15ECF500231FE2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE5CA371B15ECF500231FE2 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		55A659561B0AAFCD00333CAF = {
 			isa = PBXGroup;
 			children = (
+				BDE5CA361B15ECF500231FE2 /* QuartzCore.framework */,
 				55A659611B0AAFCD00333CAF /* CoreAnimationDome */,
 				55A6597B1B0AAFCD00333CAF /* CoreAnimationDomeTests */,
 				55A659601B0AAFCD00333CAF /* Products */,
@@ -418,6 +422,7 @@
 				55A659841B0AAFCD00333CAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55A659851B0AAFCD00333CAF /* Build configuration list for PBXNativeTarget "CoreAnimationDomeTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				55A659871B0AAFCD00333CAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
