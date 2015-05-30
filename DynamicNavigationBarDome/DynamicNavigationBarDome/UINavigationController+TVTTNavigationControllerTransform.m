@@ -82,7 +82,7 @@ static NSTimeInterval const TRVSTransitionDuration = .2f;
 //            {CGRectGetWidth(self.view.bounds), CGRectGetMinY(self.view.bounds)},
 //            self.view.bounds.size};
 //        
-//        [self.view.layer addSublayer:TRVSStillLayer];
+//        [self.view.layer addSublayer:TRVSStillLaye˜r];
 //        [self.view.layer addSublayer:TRVSTransitioningLayer];
 //        
 //        [CATransaction flush];

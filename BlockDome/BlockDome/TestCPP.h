@@ -11,4 +11,9 @@
 
 #include <stdio.h>
 
+class MyClass{
+public:
+    void method(int art);
+};
+
 #endif /* defined(__BlockDome__TestCPP__) */

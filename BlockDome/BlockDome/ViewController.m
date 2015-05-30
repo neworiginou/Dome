@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <objc/runtime.h>
+
+
 
 @interface ViewController ()
 
@@ -14,14 +17,62 @@
 
 @implementation ViewController
 
+
+int func(int count){
+    printf("hah");
+    return count + 1;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    int(*funcptr)(int) = &func;
+    
+    
+    void(^voidBlock)() = ^void(){};
+    
+    objc_msgSend(voidBlock,sel_registerName("callBack:"));
+    
+    int (^ ttt) (int) = ^ int (int count){
+        return count + 1;
+    };
+    
+    int tttt = ttt(1);
+    
+    
+    int t = funcptr(1);
+    
+    [self callBack:^{
+        
+    }];
+    
+    [self callBackBlock:^int(int t) {
+        return 1 + t;
+    }];
+    
+    ^ void (int i ){
+        printf("haha");
+    };
+    
+    ^int {printf("haha");return 1;};
+    
+    
+    
 }
+
+- (void)callBack:(void(^)())block{
+    block();
+}
+- (void)callBackBlock:(int(^)(int t))block{
+    int k = block(2);
+    printf("----->%d",k);
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

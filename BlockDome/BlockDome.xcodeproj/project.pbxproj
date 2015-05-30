@@ -14,6 +14,7 @@
 		5549578F1B14C2D30006CBF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5549578E1B14C2D30006CBF5 /* Images.xcassets */; };
 		554957921B14C2D30006CBF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554957901B14C2D30006CBF5 /* LaunchScreen.xib */; };
 		5549579E1B14C2D30006CBF5 /* BlockDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5549579D1B14C2D30006CBF5 /* BlockDomeTests.m */; };
+		554957A91B14D27E0006CBF5 /* TestCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 554957A71B14D27E0006CBF5 /* TestCPP.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		554957971B14C2D30006CBF5 /* BlockDomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockDomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5549579C1B14C2D30006CBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5549579D1B14C2D30006CBF5 /* BlockDomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockDomeTests.m; sourceTree = "<group>"; };
+		554957A71B14D27E0006CBF5 /* TestCPP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestCPP.cpp; sourceTree = "<group>"; };
+		554957A81B14D27E0006CBF5 /* TestCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCPP.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				5549578E1B14C2D30006CBF5 /* Images.xcassets */,
 				554957901B14C2D30006CBF5 /* LaunchScreen.xib */,
 				554957811B14C2D30006CBF5 /* Supporting Files */,
+				554957A71B14D27E0006CBF5 /* TestCPP.cpp */,
+				554957A81B14D27E0006CBF5 /* TestCPP.h */,
 			);
 			path = BlockDome;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				5549578A1B14C2D30006CBF5 /* ViewController.m in Sources */,
 				554957871B14C2D30006CBF5 /* AppDelegate.m in Sources */,
 				554957841B14C2D30006CBF5 /* main.m in Sources */,
+				554957A91B14D27E0006CBF5 /* TestCPP.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

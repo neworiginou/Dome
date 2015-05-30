@@ -7,3 +7,12 @@
 //
 
 #include "TestCPP.h"
+
+void MyClass::method(int arg){
+    printf("hello world!");
+}
+
+
+void __ZN7Myclass6methodEi(MyClass *this_, int arg){
+    this_->method(2);
+}
