@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		554958CD1B19D2630006CBF5 /* libBlockLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 554958C11B19D2630006CBF5 /* libBlockLib.a */; };
 		554958E91B19D6D40006CBF5 /* NSTimer+BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 554958E81B19D6D40006CBF5 /* NSTimer+BlockLib.m */; };
+		55CCCD771B19E817008928A9 /* BlockLibHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CCCD761B19E817008928A9 /* BlockLibHead.m */; };
+		55CCCD9E1B19E9FF008928A9 /* BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CCCD9D1B19E9FF008928A9 /* BlockLib.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,10 @@
 		554958D21B19D2630006CBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554958E71B19D6D40006CBF5 /* NSTimer+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlockLib.h"; sourceTree = "<group>"; };
 		554958E81B19D6D40006CBF5 /* NSTimer+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlockLib.m"; sourceTree = "<group>"; };
+		55CCCD751B19E817008928A9 /* BlockLibHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockLibHead.h; sourceTree = "<group>"; };
+		55CCCD761B19E817008928A9 /* BlockLibHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockLibHead.m; sourceTree = "<group>"; };
+		55CCCD9C1B19E9FF008928A9 /* BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockLib.h; sourceTree = "<group>"; };
+		55CCCD9D1B19E9FF008928A9 /* BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockLib.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 			children = (
 				554958E71B19D6D40006CBF5 /* NSTimer+BlockLib.h */,
 				554958E81B19D6D40006CBF5 /* NSTimer+BlockLib.m */,
+				55CCCD751B19E817008928A9 /* BlockLibHead.h */,
+				55CCCD761B19E817008928A9 /* BlockLibHead.m */,
+				55CCCD9C1B19E9FF008928A9 /* BlockLib.h */,
+				55CCCD9D1B19E9FF008928A9 /* BlockLib.m */,
 			);
 			path = BlockLib;
 			sourceTree = "<group>";
@@ -192,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				554958E91B19D6D40006CBF5 /* NSTimer+BlockLib.m in Sources */,
+				55CCCD771B19E817008928A9 /* BlockLibHead.m in Sources */,
+				55CCCD9E1B19E9FF008928A9 /* BlockLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

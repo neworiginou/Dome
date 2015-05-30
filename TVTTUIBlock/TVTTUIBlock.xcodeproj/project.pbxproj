@@ -14,6 +14,7 @@
 		554957D61B19CA370006CBF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554957D51B19CA370006CBF5 /* Images.xcassets */; };
 		554957D91B19CA370006CBF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554957D71B19CA370006CBF5 /* LaunchScreen.xib */; };
 		554957E51B19CA370006CBF5 /* TVTTUIBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 554957E41B19CA370006CBF5 /* TVTTUIBlockTests.m */; };
+		554957FA1B19CAA10006CBF5 /* NSTimer+TVTTTimerBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 554957F91B19CAA10006CBF5 /* NSTimer+TVTTTimerBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		554957DE1B19CA370006CBF5 /* TVTTUIBlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTTUIBlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		554957E31B19CA370006CBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554957E41B19CA370006CBF5 /* TVTTUIBlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVTTUIBlockTests.m; sourceTree = "<group>"; };
+		554957F81B19CAA10006CBF5 /* NSTimer+TVTTTimerBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+TVTTTimerBlock.h"; sourceTree = "<group>"; };
+		554957F91B19CAA10006CBF5 /* NSTimer+TVTTTimerBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+TVTTTimerBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		554957C71B19CA370006CBF5 /* TVTTUIBlock */ = {
 			isa = PBXGroup;
 			children = (
+				554957F71B19CA7F0006CBF5 /* Class */,
 				554957CC1B19CA370006CBF5 /* AppDelegate.h */,
 				554957CD1B19CA370006CBF5 /* AppDelegate.m */,
 				554957CF1B19CA370006CBF5 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				554957E31B19CA370006CBF5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		554957F71B19CA7F0006CBF5 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				554957F81B19CAA10006CBF5 /* NSTimer+TVTTTimerBlock.h */,
+				554957F91B19CAA10006CBF5 /* NSTimer+TVTTTimerBlock.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				554957D11B19CA370006CBF5 /* ViewController.m in Sources */,
 				554957CE1B19CA370006CBF5 /* AppDelegate.m in Sources */,
+				554957FA1B19CAA10006CBF5 /* NSTimer+TVTTTimerBlock.m in Sources */,
 				554957CB1B19CA370006CBF5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +432,7 @@
 				554957EA1B19CA370006CBF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		554957EB1B19CA370006CBF5 /* Build configuration list for PBXNativeTarget "TVTTUIBlockTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +441,7 @@
 				554957ED1B19CA370006CBF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

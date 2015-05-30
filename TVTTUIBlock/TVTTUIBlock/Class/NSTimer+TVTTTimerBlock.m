@@ -10,4 +10,11 @@
 
 @implementation NSTimer (TVTTTimerBlock)
 
++ (NSTimer *)timerWithTimeInterval:(NSTimeInterval)ti invocation:(NSInvocation *)invocation repeats:(BOOL)yesOrNo{
+    return nil;
+}
+
++ (NSTimer *)timerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo repeats:(BOOL)yesOrNo{
+    return nil;
+}
 @end
