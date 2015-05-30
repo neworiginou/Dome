@@ -9,7 +9,7 @@
 #import "TVTTProgressView.h"
 
 #import "BlockLib/BlockLib.h"
-#import "BlockLib/BlockLibHead.h"
+#import "BlockLib/TTT.h"
 
 @interface TVTTProgressView (){
     CAShapeLayer *_testLayer;
