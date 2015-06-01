@@ -39,6 +39,7 @@
 		554958D21B19D2630006CBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554958E71B19D6D40006CBF5 /* NSTimer+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlockLib.h"; sourceTree = "<group>"; };
 		554958E81B19D6D40006CBF5 /* NSTimer+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlockLib.m"; sourceTree = "<group>"; };
+		55CCCDA21B19EC7C008928A9 /* BlockLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockLib.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		554958B81B19D2630006CBF5 = {
 			isa = PBXGroup;
 			children = (
+				55CCCDA21B19EC7C008928A9 /* BlockLib.h */,
 				554958C31B19D2630006CBF5 /* BlockLib */,
 				554958D01B19D2630006CBF5 /* BlockLibTests */,
 				554958C21B19D2630006CBF5 /* Products */,

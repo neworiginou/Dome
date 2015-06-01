@@ -9,7 +9,7 @@
 #import "TVTTProgressView.h"
 
 #import "BlockLib/BlockLib.h"
-#import "BlockLib/TTT.h"
+#import "BlockLib.h"
 
 @interface TVTTProgressView (){
     CAShapeLayer *_testLayer;
@@ -51,9 +51,9 @@
     __weak typeof(self) weakSelf = self;
     
     if (!self.progressTimer) {
-//        self.progressTimer = [NSTimer bl_scheduledTimerWithTimeInterval:0.1 userInfo:nil repeats:YES action:^{
-        
-//        }];
+        self.progressTimer = [NSTimer bl_scheduledTimerWithTimeInterval:0.1 userInfo:nil repeats:YES action:^{
+            NSLog(@"------><------");
+        }];
     }
     
     if (!self.trackLayer) {
