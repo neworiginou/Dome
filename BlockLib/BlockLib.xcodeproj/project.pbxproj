@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		554958CD1B19D2630006CBF5 /* libBlockLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 554958C11B19D2630006CBF5 /* libBlockLib.a */; };
 		554958E91B19D6D40006CBF5 /* NSTimer+BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 554958E81B19D6D40006CBF5 /* NSTimer+BlockLib.m */; };
+		BDF2DB621B1C2DDF00D842CD /* NSObject+BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2DB611B1C2DDF00D842CD /* NSObject+BlockLib.m */; };
+		BDF2DB651B1C2DF900D842CD /* UIButton+BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2DB641B1C2DF900D842CD /* UIButton+BlockLib.m */; };
+		BDF2DB681B1C317700D842CD /* UIControl+BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2DB671B1C317700D842CD /* UIControl+BlockLib.m */; };
+		BDF2DB6B1B1C3B6800D842CD /* UIView+BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2DB6A1B1C3B6800D842CD /* UIView+BlockLib.m */; };
+		BDF2DB6E1B1C3B8D00D842CD /* UIResponder+BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2DB6D1B1C3B8D00D842CD /* UIResponder+BlockLib.m */; };
+		BDF2DB711B1C3C9D00D842CD /* UIAlertView+BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2DB701B1C3C9D00D842CD /* UIAlertView+BlockLib.m */; };
+		BDF2DB741B1C4F5700D842CD /* UIPickerView+BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2DB731B1C4F5700D842CD /* UIPickerView+BlockLib.m */; };
+		BDF2DB771B1C4FD000D842CD /* UIActionSheet+BlockLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF2DB761B1C4FD000D842CD /* UIActionSheet+BlockLib.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,23 @@
 		554958D21B19D2630006CBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554958E71B19D6D40006CBF5 /* NSTimer+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlockLib.h"; sourceTree = "<group>"; };
 		554958E81B19D6D40006CBF5 /* NSTimer+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlockLib.m"; sourceTree = "<group>"; };
+		55CCCDA21B19EC7C008928A9 /* BlockLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockLib.h; sourceTree = "<group>"; };
+		BDF2DB601B1C2DDF00D842CD /* NSObject+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockLib.h"; sourceTree = "<group>"; };
+		BDF2DB611B1C2DDF00D842CD /* NSObject+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockLib.m"; sourceTree = "<group>"; };
+		BDF2DB631B1C2DF900D842CD /* UIButton+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BlockLib.h"; sourceTree = "<group>"; };
+		BDF2DB641B1C2DF900D842CD /* UIButton+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BlockLib.m"; sourceTree = "<group>"; };
+		BDF2DB661B1C317700D842CD /* UIControl+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+BlockLib.h"; sourceTree = "<group>"; };
+		BDF2DB671B1C317700D842CD /* UIControl+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+BlockLib.m"; sourceTree = "<group>"; };
+		BDF2DB691B1C3B6800D842CD /* UIView+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockLib.h"; sourceTree = "<group>"; };
+		BDF2DB6A1B1C3B6800D842CD /* UIView+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlockLib.m"; sourceTree = "<group>"; };
+		BDF2DB6C1B1C3B8D00D842CD /* UIResponder+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+BlockLib.h"; sourceTree = "<group>"; };
+		BDF2DB6D1B1C3B8D00D842CD /* UIResponder+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+BlockLib.m"; sourceTree = "<group>"; };
+		BDF2DB6F1B1C3C9D00D842CD /* UIAlertView+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+BlockLib.h"; sourceTree = "<group>"; };
+		BDF2DB701B1C3C9D00D842CD /* UIAlertView+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+BlockLib.m"; sourceTree = "<group>"; };
+		BDF2DB721B1C4F5700D842CD /* UIPickerView+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+BlockLib.h"; sourceTree = "<group>"; };
+		BDF2DB731B1C4F5700D842CD /* UIPickerView+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+BlockLib.m"; sourceTree = "<group>"; };
+		BDF2DB751B1C4FD000D842CD /* UIActionSheet+BlockLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+BlockLib.h"; sourceTree = "<group>"; };
+		BDF2DB761B1C4FD000D842CD /* UIActionSheet+BlockLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+BlockLib.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +88,7 @@
 		554958B81B19D2630006CBF5 = {
 			isa = PBXGroup;
 			children = (
+				55CCCDA21B19EC7C008928A9 /* BlockLib.h */,
 				554958C31B19D2630006CBF5 /* BlockLib */,
 				554958D01B19D2630006CBF5 /* BlockLibTests */,
 				554958C21B19D2630006CBF5 /* Products */,
@@ -83,6 +109,22 @@
 			children = (
 				554958E71B19D6D40006CBF5 /* NSTimer+BlockLib.h */,
 				554958E81B19D6D40006CBF5 /* NSTimer+BlockLib.m */,
+				BDF2DB601B1C2DDF00D842CD /* NSObject+BlockLib.h */,
+				BDF2DB611B1C2DDF00D842CD /* NSObject+BlockLib.m */,
+				BDF2DB631B1C2DF900D842CD /* UIButton+BlockLib.h */,
+				BDF2DB641B1C2DF900D842CD /* UIButton+BlockLib.m */,
+				BDF2DB661B1C317700D842CD /* UIControl+BlockLib.h */,
+				BDF2DB671B1C317700D842CD /* UIControl+BlockLib.m */,
+				BDF2DB691B1C3B6800D842CD /* UIView+BlockLib.h */,
+				BDF2DB6A1B1C3B6800D842CD /* UIView+BlockLib.m */,
+				BDF2DB6C1B1C3B8D00D842CD /* UIResponder+BlockLib.h */,
+				BDF2DB6D1B1C3B8D00D842CD /* UIResponder+BlockLib.m */,
+				BDF2DB6F1B1C3C9D00D842CD /* UIAlertView+BlockLib.h */,
+				BDF2DB701B1C3C9D00D842CD /* UIAlertView+BlockLib.m */,
+				BDF2DB721B1C4F5700D842CD /* UIPickerView+BlockLib.h */,
+				BDF2DB731B1C4F5700D842CD /* UIPickerView+BlockLib.m */,
+				BDF2DB751B1C4FD000D842CD /* UIActionSheet+BlockLib.h */,
+				BDF2DB761B1C4FD000D842CD /* UIActionSheet+BlockLib.m */,
 			);
 			path = BlockLib;
 			sourceTree = "<group>";
@@ -192,6 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				554958E91B19D6D40006CBF5 /* NSTimer+BlockLib.m in Sources */,
+				BDF2DB6B1B1C3B6800D842CD /* UIView+BlockLib.m in Sources */,
+				BDF2DB711B1C3C9D00D842CD /* UIAlertView+BlockLib.m in Sources */,
+				BDF2DB621B1C2DDF00D842CD /* NSObject+BlockLib.m in Sources */,
+				BDF2DB651B1C2DF900D842CD /* UIButton+BlockLib.m in Sources */,
+				BDF2DB6E1B1C3B8D00D842CD /* UIResponder+BlockLib.m in Sources */,
+				BDF2DB771B1C4FD000D842CD /* UIActionSheet+BlockLib.m in Sources */,
+				BDF2DB741B1C4F5700D842CD /* UIPickerView+BlockLib.m in Sources */,
+				BDF2DB681B1C317700D842CD /* UIControl+BlockLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +344,11 @@
 		554958D61B19D2630006CBF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SOURCE_ROOT/,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -303,6 +358,11 @@
 		554958D71B19D2630006CBF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SOURCE_ROOT/,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
