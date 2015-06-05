@@ -20,7 +20,7 @@
 @property (strong, nonatomic) UIBezierPath * progressPath;
 @property (weak, nonatomic) CATextLayer * textLayer;
 
-@property (strong, nonatomic) NSTimer * progressTimer;
+//@property (strong, nonatomic) NSTimer * progressTimer;
 @end
 
 @implementation TVTTProgressView
@@ -50,12 +50,12 @@
     
     __weak typeof(self) weakSelf = self;
     
-    if (!self.progressTimer) {
-        self.progressTimer = [NSTimer bl_scheduledTimerWithTimeInterval:0.1 userInfo:nil repeats:YES action:^{
-            NSLog(@"------><------");
-        }];
-    }
-    
+//    if (!self.progressTimer) {
+//        self.progressTimer = [NSTimer bl_scheduledTimerWithTimeInterval:0.1 userInfo:nil repeats:YES action:^{
+//            NSLog(@"------><------");
+//        }];
+//    }
+//    
     if (!self.trackLayer) {
         [self makeTrackLayerFinished:^(CAShapeLayer *layer, UIBezierPath *path) {
             weakSelf.trackLayer = layer;
