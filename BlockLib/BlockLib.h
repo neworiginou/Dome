@@ -11,4 +11,13 @@
 
 #import "BlockLib/NSTimer+BlockLib.h"
 
+
+//Control
+#import "BlockLib/UIControl+BlockLib.h"
+
+//UI
+#import "BlockLib/UIButton+BlockLib.h"
+#import "BlockLib/UIAlertView+BlockLib.h"
+#import "BlockLib/UIActionSheet+BlockLib.h"
+
 #endif

@@ -11,7 +11,7 @@
 #import "TVTTProgressBar.h"
 #import "TVTTProgressView.h"
 #import "TVTTAffineTransformView.h"
-
+#import "BlockLib.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) TVTTProgressBar * progressBar;
@@ -22,6 +22,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[[UIAlertView alloc] initWithTitle:@"Title" message:@"Message" clickedButtonAtIndex:^(UIAlertView *alertView, NSInteger buttonIndex) {
+        NSLog(@"%ld",buttonIndex);
+    }cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil] show];
+    
+    [[[UIActionSheet alloc] initWithTitle:@"Title" clickedButtonAtIndex:^(UIActionSheet *actionSheet, NSInteger buttonIndex) {
+        NSLog(@"%ld",buttonIndex);
+    } cancelButtonTitle:@"cancel" destructiveButtonTitle:@"ddr" otherButtonTitles:@"ot1",@"ot2",@"ot3", nil] showInView:self.view];
+    
+  
     
     TVTTCircleView * circleView = [[TVTTCircleView alloc] init];
     circleView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -101,6 +111,17 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"OK" style:0 target:self action:@selector(leftBarButtonItemBtnClick)];
     
+    
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, 250, 100, 40);
+    button.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:button];
+    [button bl_handleControlEvent:UIControlEventTouchUpInside action:^(id sender) {
+        NSLog(@"UIControlEventTouchUpInside");
+    }];
+    [button bl_handleControlEvent:UIControlEventTouchDown action:^(id sender) {
+        NSLog(@"UIControlEventTouchDown");
+    }];
     
 }
 - (void)leftBarButtonItemBtnClick{
