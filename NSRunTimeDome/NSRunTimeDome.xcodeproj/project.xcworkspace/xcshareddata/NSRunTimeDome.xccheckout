@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>55ABDE9E-89E2-4CA0-9005-FA0AC15E09E5</string>
+	<string>357B607C-1B2E-4DC3-BD89-76A57BF1F65D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,7 +14,7 @@
 		<string>https://github.com/lbencs/Dome.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DynamicNavigationBarDome/DynamicNavigationBarDome.xcodeproj/project.xcworkspace</string>
+	<string>NSRunTimeDome/NSRunTimeDome.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DF7F7FB70A0BC4920948668314C75B1E4DF4D6A5</key>
