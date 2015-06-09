@@ -18,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.navigationController.view.backgroundColor = [UIColor redColor];
+    
+//    CALayer * layer = [CALayer layer];
+//    layer.frame = self.view.bounds;
+//    layer.backgroundColor = [UIColor yellowColor].CGColor;
+//    [self.navigationController.view.layer addSublayer:layer];
 }
 
 - (void)didReceiveMemoryWarning {

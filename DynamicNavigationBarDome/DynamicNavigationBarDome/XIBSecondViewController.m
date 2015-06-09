@@ -26,6 +26,14 @@
 //    self.navigationController.navigationBar.translucent = YES;
 //    [[UIApplication sharedApplication]
 //     setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+    
+    CALayer * layer = [CALayer layer];
+    CGRect frame = self.view.bounds;
+    frame.origin.y = 462;
+    layer.frame = frame;
+    layer.backgroundColor = [UIColor yellowColor].CGColor;
+    [self.navigationController.view.layer addSublayer:layer];
+    
     self.tableView.contentInset = UIEdgeInsetsMake(-20.f, 0, 0, 0);
 
 }
