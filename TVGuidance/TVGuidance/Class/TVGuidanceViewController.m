@@ -7,6 +7,7 @@
 //
 
 #import "TVGuidanceViewController.h"
+#import "TVGuidancePage.h"
 
 @interface TVGuidanceViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) UIScrollView * scrollView;
@@ -15,9 +16,17 @@
 
 @implementation TVGuidanceViewController
 
+- (instancetype)initWithItems:(NSArray *)items{
+    self = [super init];
+    if (self) {
+        _pageItems = [[NSMutableArray alloc] initWithArray:items];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self pMakeScrollView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,12 +46,18 @@
         UIScrollView * scrollView = [[UIScrollView alloc] init];
         scrollView.frame = self.view.bounds;
         scrollView.pagingEnabled = YES;
-        
+        scrollView.contentSize = CGSizeMake([self.pageItems count] * CGRectGetWidth(self.view.frame), scrollView.contentSize.height);
         [self.view addSubview:scrollView];
         scrollView.delegate = self;
         scrollView;
     });
     self.scrollView = scrollView;
+    
+    for (int i = 0; i < [self.pageItems count]; i ++) {
+        UIImageView * imageView = [[UIImageView alloc] init];
+        
+    }
+
 }
 
 

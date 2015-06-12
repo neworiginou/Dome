@@ -10,4 +10,5 @@
 
 @interface TVGuidanceViewController : UIViewController
 
+- (instancetype)initWithItems:(NSArray *)items;
 @end
