@@ -430,6 +430,7 @@
 				55DD81B71A77DBFF009B44A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55DD81B81A77DBFF009B44A2 /* Build configuration list for PBXNativeTarget "CoreTextDomeTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +439,7 @@
 				55DD81BA1A77DBFF009B44A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
