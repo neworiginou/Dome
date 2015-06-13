@@ -289,8 +289,6 @@ static const char * kBottomScreenMirrorImageViewKey = "TVTT_BOTTOM_SCREEN_MIRROR
     }
 }
 
-
-
 #pragma mark - Private
 
 - (void)tvtt_removeMirrorImageView{
