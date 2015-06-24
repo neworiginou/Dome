@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, TVTTProgressViewStyle) {
+    TVTTProgressViewStyleProgress = 1,
+    TVTTProgressViewStyleProgressWillStart,
+    TVTTProgressViewStyleProgressWasEnd,
+};
+
+
 @interface TVTTProgressView : UIView
 
 @property (assign, nonatomic) CGFloat progress;
@@ -18,4 +25,6 @@
 @property (strong, nonatomic) UIFont * textFont;
 
 @property (strong, nonatomic) UIColor * progressColor;
+
+@property (assign, nonatomic) TVTTProgressViewStyle * viewStyle;
 @end
