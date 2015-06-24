@@ -27,22 +27,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationDidChange:)
                                                  name:UIDeviceOrientationDidChangeNotification
                                                object:nil];
-    
-    NSLayoutConstraint *leftEdgeAlign = [NSLayoutConstraint constraintWithItem:self.contentView
-                                                                     attribute:NSLayoutAttributeLeading
-                                                                     relatedBy:0
-                                                                        toItem:self.view
-                                                                     attribute:NSLayoutAttributeLeft
-                                                                    multiplier:1.0f
-                                                                      constant:0];
-    NSLayoutConstraint *rightEdgeAlign = [NSLayoutConstraint constraintWithItem:self.contentView
-                                                                      attribute:NSLayoutAttributeTrailing
-                                                                      relatedBy:0
-                                                                         toItem:self.view
-                                                                      attribute:NSLayoutAttributeRight
-                                                                     multiplier:1.0f
-                                                                       constant:0];
-    [self.view addConstraints:@[leftEdgeAlign,rightEdgeAlign]];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -52,10 +36,19 @@
     [self deregisterFromKeyboardNotifications];
 }
 
-- (void)registerForKeyboardNotifications
-{
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.scrollView.contentSize = self.contentView.bounds.size;
+    [self.view setNeedsLayout];
+}
+
+- (void)registerForKeyboardNotifications{
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasShown:) name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillBeHidden:) name:UIKeyboardWillHideNotification object:nil];
+}
+- (void)deregisterFromKeyboardNotifications{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 }
 
 - (void)keyboardWasShown:(NSNotification *)notification{
@@ -74,17 +67,12 @@
     }
 }
 - (void)keyboardWillBeHidden:(NSNotification *)notification{
-    
     UIEdgeInsets contentInsets = UIEdgeInsetsZero;
     self.scrollView.contentInset = contentInsets;
     self.scrollView.scrollIndicatorInsets = contentInsets;
 }
 
-- (void)deregisterFromKeyboardNotifications
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
-}
+
 
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField{

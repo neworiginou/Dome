@@ -14,6 +14,7 @@
 		55DD440D1A4904F0006BD0C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DD440C1A4904F0006BD0C0 /* Images.xcassets */; };
 		55DD44101A4904F0006BD0C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DD440E1A4904F0006BD0C0 /* LaunchScreen.xib */; };
 		55DD441C1A4904F0006BD0C0 /* UIScrollViewAutolayoutDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DD441B1A4904F0006BD0C0 /* UIScrollViewAutolayoutDomeTests.m */; };
+		BDF37FE61B3A8DCD0063EACC /* png.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BDF37FE51B3A8DCD0063EACC /* png.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		55DD44151A4904F0006BD0C0 /* UIScrollViewAutolayoutDomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIScrollViewAutolayoutDomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DD441A1A4904F0006BD0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55DD441B1A4904F0006BD0C0 /* UIScrollViewAutolayoutDomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewAutolayoutDomeTests.m; sourceTree = "<group>"; };
+		BDF37FE51B3A8DCD0063EACC /* png.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = png.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				55DD44071A4904F0006BD0C0 /* ViewController.m */,
 				55DD44091A4904F0006BD0C0 /* Main.storyboard */,
 				55DD440C1A4904F0006BD0C0 /* Images.xcassets */,
+				BDF37FE51B3A8DCD0063EACC /* png.jpg */,
 				55DD440E1A4904F0006BD0C0 /* LaunchScreen.xib */,
 				55DD43FF1A4904F0006BD0C0 /* Supporting Files */,
 			);
@@ -202,6 +205,7 @@
 				55DD440B1A4904F0006BD0C0 /* Main.storyboard in Resources */,
 				55DD44101A4904F0006BD0C0 /* LaunchScreen.xib in Resources */,
 				55DD440D1A4904F0006BD0C0 /* Images.xcassets in Resources */,
+				BDF37FE61B3A8DCD0063EACC /* png.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
