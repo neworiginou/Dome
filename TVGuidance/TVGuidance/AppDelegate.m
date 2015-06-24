@@ -21,13 +21,13 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-    
-    TVGuidancePage * page_1 = [[TVGuidancePage alloc] initWithBackgroundPictureName:@"1" duation:.3 centerImageName:nil animationType:0];
-    TVGuidancePage * page_2 = [[TVGuidancePage alloc] initWithBackgroundPictureName:@"2" duation:.3 centerImageName:nil animationType:0];
-    TVGuidancePage * page_3 = [[TVGuidancePage alloc] initWithBackgroundPictureName:@"3" duation:.3 centerImageName:nil animationType:0];
-    TVGuidancePage * page_4 = [[TVGuidancePage alloc] initWithBackgroundPictureName:@"4" duation:.3 centerImageName:nil animationType:0];
-    
-    TVGuidanceViewController * vc = [[TVGuidanceViewController alloc] initWithItems:@[page_1,page_2,page_3,page_4]];
+//    
+//    TVGuidancePage * page_1 = [[TVGuidancePage alloc] initWithBackgroundPictureName:@"1" duation:.3 centerImageName:nil animationType:0];
+//    TVGuidancePage * page_2 = [[TVGuidancePage alloc] initWithBackgroundPictureName:@"2" duation:.3 centerImageName:nil animationType:0];
+//    TVGuidancePage * page_3 = [[TVGuidancePage alloc] initWithBackgroundPictureName:@"3" duation:.3 centerImageName:nil animationType:0];
+//    TVGuidancePage * page_4 = [[TVGuidancePage alloc] initWithBackgroundPictureName:@"4" duation:.3 centerImageName:nil animationType:0];
+//    
+    TVGuidanceViewController * vc = [[TVGuidanceViewController alloc] init];//WithItems:@[page_1,page_2,page_3,page_4]];
     vc.view.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = vc;
     

@@ -16,6 +16,7 @@
 		BD769CDD1B2A749D00BF796D /* TVGuidanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CDC1B2A749D00BF796D /* TVGuidanceTests.m */; };
 		BD769CEC1B2A763900BF796D /* TVGuidancePage.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CEB1B2A763900BF796D /* TVGuidancePage.m */; };
 		BD769CEF1B2A78F400BF796D /* TVGuidanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CEE1B2A78F400BF796D /* TVGuidanceViewController.m */; };
+		BDF7C29D1B2E68BC00E606B9 /* TVGuidancePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF7C29C1B2E68BC00E606B9 /* TVGuidancePageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		BD769CEB1B2A763900BF796D /* TVGuidancePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidancePage.m; sourceTree = "<group>"; };
 		BD769CED1B2A78F400BF796D /* TVGuidanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceViewController.h; sourceTree = "<group>"; };
 		BD769CEE1B2A78F400BF796D /* TVGuidanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceViewController.m; sourceTree = "<group>"; };
+		BDF7C29B1B2E68BC00E606B9 /* TVGuidancePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidancePageViewController.h; sourceTree = "<group>"; };
+		BDF7C29C1B2E68BC00E606B9 /* TVGuidancePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidancePageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				BD769CEB1B2A763900BF796D /* TVGuidancePage.m */,
 				BD769CED1B2A78F400BF796D /* TVGuidanceViewController.h */,
 				BD769CEE1B2A78F400BF796D /* TVGuidanceViewController.m */,
+				BDF7C29B1B2E68BC00E606B9 /* TVGuidancePageViewController.h */,
+				BDF7C29C1B2E68BC00E606B9 /* TVGuidancePageViewController.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD769CC91B2A749D00BF796D /* ViewController.m in Sources */,
+				BDF7C29D1B2E68BC00E606B9 /* TVGuidancePageViewController.m in Sources */,
 				BD769CC61B2A749D00BF796D /* AppDelegate.m in Sources */,
 				BD769CEC1B2A763900BF796D /* TVGuidancePage.m in Sources */,
 				BD769CEF1B2A78F400BF796D /* TVGuidanceViewController.m in Sources */,
@@ -438,6 +444,7 @@
 				BD769CE21B2A749D00BF796D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD769CE31B2A749D00BF796D /* Build configuration list for PBXNativeTarget "TVGuidanceTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +453,7 @@
 				BD769CE51B2A749D00BF796D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

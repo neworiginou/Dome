@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TVGuidanceViewController : UIViewController
+typedef NS_ENUM(NSInteger, TVGuidanceStyle) {
+    TVGuidanceStyleLiner = 0,
+    TVGuidanceStyleCircle,
+};
 
+@interface TVGuidanceViewController : UIViewController
+@property (assign, nonatomic) TVGuidanceStyle guidanceStyle;
 - (instancetype)initWithItems:(NSArray *)items;
 @end
