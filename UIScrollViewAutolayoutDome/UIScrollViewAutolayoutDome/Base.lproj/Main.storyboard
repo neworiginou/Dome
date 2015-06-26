@@ -248,7 +248,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164.25" y="144"/>
+            <point key="canvasLocation" x="222" y="-0.75"/>
+        </scene>
+        <!--Zoom Scroll View Controller-->
+        <scene sceneID="UcA-zW-Wq2">
+            <objects>
+                <viewController id="7Qv-1x-5JE" customClass="UIZoomScrollViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="smd-Zw-Z68"/>
+                        <viewControllerLayoutGuide type="bottom" id="ej9-XN-rK6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8yl-Rx-ggZ">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RoQ-Wa-W1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="567.75"/>
         </scene>
     </scenes>
     <resources>

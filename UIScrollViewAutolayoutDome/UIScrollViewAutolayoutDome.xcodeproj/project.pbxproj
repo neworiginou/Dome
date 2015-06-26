@@ -15,6 +15,7 @@
 		55DD44101A4904F0006BD0C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DD440E1A4904F0006BD0C0 /* LaunchScreen.xib */; };
 		55DD441C1A4904F0006BD0C0 /* UIScrollViewAutolayoutDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DD441B1A4904F0006BD0C0 /* UIScrollViewAutolayoutDomeTests.m */; };
 		BDF37FE61B3A8DCD0063EACC /* png.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BDF37FE51B3A8DCD0063EACC /* png.jpg */; };
+		BDF37FE91B3A99580063EACC /* UIZoomScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF37FE81B3A99580063EACC /* UIZoomScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		55DD441A1A4904F0006BD0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55DD441B1A4904F0006BD0C0 /* UIScrollViewAutolayoutDomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewAutolayoutDomeTests.m; sourceTree = "<group>"; };
 		BDF37FE51B3A8DCD0063EACC /* png.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = png.jpg; sourceTree = "<group>"; };
+		BDF37FE71B3A99580063EACC /* UIZoomScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIZoomScrollViewController.h; sourceTree = "<group>"; };
+		BDF37FE81B3A99580063EACC /* UIZoomScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIZoomScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				BDF37FE51B3A8DCD0063EACC /* png.jpg */,
 				55DD440E1A4904F0006BD0C0 /* LaunchScreen.xib */,
 				55DD43FF1A4904F0006BD0C0 /* Supporting Files */,
+				BDF37FE71B3A99580063EACC /* UIZoomScrollViewController.h */,
+				BDF37FE81B3A99580063EACC /* UIZoomScrollViewController.m */,
 			);
 			path = UIScrollViewAutolayoutDome;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF37FE91B3A99580063EACC /* UIZoomScrollViewController.m in Sources */,
 				55DD44081A4904F0006BD0C0 /* ViewController.m in Sources */,
 				55DD44051A4904F0006BD0C0 /* AppDelegate.m in Sources */,
 				55DD44021A4904F0006BD0C0 /* main.m in Sources */,
