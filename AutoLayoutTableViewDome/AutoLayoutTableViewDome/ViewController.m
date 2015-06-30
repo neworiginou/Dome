@@ -67,6 +67,7 @@
     
     cell.contextLabel.preferredMaxLayoutWidth = CGRectGetWidth(cell.contextLabel.frame);
     cell.nameLabel.preferredMaxLayoutWidth = CGRectGetWidth(cell.nameLabel.frame);
+    
     [cell setNeedsDisplay]; //自动调用drawRect方法
     [cell layoutIfNeeded];  //默认调用layoutSubviews方法
     
