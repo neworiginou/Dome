@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C2AE10B0-8515-4B46-87B1-AC835ABD3D3A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TVGuidance</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>DF7F7FB70A0BC4920948668314C75B1E4DF4D6A5</key>
 		<string>https://github.com/lbencs/Dome.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TVGuidance/TVGuidance.xcodeproj/project.xcworkspace</string>
+	<string>TVGuidance/TVGuidance.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DF7F7FB70A0BC4920948668314C75B1E4DF4D6A5</key>

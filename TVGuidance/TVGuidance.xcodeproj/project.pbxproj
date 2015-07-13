@@ -10,7 +10,6 @@
 		BD769CC31B2A749D00BF796D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CC21B2A749D00BF796D /* main.m */; };
 		BD769CC61B2A749D00BF796D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CC51B2A749D00BF796D /* AppDelegate.m */; };
 		BD769CC91B2A749D00BF796D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CC81B2A749D00BF796D /* ViewController.m */; };
-		BD769CCC1B2A749D00BF796D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD769CCA1B2A749D00BF796D /* Main.storyboard */; };
 		BD769CCE1B2A749D00BF796D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD769CCD1B2A749D00BF796D /* Images.xcassets */; };
 		BD769CD11B2A749D00BF796D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD769CCF1B2A749D00BF796D /* LaunchScreen.xib */; };
 		BD769CDD1B2A749D00BF796D /* TVGuidanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CDC1B2A749D00BF796D /* TVGuidanceTests.m */; };
@@ -37,7 +36,6 @@
 		BD769CC51B2A749D00BF796D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BD769CC71B2A749D00BF796D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BD769CC81B2A749D00BF796D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BD769CCB1B2A749D00BF796D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD769CCD1B2A749D00BF796D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BD769CD01B2A749D00BF796D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BD769CD61B2A749D00BF796D /* TVGuidanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVGuidanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +93,6 @@
 				BD769CC51B2A749D00BF796D /* AppDelegate.m */,
 				BD769CC71B2A749D00BF796D /* ViewController.h */,
 				BD769CC81B2A749D00BF796D /* ViewController.m */,
-				BD769CCA1B2A749D00BF796D /* Main.storyboard */,
 				BD769CCD1B2A749D00BF796D /* Images.xcassets */,
 				BD769CCF1B2A749D00BF796D /* LaunchScreen.xib */,
 				BD769CC01B2A749D00BF796D /* Supporting Files */,
@@ -223,7 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD769CCC1B2A749D00BF796D /* Main.storyboard in Resources */,
 				BD769CD11B2A749D00BF796D /* LaunchScreen.xib in Resources */,
 				BD769CCE1B2A749D00BF796D /* Images.xcassets in Resources */,
 			);
@@ -271,14 +267,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BD769CCA1B2A749D00BF796D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD769CCB1B2A749D00BF796D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD769CCF1B2A749D00BF796D /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -326,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -364,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,6 +367,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TVGuidance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -392,6 +381,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TVGuidance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

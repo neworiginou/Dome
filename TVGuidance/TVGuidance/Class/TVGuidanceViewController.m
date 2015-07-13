@@ -24,8 +24,6 @@
 
 @property (strong, nonatomic) NSMutableArray * reusePageControllers;
 @property (strong, nonatomic) NSMutableDictionary * currentPageControllers;
-//@property (strong, nonatomic) NSCache * reusePageCache;
-//@property (strong, nonatomic) NSCache * currentPageCache;
 
 @end
 
@@ -336,16 +334,4 @@
     }
     return _currentPageControllers;
 }
-//- (NSCache *)reusePageCache{
-//    if (!_reusePageCache) {
-//        _reusePageCache = [[NSCache alloc] init];
-//    }
-//    return _reusePageCache;
-//}
-//- (NSCache *)currentPageCache{
-//    if (!_currentPageCache) {
-//        _currentPageCache = [[NSCache alloc] init];
-//    }
-//    return _currentPageCache;
-//}
 @end

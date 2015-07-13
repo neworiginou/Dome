@@ -106,7 +106,7 @@
         self.backgorundImageView = imageView;
     }
     NSString * backgroundImage = @"launch_homeImage_page_";
-    backgroundImage = [backgroundImage stringByAppendingFormat:@"%d_",_index+1];
+    backgroundImage = [backgroundImage stringByAppendingFormat:@"%ld_",_index+1];
     if (Iphone_4) {
         backgroundImage = [backgroundImage stringByAppendingString:@"iphone4"];
     }else{
@@ -120,7 +120,7 @@
     CGFloat centerTextImageViewHeight = 0;
     NSString * centerTextImageName = @"launch_center_text_";
     
-    centerTextImageName = [centerTextImageName stringByAppendingFormat:@"%d_",_index+1];
+    centerTextImageName = [centerTextImageName stringByAppendingFormat:@"%ld_",_index+1];
     if (Iphone_4) {
         if (_index < 2) {
             centerTextImageViewHeight = 335.0;
