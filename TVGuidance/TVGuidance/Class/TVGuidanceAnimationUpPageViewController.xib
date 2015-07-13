@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVGuidanceAnimationUpPageViewController">
             <connections>
+                <outlet property="_left_1_view" destination="Ss5-PY-8wU" id="nfR-nb-DZ3"/>
                 <outlet property="left_1_ImageView" destination="nri-L8-d1t" id="o30-TM-dUc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -123,7 +124,7 @@
                 <constraint firstItem="Ss5-PY-8wU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="48" id="xMJ-is-Alu"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="521.5" y="270.5"/>
+            <point key="canvasLocation" x="349.5" y="283.5"/>
         </view>
     </objects>
     <resources>

@@ -7,10 +7,14 @@
 //
 
 #import "TVGuidanceAnimationUpPageViewController.h"
+#import "TVTTPathView.h"
 
 @interface TVGuidanceAnimationUpPageViewController (){
     
     __weak IBOutlet UIImageView *left_1_ImageView;
+    __weak IBOutlet TVTTPathView *_left_1_view;
+    __weak IBOutlet TVTTPathView *_left_2_view;
+    __weak IBOutlet TVTTPathView *_left_3_view;
 }
 
 @end

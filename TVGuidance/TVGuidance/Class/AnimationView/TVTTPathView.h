@@ -19,5 +19,5 @@ typedef NS_ENUM(NSInteger,TVTTPathDirection)  {
 
 
 - (instancetype)initWithStartDirection:(TVTTPathDirection *)startDirection endDirection:(TVTTPathDirection)endDirection image:(UIImage *)image;
-- (void)setStartDirection:(TVTTPathDirection *)startDirection endDirection:(TVTTPathDirection *)endDirection;
+- (void)setStartDirection:(TVTTPathDirection)startDirection endDirection:(TVTTPathDirection)endDirection;
 @end

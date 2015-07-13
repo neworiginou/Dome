@@ -23,16 +23,10 @@
     return self;
 }
 
-- (void)setStartDirection:(TVTTPathDirection *)startDirection endDirection:(TVTTPathDirection *)endDirection{
-    
+- (void)setStartDirection:(TVTTPathDirection)startDirection endDirection:(TVTTPathDirection)endDirection{
+    _startDirection = startDirection;
+    _endDirection = endDirection;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end
