@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD376F031B53632200992DEA /* TVGuidanceAnimationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F021B53632200992DEA /* TVGuidanceAnimationPageViewController.m */; };
+		BD376F071B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F051B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m */; };
+		BD376F081B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD376F061B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib */; };
+		BD376F0C1B5380F900992DEA /* TVTTShakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F0B1B5380F900992DEA /* TVTTShakeView.m */; };
+		BD376F0F1B53984600992DEA /* TVTTZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F0E1B53984600992DEA /* TVTTZoomView.m */; };
+		BD376F121B53985300992DEA /* TVTTPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F111B53985300992DEA /* TVTTPathView.m */; };
 		BD769CC31B2A749D00BF796D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CC21B2A749D00BF796D /* main.m */; };
 		BD769CC61B2A749D00BF796D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CC51B2A749D00BF796D /* AppDelegate.m */; };
 		BD769CC91B2A749D00BF796D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CC81B2A749D00BF796D /* ViewController.m */; };
@@ -15,6 +21,8 @@
 		BD769CDD1B2A749D00BF796D /* TVGuidanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CDC1B2A749D00BF796D /* TVGuidanceTests.m */; };
 		BD769CEC1B2A763900BF796D /* TVGuidancePage.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CEB1B2A763900BF796D /* TVGuidancePage.m */; };
 		BD769CEF1B2A78F400BF796D /* TVGuidanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CEE1B2A78F400BF796D /* TVGuidanceViewController.m */; };
+		BDD7B5D21B539D73007585BA /* TVTTAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD7B5D11B539D73007585BA /* TVTTAnimationView.m */; };
+		BDD7B5D51B53ABB8007585BA /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD7B5D41B53ABB8007585BA /* UIView+Constraints.m */; };
 		BDF7C29D1B2E68BC00E606B9 /* TVGuidancePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF7C29C1B2E68BC00E606B9 /* TVGuidancePageViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD376F011B53632200992DEA /* TVGuidanceAnimationPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceAnimationPageViewController.h; sourceTree = "<group>"; };
+		BD376F021B53632200992DEA /* TVGuidanceAnimationPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceAnimationPageViewController.m; sourceTree = "<group>"; };
+		BD376F041B53635600992DEA /* TVGuidanceAnimationUpPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceAnimationUpPageViewController.h; sourceTree = "<group>"; };
+		BD376F051B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceAnimationUpPageViewController.m; sourceTree = "<group>"; };
+		BD376F061B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVGuidanceAnimationUpPageViewController.xib; sourceTree = "<group>"; };
+		BD376F0A1B5380F900992DEA /* TVTTShakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTShakeView.h; sourceTree = "<group>"; };
+		BD376F0B1B5380F900992DEA /* TVTTShakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTShakeView.m; sourceTree = "<group>"; };
+		BD376F0D1B53984600992DEA /* TVTTZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTZoomView.h; sourceTree = "<group>"; };
+		BD376F0E1B53984600992DEA /* TVTTZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTZoomView.m; sourceTree = "<group>"; };
+		BD376F101B53985300992DEA /* TVTTPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTPathView.h; sourceTree = "<group>"; };
+		BD376F111B53985300992DEA /* TVTTPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTPathView.m; sourceTree = "<group>"; };
 		BD769CBD1B2A749D00BF796D /* TVGuidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVGuidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD769CC11B2A749D00BF796D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD769CC21B2A749D00BF796D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +64,10 @@
 		BD769CEB1B2A763900BF796D /* TVGuidancePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidancePage.m; sourceTree = "<group>"; };
 		BD769CED1B2A78F400BF796D /* TVGuidanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceViewController.h; sourceTree = "<group>"; };
 		BD769CEE1B2A78F400BF796D /* TVGuidanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceViewController.m; sourceTree = "<group>"; };
+		BDD7B5D01B539D73007585BA /* TVTTAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTAnimationView.h; sourceTree = "<group>"; };
+		BDD7B5D11B539D73007585BA /* TVTTAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTAnimationView.m; sourceTree = "<group>"; };
+		BDD7B5D31B53ABB8007585BA /* UIView+Constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints.h"; sourceTree = "<group>"; };
+		BDD7B5D41B53ABB8007585BA /* UIView+Constraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
 		BDF7C29B1B2E68BC00E606B9 /* TVGuidancePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidancePageViewController.h; sourceTree = "<group>"; };
 		BDF7C29C1B2E68BC00E606B9 /* TVGuidancePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidancePageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD376F091B5380C100992DEA /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				BDD7B5D31B53ABB8007585BA /* UIView+Constraints.h */,
+				BDD7B5D41B53ABB8007585BA /* UIView+Constraints.m */,
+				BDD7B5D01B539D73007585BA /* TVTTAnimationView.h */,
+				BDD7B5D11B539D73007585BA /* TVTTAnimationView.m */,
+				BD376F0A1B5380F900992DEA /* TVTTShakeView.h */,
+				BD376F0B1B5380F900992DEA /* TVTTShakeView.m */,
+				BD376F0D1B53984600992DEA /* TVTTZoomView.h */,
+				BD376F0E1B53984600992DEA /* TVTTZoomView.m */,
+				BD376F101B53985300992DEA /* TVTTPathView.h */,
+				BD376F111B53985300992DEA /* TVTTPathView.m */,
+			);
+			path = AnimationView;
+			sourceTree = "<group>";
+		};
 		BD769CB41B2A749D00BF796D = {
 			isa = PBXGroup;
 			children = (
@@ -129,12 +169,18 @@
 		BD769CE91B2A758200BF796D /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				BD376F091B5380C100992DEA /* AnimationView */,
 				BD769CEA1B2A763900BF796D /* TVGuidancePage.h */,
 				BD769CEB1B2A763900BF796D /* TVGuidancePage.m */,
 				BD769CED1B2A78F400BF796D /* TVGuidanceViewController.h */,
 				BD769CEE1B2A78F400BF796D /* TVGuidanceViewController.m */,
 				BDF7C29B1B2E68BC00E606B9 /* TVGuidancePageViewController.h */,
 				BDF7C29C1B2E68BC00E606B9 /* TVGuidancePageViewController.m */,
+				BD376F011B53632200992DEA /* TVGuidanceAnimationPageViewController.h */,
+				BD376F021B53632200992DEA /* TVGuidanceAnimationPageViewController.m */,
+				BD376F041B53635600992DEA /* TVGuidanceAnimationUpPageViewController.h */,
+				BD376F051B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m */,
+				BD376F061B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -222,6 +268,7 @@
 			files = (
 				BD769CD11B2A749D00BF796D /* LaunchScreen.xib in Resources */,
 				BD769CCE1B2A749D00BF796D /* Images.xcassets in Resources */,
+				BD376F081B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,9 +289,16 @@
 				BD769CC91B2A749D00BF796D /* ViewController.m in Sources */,
 				BDF7C29D1B2E68BC00E606B9 /* TVGuidancePageViewController.m in Sources */,
 				BD769CC61B2A749D00BF796D /* AppDelegate.m in Sources */,
+				BD376F121B53985300992DEA /* TVTTPathView.m in Sources */,
+				BD376F031B53632200992DEA /* TVGuidanceAnimationPageViewController.m in Sources */,
+				BDD7B5D51B53ABB8007585BA /* UIView+Constraints.m in Sources */,
 				BD769CEC1B2A763900BF796D /* TVGuidancePage.m in Sources */,
+				BD376F0F1B53984600992DEA /* TVTTZoomView.m in Sources */,
+				BD376F0C1B5380F900992DEA /* TVTTShakeView.m in Sources */,
 				BD769CEF1B2A78F400BF796D /* TVGuidanceViewController.m in Sources */,
 				BD769CC31B2A749D00BF796D /* main.m in Sources */,
+				BD376F071B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m in Sources */,
+				BDD7B5D21B539D73007585BA /* TVTTAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

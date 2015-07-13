@@ -10,6 +10,9 @@
 #import "TVGuidancePage.h"
 #import "TVGuidancePageViewController.h"
 
+#import "TVGuidanceAnimationUpPageViewController.h"
+#import "TVTTShakeView.h"
+
 #define kAnimationDuration 1.0
 
 @interface TVGuidanceViewController ()<UIScrollViewDelegate,UIPageViewControllerDataSource,UIPageViewControllerDelegate>{
@@ -24,6 +27,10 @@
 
 @property (strong, nonatomic) NSMutableArray * reusePageControllers;
 @property (strong, nonatomic) NSMutableDictionary * currentPageControllers;
+
+@property (weak, nonatomic) UIViewController * preViewController;
+@property (weak, nonatomic) UIViewController * currentViewController;
+@property (weak, nonatomic) UIViewController * nextViewController;
 
 @end
 
@@ -48,8 +55,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self pMakeScrollView];
+//    [self pMakeScrollView];
 //    [self pMakePageConroller];
+    TVTTShakeView * view = [[TVTTShakeView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
+    view.backgroundColor = [UIColor redColor];
+//    [view addShakeAnimationAndRemoveOnCompletion:YES];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [view addZoomAnimationAndRemoveOnCompletion:YES];
+//    });
+    [view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {
+        NSLog(@"haha");
+    }];
+    [self.view addSubview:view];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -135,7 +153,7 @@
             [dataViewController showAnimationWithDuration:kAnimationDuration];
         }
     }
-    self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.frame) * (self.pageItems.count > 3 ? 3 : self.pageItems.count), CGRectGetHeight(self.view.frame));
+    self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.frame) * self.pageItems.count, CGRectGetHeight(self.view.frame));
 }
 
 #pragma mark - get view controller
@@ -192,37 +210,50 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     NSLog(@"-----------------------------------------> start");
     NSInteger currentPage = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
-    NSLog(@"%@ %d",NSStringFromSelector(_cmd),currentPage);
+    NSLog(@"%@ %ld",NSStringFromSelector(_cmd),(long)currentPage);
     __dragStartPointX = scrollView.contentOffset.x;
 }
 -  (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     NSInteger currentPage = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
-    NSLog(@"%@ %d",NSStringFromSelector(_cmd),currentPage);
+    NSLog(@"%@ %ld",NSStringFromSelector(_cmd),(long)currentPage);
 }
 
 
 
 //scroll to top
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+//    CGFloat scrollingPosition = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
+//    NSInteger currentPage = (int)scrollingPosition;
+//    
+//    TVGuidancePageViewController * pageViewController = [self currentPageViewControllerWithIndex:currentPage];
+//    [pageViewController showAnimationWithDuration:kAnimationDuration];
+    [(TVGuidancePageViewController *)_currentViewController showAnimationWithDuration:kAnimationDuration];
+    [(TVGuidancePageViewController *)_preViewController hiddenAnimationViews];
+    [(TVGuidancePageViewController *)_nextViewController hiddenAnimationViews];
+    
+}
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     CGFloat scrollingPosition = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
     NSInteger currentPage = (int)scrollingPosition;
-    
+
     TVGuidancePageViewController * pageViewController = [self currentPageViewControllerWithIndex:currentPage];
-    [pageViewController showAnimationWithDuration:kAnimationDuration];
-    
+    _currentViewController = pageViewController;
+//    
     //pre
+    _preViewController = nil;
     NSInteger pro_page = currentPage - 1;
     if (pro_page >=0) {
         TVGuidancePageViewController * pageViewController = [self currentPageViewControllerWithIndex:pro_page];
-        [pageViewController hiddenAnimationViews];
+        _preViewController = pageViewController;
     }
     
     //next
+    _nextViewController = nil;
     NSInteger next_page = currentPage + 1;
     if (next_page < [self.pageItems count]) {
         TVGuidancePageViewController * pageViewController = [self currentPageViewControllerWithIndex:next_page];
-        [pageViewController hiddenAnimationViews];
+        _nextViewController = pageViewController;
     }
     
     //reuse pre next
@@ -238,75 +269,73 @@
 - (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView{
     return NO;
 }
+
 - (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView{
     NSInteger currentPage = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
-    NSLog(@"%@ %d",NSStringFromSelector(_cmd),currentPage);
+    NSLog(@"%@ %ld",NSStringFromSelector(_cmd),(long)currentPage);
 }
 
 
 //zoom
-- (void)scrollViewDidZoom:(UIScrollView *)scrollView{
-    NSInteger currentPage = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
-    NSLog(@"%@ %d",NSStringFromSelector(_cmd),currentPage);
-}
-
-
-- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
-    UIView * v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    v.backgroundColor = [UIColor redColor];
-    return v;
-}
-- (void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(UIView *)view {
-    NSInteger currentPage = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
-    NSLog(@"%@ %d",NSStringFromSelector(_cmd),currentPage);
-}
-- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale{
-    NSInteger currentPage = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
-    NSLog(@"%@ %d",NSStringFromSelector(_cmd),currentPage);
-}
+//- (void)scrollViewDidZoom:(UIScrollView *)scrollView{
+//    NSInteger currentPage = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
+//    NSLog(@"%@ %ld",NSStringFromSelector(_cmd),(long)currentPage);
+//}
+//
+//- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
+//    UIView * v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//    v.backgroundColor = [UIColor redColor];
+//    return v;
+//}
+//- (void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(UIView *)view {
+//    NSInteger currentPage = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
+//    NSLog(@"%@ %ld",NSStringFromSelector(_cmd),(long)currentPage);
+//}
+//- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale{
+//    NSInteger currentPage = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
+//    NSLog(@"%@ %ld",NSStringFromSelector(_cmd),(long)currentPage);
+//}
 
 
 //decelerating
 
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
     NSInteger currentPage = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
-    NSLog(@"%@ %d",NSStringFromSelector(_cmd),currentPage);
-}
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    NSLog(@"%@ %ld",NSStringFromSelector(_cmd),(long)currentPage);
 }
 
 
 
 #pragma mark- UIPageViewControllerDataSource
 
-- (TVGuidancePageViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(TVGuidancePageViewController *)viewController{
-    
-    [viewController showAnimationWithDuration:kAnimationDuration];
-    NSUInteger index = viewController.index;
-    if ((index == 0) || (index == NSNotFound)) {
-        return nil;
-    }
-    
-    index--;
-    TVGuidancePageViewController  * proPageViewController = [self viewControllerAtIndex:index];
-    return proPageViewController;
-}
-
-- (TVGuidancePageViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(TVGuidancePageViewController *)viewController{
-    
-    [viewController showAnimationWithDuration:kAnimationDuration];
-    NSUInteger index = viewController.index;
-    if (index == NSNotFound) {
-        return nil;
-    }
-    
-    index++;
-    if (index == [self.pageItems count]) {
-        return nil;
-    }
-    TVGuidancePageViewController * nextPageViewController = [self viewControllerAtIndex:index];
-    return nextPageViewController;
-}
+//- (TVGuidancePageViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(TVGuidancePageViewController *)viewController{
+//    
+//    [viewController showAnimationWithDuration:kAnimationDuration];
+//    NSUInteger index = viewController.index;
+//    if ((index == 0) || (index == NSNotFound)) {
+//        return nil;
+//    }
+//    
+//    index--;
+//    TVGuidancePageViewController  * proPageViewController = [self viewControllerAtIndex:index];
+//    return proPageViewController;
+//}
+//
+//- (TVGuidancePageViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(TVGuidancePageViewController *)viewController{
+//    
+//    [viewController showAnimationWithDuration:kAnimationDuration];
+//    NSUInteger index = viewController.index;
+//    if (index == NSNotFound) {
+//        return nil;
+//    }
+//    
+//    index++;
+//    if (index == [self.pageItems count]) {
+//        return nil;
+//    }
+//    TVGuidancePageViewController * nextPageViewController = [self viewControllerAtIndex:index];
+//    return nextPageViewController;
+//}
 
 #pragma mark - get
 

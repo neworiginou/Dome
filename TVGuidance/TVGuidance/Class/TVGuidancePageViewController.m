@@ -108,9 +108,9 @@
     NSString * backgroundImage = @"launch_homeImage_page_";
     backgroundImage = [backgroundImage stringByAppendingFormat:@"%ld_",_index+1];
     if (Iphone_4) {
-        backgroundImage = [backgroundImage stringByAppendingString:@"iphone4"];
+        backgroundImage = [backgroundImage stringByAppendingString:@"iphone4.jpg"];
     }else{
-        backgroundImage = [backgroundImage stringByAppendingString:@"iphone5"];
+        backgroundImage = [backgroundImage stringByAppendingString:@"iphone5.jpg"];
     }
     self.backgorundImageView.image = [UIImage imageNamed:backgroundImage];
 }
@@ -136,7 +136,7 @@
         }
         centerTextImageName = [centerTextImageName stringByAppendingString:@"iphone5"];
     }
-    
+
     if (!self.centerTextImageView) {
         UIImageView * imageView = ({
             UIImageView * imageView = [[UIImageView alloc] init];
