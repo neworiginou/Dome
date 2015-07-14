@@ -10,7 +10,13 @@
 
 #import <CoreGraphics/CoreGraphics.h>
 
-@interface TVGuidanceAnimationPageViewController ()
+@interface TVGuidanceAnimationPageViewController (){
+    BOOL _isAnimationed;
+    
+    __weak IBOutlet NSLayoutConstraint *_topSpaceConstraint;
+    __weak IBOutlet NSLayoutConstraint *_bottomSpaceConstraint;
+    __weak IBOutlet NSLayoutConstraint *_centerImageBottomConstraint;
+}
 
 @end
 
@@ -28,13 +34,29 @@
     
 }
 
-- (CABasicAnimation *)animationWithType:(TVGuidanceAnimationType)animationType{
-    return [[CABasicAnimation alloc] init];
+- (void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    if ([UIScreen mainScreen].bounds.size.height == 480) {
+        _topSpaceConstraint.constant = 35;
+        _centerImageBottomConstraint.constant = 33;
+        _bottomSpaceConstraint.constant = 25;
+    }
 }
 
-- (CABasicAnimation *)pathAnimation{
-    CAKeyframeAnimation * animation = [CAKeyframeAnimation animation];
-    return animation;
+//- (CABasicAnimation *)pathAnimation{
+//    CAKeyframeAnimation * animation = [CAKeyframeAnimation animation];
+//    return animation;
+//}
+
+- (void)startAnimation{
+}
+
+- (BOOL)isAnimationed{
+    if (_isAnimationed) {
+        return YES;
+    }
+    _isAnimationed = YES;
+    return NO;
 }
 
 //抖动动画

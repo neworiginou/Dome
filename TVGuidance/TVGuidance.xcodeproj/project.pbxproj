@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		559123E41B53F4E9003D77BB /* TVAnimationGuidanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 559123E31B53F4E9003D77BB /* TVAnimationGuidanceViewController.m */; };
+		BD03F1601B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD03F15E1B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.m */; };
+		BD03F1611B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD03F15F1B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.xib */; };
+		BD03F1651B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD03F1631B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.m */; };
+		BD03F1661B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD03F1641B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.xib */; };
+		BD03F16A1B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD03F1681B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.m */; };
+		BD03F16B1B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD03F1691B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.xib */; };
 		BD376F031B53632200992DEA /* TVGuidanceAnimationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F021B53632200992DEA /* TVGuidanceAnimationPageViewController.m */; };
-		BD376F071B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F051B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m */; };
-		BD376F081B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD376F061B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib */; };
 		BD376F0C1B5380F900992DEA /* TVTTShakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F0B1B5380F900992DEA /* TVTTShakeView.m */; };
 		BD376F0F1B53984600992DEA /* TVTTZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F0E1B53984600992DEA /* TVTTZoomView.m */; };
-		BD376F121B53985300992DEA /* TVTTPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F111B53985300992DEA /* TVTTPathView.m */; };
+		BD5F50601B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5F505E1B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.m */; };
+		BD5F50611B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD5F505F1B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.xib */; };
+		BD5F50641B5518F500B3559A /* TVTTPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5F50631B5518F500B3559A /* TVTTPathView.m */; };
 		BD769CC31B2A749D00BF796D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CC21B2A749D00BF796D /* main.m */; };
 		BD769CC61B2A749D00BF796D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CC51B2A749D00BF796D /* AppDelegate.m */; };
 		BD769CC91B2A749D00BF796D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD769CC81B2A749D00BF796D /* ViewController.m */; };
@@ -40,17 +46,26 @@
 /* Begin PBXFileReference section */
 		559123E21B53F4E9003D77BB /* TVAnimationGuidanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVAnimationGuidanceViewController.h; sourceTree = "<group>"; };
 		559123E31B53F4E9003D77BB /* TVAnimationGuidanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVAnimationGuidanceViewController.m; sourceTree = "<group>"; };
+		BD03F15D1B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceZoomAnimationPageViewController.h; sourceTree = "<group>"; };
+		BD03F15E1B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceZoomAnimationPageViewController.m; sourceTree = "<group>"; };
+		BD03F15F1B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVGuidanceZoomAnimationPageViewController.xib; sourceTree = "<group>"; };
+		BD03F1621B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceShakeAnimationPageViewController.h; sourceTree = "<group>"; };
+		BD03F1631B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceShakeAnimationPageViewController.m; sourceTree = "<group>"; };
+		BD03F1641B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVGuidanceShakeAnimationPageViewController.xib; sourceTree = "<group>"; };
+		BD03F1671B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceXXZoomAnimationPageViewController.h; sourceTree = "<group>"; };
+		BD03F1681B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceXXZoomAnimationPageViewController.m; sourceTree = "<group>"; };
+		BD03F1691B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVGuidanceXXZoomAnimationPageViewController.xib; sourceTree = "<group>"; };
 		BD376F011B53632200992DEA /* TVGuidanceAnimationPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceAnimationPageViewController.h; sourceTree = "<group>"; };
 		BD376F021B53632200992DEA /* TVGuidanceAnimationPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceAnimationPageViewController.m; sourceTree = "<group>"; };
-		BD376F041B53635600992DEA /* TVGuidanceAnimationUpPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceAnimationUpPageViewController.h; sourceTree = "<group>"; };
-		BD376F051B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceAnimationUpPageViewController.m; sourceTree = "<group>"; };
-		BD376F061B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVGuidanceAnimationUpPageViewController.xib; sourceTree = "<group>"; };
 		BD376F0A1B5380F900992DEA /* TVTTShakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTShakeView.h; sourceTree = "<group>"; };
 		BD376F0B1B5380F900992DEA /* TVTTShakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTShakeView.m; sourceTree = "<group>"; };
 		BD376F0D1B53984600992DEA /* TVTTZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTZoomView.h; sourceTree = "<group>"; };
 		BD376F0E1B53984600992DEA /* TVTTZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTZoomView.m; sourceTree = "<group>"; };
-		BD376F101B53985300992DEA /* TVTTPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTPathView.h; sourceTree = "<group>"; };
-		BD376F111B53985300992DEA /* TVTTPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTPathView.m; sourceTree = "<group>"; };
+		BD5F505D1B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceAnimationUpPageViewController.h; sourceTree = "<group>"; };
+		BD5F505E1B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceAnimationUpPageViewController.m; sourceTree = "<group>"; };
+		BD5F505F1B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVGuidanceAnimationUpPageViewController.xib; sourceTree = "<group>"; };
+		BD5F50621B5518F500B3559A /* TVTTPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTPathView.h; sourceTree = "<group>"; };
+		BD5F50631B5518F500B3559A /* TVTTPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTPathView.m; sourceTree = "<group>"; };
 		BD769CBD1B2A749D00BF796D /* TVGuidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVGuidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD769CC11B2A749D00BF796D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD769CC21B2A749D00BF796D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,8 +119,8 @@
 				BD376F0B1B5380F900992DEA /* TVTTShakeView.m */,
 				BD376F0D1B53984600992DEA /* TVTTZoomView.h */,
 				BD376F0E1B53984600992DEA /* TVTTZoomView.m */,
-				BD376F101B53985300992DEA /* TVTTPathView.h */,
-				BD376F111B53985300992DEA /* TVTTPathView.m */,
+				BD5F50621B5518F500B3559A /* TVTTPathView.h */,
+				BD5F50631B5518F500B3559A /* TVTTPathView.m */,
 			);
 			path = AnimationView;
 			sourceTree = "<group>";
@@ -181,9 +196,18 @@
 				BDF7C29C1B2E68BC00E606B9 /* TVGuidancePageViewController.m */,
 				BD376F011B53632200992DEA /* TVGuidanceAnimationPageViewController.h */,
 				BD376F021B53632200992DEA /* TVGuidanceAnimationPageViewController.m */,
-				BD376F041B53635600992DEA /* TVGuidanceAnimationUpPageViewController.h */,
-				BD376F051B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m */,
-				BD376F061B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib */,
+				BD5F505D1B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.h */,
+				BD5F505E1B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.m */,
+				BD5F505F1B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.xib */,
+				BD03F15D1B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.h */,
+				BD03F15E1B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.m */,
+				BD03F15F1B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.xib */,
+				BD03F1621B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.h */,
+				BD03F1631B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.m */,
+				BD03F1641B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.xib */,
+				BD03F1671B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.h */,
+				BD03F1681B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.m */,
+				BD03F1691B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.xib */,
 				559123E21B53F4E9003D77BB /* TVAnimationGuidanceViewController.h */,
 				559123E31B53F4E9003D77BB /* TVAnimationGuidanceViewController.m */,
 			);
@@ -239,7 +263,7 @@
 				TargetAttributes = {
 					BD769CBC1B2A749D00BF796D = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 8J45U9R8VX;
+						DevelopmentTeam = 38ZB8SW96P;
 					};
 					BD769CD51B2A749D00BF796D = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -271,9 +295,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD03F1661B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.xib in Resources */,
 				BD769CD11B2A749D00BF796D /* LaunchScreen.xib in Resources */,
+				BD03F1611B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.xib in Resources */,
 				BD769CCE1B2A749D00BF796D /* Images.xcassets in Resources */,
-				BD376F081B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib in Resources */,
+				BD03F16B1B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.xib in Resources */,
+				BD5F50611B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,18 +319,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD769CC91B2A749D00BF796D /* ViewController.m in Sources */,
+				BD03F1601B54A7210002A86C /* TVGuidanceZoomAnimationPageViewController.m in Sources */,
+				BD5F50601B5518E400B3559A /* TVGuidanceAnimationUpPageViewController.m in Sources */,
 				559123E41B53F4E9003D77BB /* TVAnimationGuidanceViewController.m in Sources */,
 				BDF7C29D1B2E68BC00E606B9 /* TVGuidancePageViewController.m in Sources */,
 				BD769CC61B2A749D00BF796D /* AppDelegate.m in Sources */,
-				BD376F121B53985300992DEA /* TVTTPathView.m in Sources */,
 				BD376F031B53632200992DEA /* TVGuidanceAnimationPageViewController.m in Sources */,
 				BDD7B5D51B53ABB8007585BA /* UIView+Constraints.m in Sources */,
 				BD769CEC1B2A763900BF796D /* TVGuidancePage.m in Sources */,
+				BD03F1651B54B4C60002A86C /* TVGuidanceShakeAnimationPageViewController.m in Sources */,
+				BD5F50641B5518F500B3559A /* TVTTPathView.m in Sources */,
 				BD376F0F1B53984600992DEA /* TVTTZoomView.m in Sources */,
 				BD376F0C1B5380F900992DEA /* TVTTShakeView.m in Sources */,
 				BD769CEF1B2A78F400BF796D /* TVGuidanceViewController.m in Sources */,
 				BD769CC31B2A749D00BF796D /* main.m in Sources */,
-				BD376F071B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m in Sources */,
+				BD03F16A1B54BBC20002A86C /* TVGuidanceXXZoomAnimationPageViewController.m in Sources */,
 				BDD7B5D21B539D73007585BA /* TVTTAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

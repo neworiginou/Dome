@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVGuidanceShakeAnimationPageViewController">
+            <connections>
+                <outlet property="_bottomSpaceConstraint" destination="kn6-U4-5FD" id="WE4-kl-dEy"/>
+                <outlet property="_centerImageBottomConstraint" destination="KNb-hs-Bwa" id="gHN-ac-joT"/>
+                <outlet property="_topSpaceConstraint" destination="q5d-uu-9fq" id="ht3-Sj-QFY"/>
+                <outlet property="_view_1" destination="zqf-kF-oCW" id="Cwa-T8-rNX"/>
+                <outlet property="_view_2" destination="3lE-OE-wi6" id="1TT-UG-1Ad"/>
+                <outlet property="_view_3" destination="A4j-dU-mGM" id="3FN-mZ-WLp"/>
+                <outlet property="_view_4" destination="tz1-ba-vcx" id="fSd-z2-Bhb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_title_image_page_3" translatesAutoresizingMaskIntoConstraints="NO" id="R7k-5W-rg8">
+                    <rect key="frame" x="77" y="75" width="166" height="32"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_subtitle_image_page_3" translatesAutoresizingMaskIntoConstraints="NO" id="Y95-Ad-Krk">
+                    <rect key="frame" x="20" y="121" width="280" height="20"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_ indicator_page_3" translatesAutoresizingMaskIntoConstraints="NO" id="BBZ-Wy-F73">
+                    <rect key="frame" x="128" y="505" width="65" height="8"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_center_image_page_3" translatesAutoresizingMaskIntoConstraints="NO" id="JeF-lP-fCU">
+                    <rect key="frame" x="42" y="244" width="236" height="218"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqf-kF-oCW" userLabel="View_1" customClass="TVTTShakeView">
+                    <rect key="frame" x="64" y="222" width="38" height="38"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_3_1" translatesAutoresizingMaskIntoConstraints="NO" id="vpa-lZ-D3D">
+                            <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="vpa-lZ-D3D" firstAttribute="leading" secondItem="zqf-kF-oCW" secondAttribute="leading" id="Qfq-ny-2N0"/>
+                        <constraint firstAttribute="trailing" secondItem="vpa-lZ-D3D" secondAttribute="trailing" id="V9S-cQ-0R8"/>
+                        <constraint firstItem="vpa-lZ-D3D" firstAttribute="top" secondItem="zqf-kF-oCW" secondAttribute="top" id="WaT-R1-dZL"/>
+                        <constraint firstAttribute="bottom" secondItem="vpa-lZ-D3D" secondAttribute="bottom" id="nQv-SX-OMD"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="_imageView" destination="vpa-lZ-D3D" id="kjY-D0-v8Z"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lE-OE-wi6" userLabel="View_2" customClass="TVTTShakeView">
+                    <rect key="frame" x="130" y="200" width="33" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_3_2" translatesAutoresizingMaskIntoConstraints="NO" id="6mv-0z-9jI">
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="6mv-0z-9jI" secondAttribute="bottom" constant="11" id="Ge5-cY-RcP"/>
+                        <constraint firstItem="6mv-0z-9jI" firstAttribute="top" secondItem="3lE-OE-wi6" secondAttribute="top" id="YZh-SO-5ZN"/>
+                        <constraint firstAttribute="trailing" secondItem="6mv-0z-9jI" secondAttribute="trailing" id="kob-80-utb"/>
+                        <constraint firstItem="6mv-0z-9jI" firstAttribute="leading" secondItem="3lE-OE-wi6" secondAttribute="leading" id="ogN-1L-DHZ"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="_imageView" destination="6mv-0z-9jI" id="Wfq-K5-js8"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4j-dU-mGM" userLabel="View_3" customClass="TVTTShakeView">
+                    <rect key="frame" x="170" y="207" width="15" height="15"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_3_3" translatesAutoresizingMaskIntoConstraints="NO" id="uqQ-6z-a78">
+                            <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="uqQ-6z-a78" firstAttribute="leading" secondItem="A4j-dU-mGM" secondAttribute="leading" id="17h-Eb-8tG"/>
+                        <constraint firstItem="uqQ-6z-a78" firstAttribute="top" secondItem="A4j-dU-mGM" secondAttribute="top" id="M7e-1l-6PT"/>
+                        <constraint firstAttribute="trailing" secondItem="uqQ-6z-a78" secondAttribute="trailing" id="hQm-sg-EY0"/>
+                        <constraint firstAttribute="bottom" secondItem="uqQ-6z-a78" secondAttribute="bottom" id="zWl-mr-nA9"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="_imageView" destination="uqQ-6z-a78" id="XVJ-dA-cK3"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tz1-ba-vcx" userLabel="View_4" customClass="TVTTShakeView">
+                    <rect key="frame" x="187" y="219" width="50" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_3_4" translatesAutoresizingMaskIntoConstraints="NO" id="do4-b1-gda">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="do4-b1-gda" secondAttribute="bottom" id="7TL-nk-9AW"/>
+                        <constraint firstItem="do4-b1-gda" firstAttribute="top" secondItem="tz1-ba-vcx" secondAttribute="top" id="ORx-7F-H4g"/>
+                        <constraint firstAttribute="trailing" secondItem="do4-b1-gda" secondAttribute="trailing" id="h7r-x3-MQg"/>
+                        <constraint firstItem="do4-b1-gda" firstAttribute="leading" secondItem="tz1-ba-vcx" secondAttribute="leading" id="z09-sB-th6"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="_imageView" destination="do4-b1-gda" id="7X7-tn-T1R"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.21176470588235294" green="0.67450980392156867" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3lE-OE-wi6" firstAttribute="leading" secondItem="JeF-lP-fCU" secondAttribute="leading" constant="88" id="6Cf-xJ-HBV"/>
+                <constraint firstItem="A4j-dU-mGM" firstAttribute="leading" secondItem="JeF-lP-fCU" secondAttribute="leading" constant="128" id="88J-Rb-bBj"/>
+                <constraint firstItem="BBZ-Wy-F73" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CeM-Cf-m25"/>
+                <constraint firstItem="R7k-5W-rg8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jm2-H3-5YS"/>
+                <constraint firstAttribute="bottom" secondItem="BBZ-Wy-F73" secondAttribute="bottom" constant="55" id="KNb-hs-Bwa"/>
+                <constraint firstItem="JeF-lP-fCU" firstAttribute="top" secondItem="zqf-kF-oCW" secondAttribute="top" constant="22" id="KOT-gA-B0z"/>
+                <constraint firstItem="Y95-Ad-Krk" firstAttribute="top" secondItem="R7k-5W-rg8" secondAttribute="bottom" constant="14" id="MgP-zg-M0R"/>
+                <constraint firstItem="JeF-lP-fCU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V12-iY-Ocf"/>
+                <constraint firstItem="JeF-lP-fCU" firstAttribute="top" secondItem="A4j-dU-mGM" secondAttribute="bottom" constant="22" id="YrC-Pp-mI7"/>
+                <constraint firstItem="Y95-Ad-Krk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Zpq-py-cNN"/>
+                <constraint firstItem="tz1-ba-vcx" firstAttribute="trailing" secondItem="JeF-lP-fCU" secondAttribute="trailing" constant="-41" id="gHO-26-r37"/>
+                <constraint firstItem="BBZ-Wy-F73" firstAttribute="top" secondItem="JeF-lP-fCU" secondAttribute="bottom" constant="43" id="kn6-U4-5FD"/>
+                <constraint firstItem="tz1-ba-vcx" firstAttribute="top" secondItem="JeF-lP-fCU" secondAttribute="top" constant="-25" id="o0o-St-frl"/>
+                <constraint firstItem="R7k-5W-rg8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="75" id="q5d-uu-9fq"/>
+                <constraint firstItem="JeF-lP-fCU" firstAttribute="leading" secondItem="zqf-kF-oCW" secondAttribute="leading" constant="-22" id="uBd-Ya-X7I"/>
+                <constraint firstItem="JeF-lP-fCU" firstAttribute="top" secondItem="3lE-OE-wi6" secondAttribute="bottom" id="zFI-uq-ncN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="473" y="413"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guidance_ indicator_page_3" width="65" height="8"/>
+        <image name="guidance_animation_image_page_3_1" width="38" height="38"/>
+        <image name="guidance_animation_image_page_3_2" width="33" height="33"/>
+        <image name="guidance_animation_image_page_3_3" width="15" height="15"/>
+        <image name="guidance_animation_image_page_3_4" width="50" height="50"/>
+        <image name="guidance_center_image_page_3" width="236" height="218"/>
+        <image name="guidance_subtitle_image_page_3" width="280" height="20"/>
+        <image name="guidance_title_image_page_3" width="166" height="32"/>
+    </resources>
+</document>

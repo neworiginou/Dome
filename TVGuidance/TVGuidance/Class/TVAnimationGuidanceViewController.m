@@ -9,6 +9,9 @@
 #import "TVAnimationGuidanceViewController.h"
 #import "TVGuidanceAnimationPageViewController.h"
 #import "TVGuidanceAnimationUpPageViewController.h"
+#import "TVGuidanceZoomAnimationPageViewController.h"
+#import "TVGuidanceShakeAnimationPageViewController.h"
+#import "TVGuidanceXXZoomAnimationPageViewController.h"
 
 @interface TVAnimationGuidanceViewController ()<UIScrollViewDelegate>
 @property (strong, nonatomic) NSMutableArray * pageItems;
@@ -40,8 +43,6 @@
     [self pMakeScrollView];
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -61,7 +62,6 @@
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scrollView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(scrollView)]];
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[scrollView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(scrollView)]];
         
-        
         [scrollView addSubview:contentView];
         contentView.translatesAutoresizingMaskIntoConstraints = NO;
         [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[contentView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(contentView)]];
@@ -74,19 +74,41 @@
  
     __block  UIView * leftView = contentView;
     [_pageItems enumerateObjectsUsingBlock:^(TVGuidanceAnimationPageViewController *obj, NSUInteger idx, BOOL * __nonnull stop) {
+        
         [contentView addSubview:obj.view];
+        
         UIView * currentView = obj.view;
-        obj.view.translatesAutoresizingMaskIntoConstraints = NO;
-        [contentView addConstraint:[NSLayoutConstraint constraintWithItem:obj.view attribute:NSLayoutAttributeLeading relatedBy:0 toItem:leftView attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0.1]];
-         [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[currentView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(currentView)]];
+        
+        currentView.translatesAutoresizingMaskIntoConstraints = NO;
+        if (leftView == contentView) {
+            // left view  is the super view
+            [contentView addConstraint:[NSLayoutConstraint constraintWithItem:currentView attribute:NSLayoutAttributeLeading relatedBy:0 toItem:leftView attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0.0]];
+        }else{
+            [contentView addConstraint:[NSLayoutConstraint constraintWithItem:currentView attribute:NSLayoutAttributeLeading relatedBy:0 toItem:leftView attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0.0]];
+        }
+        [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[currentView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(currentView)]];
         [scrollView addConstraint:[NSLayoutConstraint constraintWithItem:obj.view attribute:NSLayoutAttributeWidth relatedBy:0 toItem:scrollView attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0.0]];
+        
         leftView = currentView;
     }];
-    [contentView addConstraint:[NSLayoutConstraint constraintWithItem:leftView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:contentView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [contentView addConstraint:[NSLayoutConstraint constraintWithItem:leftView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:contentView attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0.0]];
 }
+
+- (void)scrollViewDidEndDecelerating:(nonnull UIScrollView *)scrollView{
+    NSInteger index = scrollView.contentOffset.x/scrollView.frame.size.width;
+    TVGuidanceAnimationPageViewController * ctl = [self.pageItems objectAtIndex:index];
+    [ctl startAnimation];
+}
+
 - (void)pConfigData{
     TVGuidanceAnimationUpPageViewController * ctl_1 = [[TVGuidanceAnimationUpPageViewController alloc] initWithNibName:@"TVGuidanceAnimationUpPageViewController" bundle:nil];
+    TVGuidanceZoomAnimationPageViewController * ctl_2 = [[TVGuidanceZoomAnimationPageViewController alloc] initWithNibName:@"TVGuidanceZoomAnimationPageViewController"bundle:nil];
+    TVGuidanceShakeAnimationPageViewController * ctl_3 = [[TVGuidanceShakeAnimationPageViewController alloc] initWithNibName:@"TVGuidanceShakeAnimationPageViewController" bundle:nil];
+    TVGuidanceXXZoomAnimationPageViewController * ctl_4  = [[TVGuidanceXXZoomAnimationPageViewController alloc] initWithNibName:@"TVGuidanceXXZoomAnimationPageViewController" bundle:nil];
     [self.pageItems addObject:ctl_1];
+    [self.pageItems addObject:ctl_2];
+    [self.pageItems addObject:ctl_3];
+    [self.pageItems addObject:ctl_4];
 }
 
 - (NSMutableArray *)pageItems{

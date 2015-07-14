@@ -17,6 +17,7 @@
     __weak IBOutlet TVTTPathView *_left_3_view;
     __weak IBOutlet TVTTPathView *_right_2_view;
     __weak IBOutlet TVTTPathView *_right_1_view;
+    __weak IBOutlet UIImageView *_backgroundImageView;
 }
 
 @end
@@ -31,15 +32,26 @@
     [_right_1_view setStartDirection:TVTTPathDirectionLeftBottom endDirection:TVTTPathDirectionRightTop];
     [_right_2_view setStartDirection:TVTTPathDirectionLeftBottom endDirection:TVTTPathDirectionRightTop];
     
-    [self startAnimation];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self startAnimation];
+    });
+    
+    if ([[UIScreen mainScreen] bounds].size.height == 480) {
+        _backgroundImageView.image = [UIImage imageNamed:@"guidance_background_image_page_1_iphone4"];
+    }else{
+        _backgroundImageView.image = [UIImage imageNamed:@"guidance_background_image_page_1_iphone5"];
+    }
 }
-
 - (void)startAnimation{
-    [_left_1_view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
-    [_left_2_view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
-    [_left_3_view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
-    [_right_1_view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
-    [_right_2_view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
+    if (self.isAnimationed) {
+        return;
+    }
+    [super startAnimation];
+    [_left_1_view addAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
+    [_left_2_view addAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
+    [_left_3_view addAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
+    [_right_1_view addAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
+    [_right_2_view addAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
 }
 
 - (void)didReceiveMemoryWarning {

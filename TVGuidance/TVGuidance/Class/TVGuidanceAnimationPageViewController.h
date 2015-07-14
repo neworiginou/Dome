@@ -19,8 +19,10 @@ typedef NS_ENUM(NSInteger, TVGuidanceAnimationType) {
  * 需要动画效果的UI元素
  */
 @property (nonatomic, strong) NSArray * animatinItems;
+@property (nonatomic, assign, readonly, getter=isAnimationed)  BOOL animationed;
 
 
 - (void)startAnimationWithType:(TVGuidanceAnimationType)animationType;
+- (void)startAnimation;
 
 @end

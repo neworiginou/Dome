@@ -8,14 +8,29 @@
 
 #import "TVTTAnimationView.h"
 
+
+
 @implementation TVTTAnimationView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+- (void)addAnimation
+{
+    [self addAnimationWithBeginTime:0 andFillMode:kCAFillModeBoth andRemoveOnCompletion:NO completion:NULL];
 }
-*/
+
+- (void)addAnimationWithCompletion:(void (^)(BOOL finished))completionBlock
+{
+    [self addAnimationWithBeginTime:0 andFillMode:kCAFillModeBoth andRemoveOnCompletion:NO completion:completionBlock];
+}
+
+- (void)addAnimationAndRemoveOnCompletion:(BOOL)removedOnCompletion
+{
+    [self addAnimationWithBeginTime:0 andFillMode:removedOnCompletion ? kCAFillModeRemoved : kCAFillModeBoth andRemoveOnCompletion:removedOnCompletion completion:NULL];
+}
+
+- (void)addAnimationAndRemoveOnCompletion:(BOOL)removedOnCompletion completion:(void (^)(BOOL finished))completionBlock
+{
+    [self addAnimationWithBeginTime:0 andFillMode:removedOnCompletion ? kCAFillModeRemoved : kCAFillModeBoth andRemoveOnCompletion:removedOnCompletion completion:completionBlock];
+}
 
 @end

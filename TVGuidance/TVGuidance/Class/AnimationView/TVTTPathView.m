@@ -8,50 +8,53 @@
 
 #import "TVTTPathView.h"
 
+static NSInteger kAnimationDurationTime = 2.0;
+
 @interface TVTTPathView (){
     TVTTPathDirection _startDirection;
     TVTTPathDirection _endDirection;
     __weak IBOutlet UIImageView * _imageView;
-    __weak IBOutlet NSLayoutConstraint * _leftConstraint;
-    __weak IBOutlet NSLayoutConstraint * _rightConstraint;
-    __weak IBOutlet NSLayoutConstraint * _bottomConstraint;
-    __weak IBOutlet NSLayoutConstraint * _topConstraint;
-    
 }
-@property (strong, nonatomic) NSMapTable *completionBlocksByAnimation;
 @end
 
 @implementation TVTTPathView
 
-
-- (void)addPathAnimation
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    [self addPathAnimationWithBeginTime:0 andFillMode:kCAFillModeBoth andRemoveOnCompletion:NO completion:NULL];
+    self = [super initWithFrame:frame];
+    if (self)
+    {
+        [self setupHierarchy];
+    }
+    return self;
 }
 
-- (void)addPathAnimationWithCompletion:(void (^)(BOOL finished))completionBlock
+- (instancetype)initWithCoder:(NSCoder *)coder
 {
-    [self addPathAnimationWithBeginTime:0 andFillMode:kCAFillModeBoth andRemoveOnCompletion:NO completion:completionBlock];
+    self = [super initWithCoder:coder];
+    if (self)
+    {
+        [self setupHierarchy];
+    }
+    return self;
 }
 
-- (void)addPathAnimationAndRemoveOnCompletion:(BOOL)removedOnCompletion
-{
-    [self addPathAnimationWithBeginTime:0 andFillMode:removedOnCompletion ? kCAFillModeRemoved : kCAFillModeBoth andRemoveOnCompletion:removedOnCompletion completion:NULL];
+- (void)awakeFromNib{
+    [super awakeFromNib];
+    [self setupHierarchy];
 }
 
-- (void)addPathAnimationAndRemoveOnCompletion:(BOOL)removedOnCompletion completion:(void (^)(BOOL finished))completionBlock
-{
-    [self addPathAnimationWithBeginTime:0 andFillMode:removedOnCompletion ? kCAFillModeRemoved : kCAFillModeBoth andRemoveOnCompletion:removedOnCompletion completion:completionBlock];
+- (void)setupHierarchy{
 }
 
-- (void)addPathAnimationWithBeginTime:(CFTimeInterval)beginTime andFillMode:(NSString *)fillMode andRemoveOnCompletion:(BOOL)removedOnCompletion completion:(void (^)(BOOL finished))completionBlock
+- (void)addAnimationWithBeginTime:(CFTimeInterval)beginTime andFillMode:(NSString *)fillMode andRemoveOnCompletion:(BOOL)removedOnCompletion completion:(void (^)(BOOL finished))completionBlock
 {
     CAMediaTimingFunction *easeOutTiming = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
     
     if (completionBlock)
     {
         CABasicAnimation *representativeAnimation = [CABasicAnimation animationWithKeyPath:@"not.a.real.key"];
-        representativeAnimation.duration = 0.250;
+        representativeAnimation.duration = 0.200;
         representativeAnimation.delegate = self;
         [self.layer addAnimation:representativeAnimation forKey:@"Path"];
         [self.completionBlocksByAnimation setObject:completionBlock forKey:[self.layer animationForKey:@"Path"]];
@@ -64,7 +67,7 @@
     }
     
     CAKeyframeAnimation *iMG0002TranslationXAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
-    iMG0002TranslationXAnimation.duration = 0.250;
+    iMG0002TranslationXAnimation.duration = 0.200;
     iMG0002TranslationXAnimation.values = @[@(0.000), @(-xPosition)];
     iMG0002TranslationXAnimation.keyTimes = @[@(0.000), @(1.000)];
     iMG0002TranslationXAnimation.timingFunctions = @[easeOutTiming];
@@ -74,7 +77,7 @@
     [[_imageView layer] addAnimation:iMG0002TranslationXAnimation forKey:@"path_TranslationX"];
     
     CAKeyframeAnimation *iMG0002TranslationYAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.y"];
-    iMG0002TranslationYAnimation.duration = 0.250;
+    iMG0002TranslationYAnimation.duration = 0.200;
     iMG0002TranslationYAnimation.values = @[@(0.000), @(-yPosition)];
     iMG0002TranslationYAnimation.keyTimes = @[@(0.000), @(1.000)];
     iMG0002TranslationYAnimation.timingFunctions = @[easeOutTiming];
@@ -82,25 +85,17 @@
     iMG0002TranslationYAnimation.fillMode = fillMode;
     iMG0002TranslationYAnimation.removedOnCompletion = removedOnCompletion;
     [[_imageView layer] addAnimation:iMG0002TranslationYAnimation forKey:@"path_TranslationY"];
+    
+    _imageView.layer.transform = CATransform3DMakeAffineTransform(CGAffineTransformMakeTranslation(- xPosition, -yPosition));
 }
-
-- (void)removePathAnimation
+- (void)removeAnimation
 {
     [self.layer removeAnimationForKey:@"Path"];
     [[_imageView layer] removeAnimationForKey:@"path_TranslationX"];
     [[_imageView layer] removeAnimationForKey:@"path_TranslationY"];
 }
 
-
-
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
-    
-    if (_endDirection == TVTTPathDirectionLeftTop) {
-        [self removeConstraints:@[_rightConstraint,_bottomConstraint]];
-    }else{
-        [self removeConstraints:@[_leftConstraint,_bottomConstraint]];
-    }
-    [self layoutIfNeeded];
     
     void (^completion)(BOOL) = [self.completionBlocksByAnimation objectForKey:anim];
     [self.completionBlocksByAnimation removeObjectForKey:anim];
@@ -109,8 +104,6 @@
         completion(flag);
     }
 }
-
-
 
 - (instancetype)initWithStartDirection:(TVTTPathDirection *)startDirection endDirection:(TVTTPathDirection)endDirection image:(UIImage *)image{
     if (self = [super init]) {
@@ -122,7 +115,11 @@
 - (void)setStartDirection:(TVTTPathDirection)startDirection endDirection:(TVTTPathDirection)endDirection{
     _startDirection = startDirection;
     _endDirection = endDirection;
+//    if (_endDirection == TVTTPathDirectionLeftTop) {
+//        _imageView.layer.transform = CATransform3DMakeAffineTransform(CGAffineTransformMakeTranslation(self.frame.size.width - _imageView.frame.size.width, self.frame.size.height - _imageView.frame.size.height));
+//    }else{
+//        _imageView.layer.transform = CATransform3DMakeAffineTransform(CGAffineTransformMakeTranslation(-(self.frame.size.width - _imageView.frame.size.width), self.frame.size.height - _imageView.frame.size.height));
+//    }
 }
-
 
 @end
