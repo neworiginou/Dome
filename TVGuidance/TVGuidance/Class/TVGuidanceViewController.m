@@ -55,18 +55,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self pMakeScrollView];
+    [self pMakeScrollView];
 //    [self pMakePageConroller];
-    TVTTShakeView * view = [[TVTTShakeView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
-    view.backgroundColor = [UIColor redColor];
+//    TVTTShakeView * view = [[TVTTShakeView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
+//    view.backgroundColor = [UIColor redColor];
 //    [view addShakeAnimationAndRemoveOnCompletion:YES];
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [view addZoomAnimationAndRemoveOnCompletion:YES];
 //    });
-    [view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {
-        NSLog(@"haha");
-    }];
-    [self.view addSubview:view];
+//    [view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {
+//        NSLog(@"haha");
+//    }];
+//    [self.view addSubview:view];
 
 }
 

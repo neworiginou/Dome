@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		559123E41B53F4E9003D77BB /* TVAnimationGuidanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 559123E31B53F4E9003D77BB /* TVAnimationGuidanceViewController.m */; };
 		BD376F031B53632200992DEA /* TVGuidanceAnimationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F021B53632200992DEA /* TVGuidanceAnimationPageViewController.m */; };
 		BD376F071B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F051B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m */; };
 		BD376F081B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD376F061B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		559123E21B53F4E9003D77BB /* TVAnimationGuidanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVAnimationGuidanceViewController.h; sourceTree = "<group>"; };
+		559123E31B53F4E9003D77BB /* TVAnimationGuidanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVAnimationGuidanceViewController.m; sourceTree = "<group>"; };
 		BD376F011B53632200992DEA /* TVGuidanceAnimationPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceAnimationPageViewController.h; sourceTree = "<group>"; };
 		BD376F021B53632200992DEA /* TVGuidanceAnimationPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVGuidanceAnimationPageViewController.m; sourceTree = "<group>"; };
 		BD376F041B53635600992DEA /* TVGuidanceAnimationUpPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceAnimationUpPageViewController.h; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				BD376F041B53635600992DEA /* TVGuidanceAnimationUpPageViewController.h */,
 				BD376F051B53635600992DEA /* TVGuidanceAnimationUpPageViewController.m */,
 				BD376F061B53635600992DEA /* TVGuidanceAnimationUpPageViewController.xib */,
+				559123E21B53F4E9003D77BB /* TVAnimationGuidanceViewController.h */,
+				559123E31B53F4E9003D77BB /* TVAnimationGuidanceViewController.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD769CC91B2A749D00BF796D /* ViewController.m in Sources */,
+				559123E41B53F4E9003D77BB /* TVAnimationGuidanceViewController.m in Sources */,
 				BDF7C29D1B2E68BC00E606B9 /* TVGuidancePageViewController.m in Sources */,
 				BD769CC61B2A749D00BF796D /* AppDelegate.m in Sources */,
 				BD376F121B53985300992DEA /* TVTTPathView.m in Sources */,

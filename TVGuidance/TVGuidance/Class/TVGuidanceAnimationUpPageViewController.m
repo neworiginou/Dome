@@ -15,6 +15,8 @@
     __weak IBOutlet TVTTPathView *_left_1_view;
     __weak IBOutlet TVTTPathView *_left_2_view;
     __weak IBOutlet TVTTPathView *_left_3_view;
+    __weak IBOutlet TVTTPathView *_right_2_view;
+    __weak IBOutlet TVTTPathView *_right_1_view;
 }
 
 @end
@@ -23,13 +25,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CABasicAnimation * animation = [CABasicAnimation animation];
-    animation.keyPath = @"";
+    [_left_1_view setStartDirection:TVTTPathDirectionRightBottom endDirection:TVTTPathDirectionLeftTop];
+    [_left_2_view setStartDirection:TVTTPathDirectionRightBottom endDirection:TVTTPathDirectionLeftTop];
+    [_left_3_view setStartDirection:TVTTPathDirectionRightBottom endDirection:TVTTPathDirectionLeftTop];
+    [_right_1_view setStartDirection:TVTTPathDirectionLeftBottom endDirection:TVTTPathDirectionRightTop];
+    [_right_2_view setStartDirection:TVTTPathDirectionLeftBottom endDirection:TVTTPathDirectionRightTop];
+    
+    [self startAnimation];
+}
+
+- (void)startAnimation{
+    [_left_1_view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
+    [_left_2_view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
+    [_left_3_view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
+    [_right_1_view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
+    [_right_2_view addPathAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*

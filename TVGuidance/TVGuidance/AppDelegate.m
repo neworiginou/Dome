@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TVGuidanceViewController.h"
+#import "TVAnimationGuidanceViewController.h"
 #import "TVGuidancePage.h"
 
 @interface AppDelegate ()
@@ -27,8 +28,10 @@
 //    TVGuidancePage * page_3 = [[TVGuidancePage alloc] initWithBackgroundPictureName:@"3" duation:.3 centerImageName:nil animationType:0];
 //    TVGuidancePage * page_4 = [[TVGuidancePage alloc] initWithBackgroundPictureName:@"4" duation:.3 centerImageName:nil animationType:0];
     
-    TVGuidanceViewController * vc = [[TVGuidanceViewController alloc] init];
-    vc.view.backgroundColor = [UIColor whiteColor];
+//    TVGuidanceViewController * vc = [[TVGuidanceViewController alloc] init];
+//    vc.view.backgroundColor = [UIColor whiteColor];
+    
+    TVAnimationGuidanceViewController * vc = [[TVAnimationGuidanceViewController alloc] init];
     self.window.rootViewController = vc;
     
     return YES;
