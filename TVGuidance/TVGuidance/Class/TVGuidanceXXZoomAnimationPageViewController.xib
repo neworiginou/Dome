@@ -7,14 +7,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVGuidanceXXZoomAnimationPageViewController">
             <connections>
-                <outlet property="_bottomSpaceConstraint" destination="j1F-t2-jI3" id="65T-9Z-nyW"/>
-                <outlet property="_topSpaceConstraint" destination="LFg-zx-Wwx" id="cqT-bB-JgA"/>
                 <outlet property="_view_1" destination="PB2-BO-KPC" id="Obv-bN-djf"/>
                 <outlet property="_view_2" destination="bmm-8j-hSZ" id="uBd-hU-4tM"/>
                 <outlet property="_view_3" destination="SZZ-sE-9w4" id="SGE-Wq-RwB"/>
                 <outlet property="_view_4" destination="c7b-ea-z1K" id="a2B-uy-ScT"/>
                 <outlet property="_view_5" destination="gkV-Jm-cCR" id="5LK-rM-WpG"/>
                 <outlet property="_view_6" destination="cjv-mz-G4b" id="MgD-zG-am2"/>
+                <outlet property="button" destination="OIZ-aC-1MV" id="U19-aN-KUC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -32,6 +31,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIZ-aC-1MV">
                     <rect key="frame" x="45" y="450" width="230" height="44"/>
                     <state key="normal" image="guidance_btn_normal"/>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="8OB-2A-OoE"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PB2-BO-KPC" userLabel="View_1" customClass="TVTTZoomView">
                     <rect key="frame" x="182" y="170" width="7" height="7"/>
@@ -170,7 +172,7 @@
                 <constraint firstItem="cjv-mz-G4b" firstAttribute="trailing" secondItem="eZa-FM-xaq" secondAttribute="trailing" constant="12" id="vIU-jV-Om6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="364" y="320"/>
+            <point key="canvasLocation" x="493" y="462"/>
         </view>
     </objects>
     <resources>

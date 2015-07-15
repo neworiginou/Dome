@@ -17,6 +17,7 @@
     __weak IBOutlet TVTTZoomView * _view_4;
     __weak IBOutlet TVTTZoomView * _view_5;
     __weak IBOutlet TVTTZoomView * _view_6;
+    __weak IBOutlet UIButton *button;
 }
 
 @end
@@ -25,7 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [button setImage:[UIImage imageNamed:@"guidance_btn_normal"] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"guidance_btn_pre"] forState:UIControlStateHighlighted];
 }
 - (void)startAnimation{
     if (self.isAnimationed) {
@@ -43,14 +45,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)btnClick:(id)sender {
 }
-*/
 
 @end

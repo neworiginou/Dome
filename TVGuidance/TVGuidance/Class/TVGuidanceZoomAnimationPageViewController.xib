@@ -7,9 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVGuidanceZoomAnimationPageViewController">
             <connections>
-                <outlet property="_bottomSpaceConstraint" destination="QAD-lY-DxU" id="x1B-Yv-x1M"/>
-                <outlet property="_centerImageBottomConstraint" destination="GwY-ix-0ia" id="OXR-cs-RLy"/>
-                <outlet property="_topSpaceConstraint" destination="cIK-b5-x5f" id="HM7-8m-Plg"/>
                 <outlet property="_view_1" destination="lBa-AK-giD" id="KXU-JY-Yjp"/>
                 <outlet property="_view_2" destination="5V7-uU-BBB" id="ZQb-If-7Ti"/>
                 <outlet property="_view_3" destination="KHZ-Ms-JyO" id="5RX-UF-lhU"/>
@@ -23,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="guidance_subtitle_image_page_2" translatesAutoresizingMaskIntoConstraints="NO" id="loF-Tg-aAo">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_subtitle_image_page_2" translatesAutoresizingMaskIntoConstraints="NO" id="loF-Tg-aAo">
                     <rect key="frame" x="40" y="121" width="240" height="20"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_title_image_page_2" translatesAutoresizingMaskIntoConstraints="NO" id="POk-XP-HSl">

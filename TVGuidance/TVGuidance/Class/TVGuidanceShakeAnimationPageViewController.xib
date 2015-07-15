@@ -7,9 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVGuidanceShakeAnimationPageViewController">
             <connections>
-                <outlet property="_bottomSpaceConstraint" destination="kn6-U4-5FD" id="WE4-kl-dEy"/>
-                <outlet property="_centerImageBottomConstraint" destination="KNb-hs-Bwa" id="gHN-ac-joT"/>
-                <outlet property="_topSpaceConstraint" destination="q5d-uu-9fq" id="ht3-Sj-QFY"/>
                 <outlet property="_view_1" destination="zqf-kF-oCW" id="Cwa-T8-rNX"/>
                 <outlet property="_view_2" destination="3lE-OE-wi6" id="1TT-UG-1Ad"/>
                 <outlet property="_view_3" destination="A4j-dU-mGM" id="3FN-mZ-WLp"/>
@@ -131,7 +128,7 @@
                 <constraint firstItem="JeF-lP-fCU" firstAttribute="top" secondItem="3lE-OE-wi6" secondAttribute="bottom" id="zFI-uq-ncN"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="473" y="413"/>
+            <point key="canvasLocation" x="313" y="402"/>
         </view>
     </objects>
     <resources>
