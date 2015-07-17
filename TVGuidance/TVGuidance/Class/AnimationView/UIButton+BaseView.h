@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIButton (BaseView)
-
+@property (nonatomic, copy) NSString * tvtt_nomalImageName;
+@property (nonatomic, copy) NSString * tvtt_pressImageName;
 @end

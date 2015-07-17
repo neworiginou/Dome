@@ -8,21 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, TVGuidanceAnimationType) {
-    TVGuidanceAnimationTypePath,
-};
-
-
 @interface TVGuidanceAnimationPageViewController : UIViewController
-
 /*
  * 需要动画效果的UI元素
  */
-@property (nonatomic, strong) NSArray * animatinItems;
 @property (nonatomic, assign, readonly, getter=isAnimationed)  BOOL animationed;
 
-
-- (void)startAnimationWithType:(TVGuidanceAnimationType)animationType;
 - (void)startAnimation;
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5502FDF41B56AB4D00124123 /* UIButton+BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5502FDF31B56AB4D00124123 /* UIButton+BaseView.m */; };
+		5502FDF71B56AFDB00124123 /* UIViewController+BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5502FDF61B56AFDB00124123 /* UIViewController+BaseView.m */; };
 		559123E41B53F4E9003D77BB /* TVAnimationGuidanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 559123E31B53F4E9003D77BB /* TVAnimationGuidanceViewController.m */; };
 		BD376F031B53632200992DEA /* TVGuidanceAnimationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F021B53632200992DEA /* TVGuidanceAnimationPageViewController.m */; };
 		BD376F0C1B5380F900992DEA /* TVTTShakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD376F0B1B5380F900992DEA /* TVTTShakeView.m */; };
@@ -44,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5502FDF21B56AB4D00124123 /* UIButton+BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BaseView.h"; sourceTree = "<group>"; };
+		5502FDF31B56AB4D00124123 /* UIButton+BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BaseView.m"; sourceTree = "<group>"; };
+		5502FDF51B56AFDB00124123 /* UIViewController+BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseView.h"; sourceTree = "<group>"; };
+		5502FDF61B56AFDB00124123 /* UIViewController+BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseView.m"; sourceTree = "<group>"; };
 		559123E21B53F4E9003D77BB /* TVAnimationGuidanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVAnimationGuidanceViewController.h; sourceTree = "<group>"; };
 		559123E31B53F4E9003D77BB /* TVAnimationGuidanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVAnimationGuidanceViewController.m; sourceTree = "<group>"; };
 		BD376F011B53632200992DEA /* TVGuidanceAnimationPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVGuidanceAnimationPageViewController.h; sourceTree = "<group>"; };
@@ -121,6 +127,10 @@
 				BD376F0E1B53984600992DEA /* TVTTZoomView.m */,
 				BD5F50621B5518F500B3559A /* TVTTPathView.h */,
 				BD5F50631B5518F500B3559A /* TVTTPathView.m */,
+				5502FDF21B56AB4D00124123 /* UIButton+BaseView.h */,
+				5502FDF31B56AB4D00124123 /* UIButton+BaseView.m */,
+				5502FDF51B56AFDB00124123 /* UIViewController+BaseView.h */,
+				5502FDF61B56AFDB00124123 /* UIViewController+BaseView.m */,
 			);
 			path = AnimationView;
 			sourceTree = "<group>";
@@ -321,9 +331,11 @@
 				BD769CC91B2A749D00BF796D /* ViewController.m in Sources */,
 				559123E41B53F4E9003D77BB /* TVAnimationGuidanceViewController.m in Sources */,
 				BDF7C29D1B2E68BC00E606B9 /* TVGuidancePageViewController.m in Sources */,
+				5502FDF41B56AB4D00124123 /* UIButton+BaseView.m in Sources */,
 				BD5F50871B55237600B3559A /* TVGuidanceXXZoomAnimationPageViewController.m in Sources */,
 				BD769CC61B2A749D00BF796D /* AppDelegate.m in Sources */,
 				BD376F031B53632200992DEA /* TVGuidanceAnimationPageViewController.m in Sources */,
+				5502FDF71B56AFDB00124123 /* UIViewController+BaseView.m in Sources */,
 				BDD7B5D51B53ABB8007585BA /* UIView+Constraints.m in Sources */,
 				BD769CEC1B2A763900BF796D /* TVGuidancePage.m in Sources */,
 				BD5F50641B5518F500B3559A /* TVTTPathView.m in Sources */,

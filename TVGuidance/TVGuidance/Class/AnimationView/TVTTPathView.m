@@ -8,8 +8,6 @@
 
 #import "TVTTPathView.h"
 
-static NSInteger kAnimationDurationTime = 2.0;
-
 @interface TVTTPathView (){
     TVTTPathDirection _startDirection;
     TVTTPathDirection _endDirection;
@@ -115,11 +113,6 @@ static NSInteger kAnimationDurationTime = 2.0;
 - (void)setStartDirection:(TVTTPathDirection)startDirection endDirection:(TVTTPathDirection)endDirection{
     _startDirection = startDirection;
     _endDirection = endDirection;
-//    if (_endDirection == TVTTPathDirectionLeftTop) {
-//        _imageView.layer.transform = CATransform3DMakeAffineTransform(CGAffineTransformMakeTranslation(self.frame.size.width - _imageView.frame.size.width, self.frame.size.height - _imageView.frame.size.height));
-//    }else{
-//        _imageView.layer.transform = CATransform3DMakeAffineTransform(CGAffineTransformMakeTranslation(-(self.frame.size.width - _imageView.frame.size.width), self.frame.size.height - _imageView.frame.size.height));
-//    }
 }
 
 @end

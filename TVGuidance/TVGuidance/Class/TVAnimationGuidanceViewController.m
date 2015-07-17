@@ -12,6 +12,8 @@
 #import "TVGuidanceZoomAnimationPageViewController.h"
 #import "TVGuidanceShakeAnimationPageViewController.h"
 #import "TVGuidanceXXZoomAnimationPageViewController.h"
+#import "UIViewController+BaseView.h"
+
 
 @interface TVAnimationGuidanceViewController ()<UIScrollViewDelegate>
 @property (strong, nonatomic) NSMutableArray * pageItems;
@@ -43,10 +45,28 @@
     [self pMakeScrollView];
 }
 
+- (void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.pageItems[0] performSelector:@selector(startAnimation)];
+    });
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+
+#pragma mark - uiscrollview delegate
+
+- (void)scrollViewDidEndDecelerating:(nonnull UIScrollView *)scrollView{
+    NSInteger index = scrollView.contentOffset.x/scrollView.frame.size.width;
+    TVGuidanceAnimationPageViewController * ctl = [self.pageItems objectAtIndex:index];
+    [ctl startAnimation];
+}
+
+#pragma mark - static mothed
+
 - (void)pMakeScrollView{
     UIView * contentView = [UIView new];
     
@@ -74,11 +94,8 @@
  
     __block  UIView * leftView = contentView;
     [_pageItems enumerateObjectsUsingBlock:^(TVGuidanceAnimationPageViewController *obj, NSUInteger idx, BOOL * __nonnull stop) {
-        
         [contentView addSubview:obj.view];
-        
         UIView * currentView = obj.view;
-        
         currentView.translatesAutoresizingMaskIntoConstraints = NO;
         if (leftView == contentView) {
             // left view  is the super view
@@ -94,22 +111,16 @@
     [contentView addConstraint:[NSLayoutConstraint constraintWithItem:leftView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:contentView attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0.0]];
 }
 
-- (void)scrollViewDidEndDecelerating:(nonnull UIScrollView *)scrollView{
-    NSInteger index = scrollView.contentOffset.x/scrollView.frame.size.width;
-    TVGuidanceAnimationPageViewController * ctl = [self.pageItems objectAtIndex:index];
-    [ctl startAnimation];
+- (void)pConfigData{
+    [self.pageItems addObjectsFromArray:@[
+        [TVGuidanceAnimationUpPageViewController tvtt_nibViewController],
+        [TVGuidanceZoomAnimationPageViewController tvtt_nibViewController],
+        [TVGuidanceShakeAnimationPageViewController tvtt_nibViewController],
+        [TVGuidanceXXZoomAnimationPageViewController tvtt_nibViewController]
+    ]];
 }
 
-- (void)pConfigData{
-    TVGuidanceAnimationUpPageViewController * ctl_1 = [[TVGuidanceAnimationUpPageViewController alloc] initWithNibName:@"TVGuidanceAnimationUpPageViewController" bundle:nil];
-    TVGuidanceZoomAnimationPageViewController * ctl_2 = [[TVGuidanceZoomAnimationPageViewController alloc] initWithNibName:@"TVGuidanceZoomAnimationPageViewController"bundle:nil];
-    TVGuidanceShakeAnimationPageViewController * ctl_3 = [[TVGuidanceShakeAnimationPageViewController alloc] initWithNibName:@"TVGuidanceShakeAnimationPageViewController" bundle:nil];
-    TVGuidanceXXZoomAnimationPageViewController * ctl_4  = [[TVGuidanceXXZoomAnimationPageViewController alloc] initWithNibName:@"TVGuidanceXXZoomAnimationPageViewController" bundle:nil];
-    [self.pageItems addObject:ctl_1];
-    [self.pageItems addObject:ctl_2];
-    [self.pageItems addObject:ctl_3];
-    [self.pageItems addObject:ctl_4];
-}
+#pragma mark - getter setter
 
 - (NSMutableArray *)pageItems{
     if (!_pageItems) {
@@ -117,14 +128,5 @@
     }
     return _pageItems;
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

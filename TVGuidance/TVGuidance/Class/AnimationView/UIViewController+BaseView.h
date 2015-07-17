@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (BaseView)
-
++ (instancetype)tvtt_nibViewController;
 @end

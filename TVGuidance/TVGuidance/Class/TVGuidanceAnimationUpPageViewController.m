@@ -9,63 +9,37 @@
 #import "TVGuidanceAnimationUpPageViewController.h"
 #import "TVTTPathView.h"
 
+
+#define suffix @[@"iphone4",@"iphone5"]
+#define NSStringWithDifferentIphone(NSString) [NSString stringByAppendingString:[[UIScreen mainScreen] bounds].size.height == 480 ? suffix[0]:suffix[1]]
+
 @interface TVGuidanceAnimationUpPageViewController (){
-    
-    __weak IBOutlet UIImageView *left_1_ImageView;
-    __weak IBOutlet TVTTPathView *_left_1_view;
-    __weak IBOutlet TVTTPathView *_left_2_view;
-    __weak IBOutlet TVTTPathView *_left_3_view;
-    __weak IBOutlet TVTTPathView *_right_2_view;
-    __weak IBOutlet TVTTPathView *_right_1_view;
+    __strong IBOutletCollection(id) NSArray * _animationViews;
     __weak IBOutlet UIImageView *_backgroundImageView;
 }
-
 @end
 
 @implementation TVGuidanceAnimationUpPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_left_1_view setStartDirection:TVTTPathDirectionRightBottom endDirection:TVTTPathDirectionLeftTop];
-    [_left_2_view setStartDirection:TVTTPathDirectionRightBottom endDirection:TVTTPathDirectionLeftTop];
-    [_left_3_view setStartDirection:TVTTPathDirectionRightBottom endDirection:TVTTPathDirectionLeftTop];
-    [_right_1_view setStartDirection:TVTTPathDirectionLeftBottom endDirection:TVTTPathDirectionRightTop];
-    [_right_2_view setStartDirection:TVTTPathDirectionLeftBottom endDirection:TVTTPathDirectionRightTop];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self startAnimation];
-    });
-    
-    if ([[UIScreen mainScreen] bounds].size.height == 480) {
-        _backgroundImageView.image = [UIImage imageNamed:@"guidance_background_image_page_1_iphone4"];
-    }else{
-        _backgroundImageView.image = [UIImage imageNamed:@"guidance_background_image_page_1_iphone5"];
-    }
+    _backgroundImageView.image = [UIImage imageNamed:NSStringWithDifferentIphone(@"guidance_background_image_page_1_")];
 }
 - (void)startAnimation{
-    if (self.isAnimationed) {
-        return;
-    }
-    [super startAnimation];
-    [_left_1_view addAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
-    [_left_2_view addAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
-    [_left_3_view addAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
-    [_right_1_view addAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
-    [_right_2_view addAnimationAndRemoveOnCompletion:YES completion:^(BOOL finished) {}];
+    if (self.isAnimationed) return;
+    [_animationViews enumerateObjectsUsingBlock:^(TVTTPathView * obj, NSUInteger idx, BOOL * stop) {
+        if (obj.tag == 0) {
+            [obj setStartDirection:TVTTPathDirectionRightBottom endDirection:TVTTPathDirectionLeftTop];
+        }else{
+            [obj setStartDirection:TVTTPathDirectionLeftBottom endDirection:TVTTPathDirectionRightTop];
+        }
+        [obj addAnimation];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

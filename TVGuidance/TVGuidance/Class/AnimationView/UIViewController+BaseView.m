@@ -9,5 +9,7 @@
 #import "UIViewController+BaseView.h"
 
 @implementation UIViewController (BaseView)
-
++ (instancetype)tvtt_nibViewController{
+    return [[self alloc] initWithNibName:NSStringFromClass(self) bundle:nil];
+}
 @end

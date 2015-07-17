@@ -9,5 +9,4 @@
 #import "TVGuidanceAnimationPageViewController.h"
 
 @interface TVGuidanceXXZoomAnimationPageViewController : TVGuidanceAnimationPageViewController
-
 @end

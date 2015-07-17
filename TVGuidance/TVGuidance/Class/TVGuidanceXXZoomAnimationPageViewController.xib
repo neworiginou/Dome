@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.20" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
@@ -7,14 +7,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVGuidanceXXZoomAnimationPageViewController">
             <connections>
-                <outlet property="_view_1" destination="PB2-BO-KPC" id="Obv-bN-djf"/>
-                <outlet property="_view_2" destination="bmm-8j-hSZ" id="uBd-hU-4tM"/>
-                <outlet property="_view_3" destination="SZZ-sE-9w4" id="SGE-Wq-RwB"/>
-                <outlet property="_view_4" destination="c7b-ea-z1K" id="a2B-uy-ScT"/>
-                <outlet property="_view_5" destination="gkV-Jm-cCR" id="5LK-rM-WpG"/>
-                <outlet property="_view_6" destination="cjv-mz-G4b" id="MgD-zG-am2"/>
-                <outlet property="button" destination="OIZ-aC-1MV" id="U19-aN-KUC"/>
+                <outlet property="_bottomSpaceConstraint" destination="j1F-t2-jI3" id="0oj-bC-otx"/>
+                <outlet property="_centerImageBottomConstraint" destination="cbB-Xa-Y6Y" id="fAe-4p-CNk"/>
+                <outlet property="_topSpaceConstraint" destination="LFg-zx-Wwx" id="hib-jo-D9e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="_animationViews" destination="PB2-BO-KPC" id="nwa-Dr-DfR"/>
+                <outletCollection property="_animationViews" destination="bmm-8j-hSZ" id="d8o-dE-7wV"/>
+                <outletCollection property="_animationViews" destination="SZZ-sE-9w4" id="KwC-Qo-IyY"/>
+                <outletCollection property="_animationViews" destination="c7b-ea-z1K" id="Dcp-cB-g7e"/>
+                <outletCollection property="_animationViews" destination="gkV-Jm-cCR" id="hnD-Ht-tdr"/>
+                <outletCollection property="_animationViews" destination="cjv-mz-G4b" id="4bc-EE-oeS"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -24,13 +26,20 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_center_image_page_4" translatesAutoresizingMaskIntoConstraints="NO" id="eZa-FM-xaq">
                     <rect key="frame" x="42" y="162" width="236" height="254"/>
+                    <animations/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_title_image_page_4" translatesAutoresizingMaskIntoConstraints="NO" id="Fbr-Cy-Upx">
                     <rect key="frame" x="24" y="75" width="273" height="32"/>
+                    <animations/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIZ-aC-1MV">
                     <rect key="frame" x="45" y="450" width="230" height="44"/>
+                    <animations/>
                     <state key="normal" image="guidance_btn_normal"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="tvtt_nomalImageName" value="guidance_btn_normal"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="tvtt_pressImageName" value="guidance_btn_pre"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="8OB-2A-OoE"/>
                     </connections>
@@ -40,9 +49,11 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_4_1" translatesAutoresizingMaskIntoConstraints="NO" id="Pzg-SA-EDy">
                             <rect key="frame" x="0.0" y="0.0" width="7" height="7"/>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Pzg-SA-EDy" secondAttribute="trailing" id="AOw-RK-YRH"/>
@@ -59,9 +70,11 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_4_2" translatesAutoresizingMaskIntoConstraints="NO" id="2TL-Hh-Rpt">
                             <rect key="frame" x="0.0" y="0.0" width="9" height="9"/>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="2TL-Hh-Rpt" secondAttribute="bottom" id="AaY-CL-Gny"/>
@@ -78,9 +91,11 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_4_3" translatesAutoresizingMaskIntoConstraints="NO" id="veR-hm-6NA">
                             <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="veR-hm-6NA" firstAttribute="leading" secondItem="SZZ-sE-9w4" secondAttribute="leading" id="0dn-hz-ouI"/>
@@ -97,9 +112,11 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_4_4" translatesAutoresizingMaskIntoConstraints="NO" id="bd8-SJ-rcB">
                             <rect key="frame" x="0.0" y="0.0" width="7" height="7"/>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="bd8-SJ-rcB" secondAttribute="bottom" id="Cow-1o-fNd"/>
@@ -116,9 +133,11 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_4_5" translatesAutoresizingMaskIntoConstraints="NO" id="t7O-ls-dls">
                             <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="t7O-ls-dls" firstAttribute="leading" secondItem="gkV-Jm-cCR" secondAttribute="leading" id="3HY-tB-Nt5"/>
@@ -135,9 +154,11 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_4_6" translatesAutoresizingMaskIntoConstraints="NO" id="LYd-5c-38B">
                             <rect key="frame" x="0.0" y="0.0" width="19" height="19"/>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="LYd-5c-38B" firstAttribute="leading" secondItem="cjv-mz-G4b" secondAttribute="leading" id="1x8-rf-JY9"/>
@@ -150,6 +171,7 @@
                     </connections>
                 </view>
             </subviews>
+            <animations/>
             <color key="backgroundColor" red="0.25882352941176473" green="0.80784313725490198" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="gkV-Jm-cCR" firstAttribute="top" secondItem="eZa-FM-xaq" secondAttribute="top" constant="80" id="6Ol-U0-0Fc"/>
@@ -172,7 +194,7 @@
                 <constraint firstItem="cjv-mz-G4b" firstAttribute="trailing" secondItem="eZa-FM-xaq" secondAttribute="trailing" constant="12" id="vIU-jV-Om6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="493" y="462"/>
+            <point key="canvasLocation" x="532" y="470"/>
         </view>
     </objects>
     <resources>

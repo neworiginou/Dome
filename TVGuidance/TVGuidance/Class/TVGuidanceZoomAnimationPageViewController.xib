@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.20" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
@@ -7,12 +7,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVGuidanceZoomAnimationPageViewController">
             <connections>
-                <outlet property="_view_1" destination="lBa-AK-giD" id="KXU-JY-Yjp"/>
-                <outlet property="_view_2" destination="5V7-uU-BBB" id="ZQb-If-7Ti"/>
-                <outlet property="_view_3" destination="KHZ-Ms-JyO" id="5RX-UF-lhU"/>
-                <outlet property="_view_4" destination="LQP-XR-4sb" id="b1i-Ce-RZI"/>
-                <outlet property="_view_5" destination="s90-wX-pxg" id="XWP-EK-Leg"/>
+                <outlet property="_bottomSpaceConstraint" destination="QAD-lY-DxU" id="7VM-wR-pWn"/>
+                <outlet property="_centerImageBottomConstraint" destination="GwY-ix-0ia" id="r53-zT-mjl"/>
+                <outlet property="_topSpaceConstraint" destination="cIK-b5-x5f" id="KgQ-bd-Opv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="_animationViews" destination="s90-wX-pxg" id="ka0-f9-VDR"/>
+                <outletCollection property="_animationViews" destination="LQP-XR-4sb" id="3XN-EU-edF"/>
+                <outletCollection property="_animationViews" destination="lBa-AK-giD" id="4ZL-zR-m7i"/>
+                <outletCollection property="_animationViews" destination="KHZ-Ms-JyO" id="god-LS-jJk"/>
+                <outletCollection property="_animationViews" destination="5V7-uU-BBB" id="neE-yl-cYT"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -22,24 +25,30 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_subtitle_image_page_2" translatesAutoresizingMaskIntoConstraints="NO" id="loF-Tg-aAo">
                     <rect key="frame" x="40" y="121" width="240" height="20"/>
+                    <animations/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_title_image_page_2" translatesAutoresizingMaskIntoConstraints="NO" id="POk-XP-HSl">
                     <rect key="frame" x="77" y="75" width="166" height="32"/>
+                    <animations/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_center_image_page_2" translatesAutoresizingMaskIntoConstraints="NO" id="Yck-CA-FkX">
                     <rect key="frame" x="66" y="207" width="188" height="255"/>
+                    <animations/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_ indicator_page_2" translatesAutoresizingMaskIntoConstraints="NO" id="Ni6-2O-Vys">
                     <rect key="frame" x="128" y="505" width="65" height="8"/>
+                    <animations/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5V7-uU-BBB" userLabel="View_2" customClass="TVTTZoomView">
+                <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5V7-uU-BBB" userLabel="View_2" customClass="TVTTZoomView">
                     <rect key="frame" x="97" y="179" width="32" height="32"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_2_2" translatesAutoresizingMaskIntoConstraints="NO" id="XLh-sK-zT5">
                             <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="XLh-sK-zT5" firstAttribute="top" secondItem="5V7-uU-BBB" secondAttribute="top" id="eEl-i1-Eob"/>
@@ -51,14 +60,37 @@
                         <outlet property="imageView" destination="XLh-sK-zT5" id="5s4-iZ-cBQ"/>
                     </connections>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHZ-Ms-JyO" userLabel="View_3" customClass="TVTTZoomView">
+                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBa-AK-giD" userLabel="View_1" customClass="TVTTZoomView">
+                    <rect key="frame" x="134" y="202" width="65" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_2_1" translatesAutoresizingMaskIntoConstraints="NO" id="45m-uM-b9Z">
+                            <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="45m-uM-b9Z" secondAttribute="trailing" id="7Lx-iH-3tU"/>
+                        <constraint firstItem="45m-uM-b9Z" firstAttribute="top" secondItem="lBa-AK-giD" secondAttribute="top" id="CGV-T8-sEi"/>
+                        <constraint firstAttribute="bottom" secondItem="45m-uM-b9Z" secondAttribute="bottom" id="Q2B-iL-Thi"/>
+                        <constraint firstItem="45m-uM-b9Z" firstAttribute="leading" secondItem="lBa-AK-giD" secondAttribute="leading" id="QMR-TG-UQG"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="imageView" destination="45m-uM-b9Z" id="stU-qM-mDj"/>
+                    </connections>
+                </view>
+                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHZ-Ms-JyO" userLabel="View_3" customClass="TVTTZoomView">
                     <rect key="frame" x="186" y="244" width="36" height="36"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_2_3" translatesAutoresizingMaskIntoConstraints="NO" id="Nbj-XH-X7f">
                             <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="Nbj-XH-X7f" firstAttribute="top" secondItem="KHZ-Ms-JyO" secondAttribute="top" id="AGT-3I-sur"/>
@@ -70,33 +102,16 @@
                         <outlet property="imageView" destination="Nbj-XH-X7f" id="GMl-CD-2mn"/>
                     </connections>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBa-AK-giD" userLabel="View_1" customClass="TVTTZoomView">
-                    <rect key="frame" x="134" y="202" width="65" height="65"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_2_1" translatesAutoresizingMaskIntoConstraints="NO" id="45m-uM-b9Z">
-                            <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="45m-uM-b9Z" secondAttribute="trailing" id="7Lx-iH-3tU"/>
-                        <constraint firstItem="45m-uM-b9Z" firstAttribute="top" secondItem="lBa-AK-giD" secondAttribute="top" id="CGV-T8-sEi"/>
-                        <constraint firstAttribute="bottom" secondItem="45m-uM-b9Z" secondAttribute="bottom" id="Q2B-iL-Thi"/>
-                        <constraint firstItem="45m-uM-b9Z" firstAttribute="leading" secondItem="lBa-AK-giD" secondAttribute="leading" id="QMR-TG-UQG"/>
-                    </constraints>
-                    <connections>
-                        <outlet property="imageView" destination="45m-uM-b9Z" id="NEN-6B-MdU"/>
-                    </connections>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQP-XR-4sb" userLabel="View_4" customClass="TVTTZoomView">
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQP-XR-4sb" userLabel="View_4" customClass="TVTTZoomView">
                     <rect key="frame" x="91" y="252" width="42" height="42"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_2_4" translatesAutoresizingMaskIntoConstraints="NO" id="Awn-Jn-gm1">
                             <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Awn-Jn-gm1" secondAttribute="trailing" id="5Av-6a-LHG"/>
@@ -113,9 +128,11 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_animation_image_page_2_5" translatesAutoresizingMaskIntoConstraints="NO" id="Ock-Sv-L2u">
                             <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="Ock-Sv-L2u" firstAttribute="leading" secondItem="s90-wX-pxg" secondAttribute="leading" id="49M-lT-0jl"/>
@@ -128,6 +145,7 @@
                     </connections>
                 </view>
             </subviews>
+            <animations/>
             <color key="backgroundColor" red="0.96470588235294119" green="0.68627450980392157" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="s90-wX-pxg" firstAttribute="top" secondItem="Yck-CA-FkX" secondAttribute="top" constant="73" id="4Dc-de-l6z"/>
@@ -150,7 +168,7 @@
                 <constraint firstItem="Yck-CA-FkX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xTG-eT-ovK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="500" y="457"/>
+            <point key="canvasLocation" x="841" y="360"/>
         </view>
     </objects>
     <resources>
