@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDF399A11B6249FA00D60A77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF399A01B6249FA00D60A77 /* main.m */; };
+		BDF399A41B6249FA00D60A77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF399A31B6249FA00D60A77 /* AppDelegate.m */; };
+		BDF399A71B6249FA00D60A77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF399A61B6249FA00D60A77 /* ViewController.m */; };
+		BDF399AA1B6249FA00D60A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF399A81B6249FA00D60A77 /* Main.storyboard */; };
+		BDF399AC1B6249FA00D60A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF399AB1B6249FA00D60A77 /* Assets.xcassets */; };
+		BDF399AF1B6249FA00D60A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF399AD1B6249FA00D60A77 /* LaunchScreen.storyboard */; };
+		BDF399BA1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF399B91B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests.m */; };
+		BDF399C51B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF399C41B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDF399B61B6249FA00D60A77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDF399941B6249FA00D60A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDF3999B1B6249FA00D60A77;
+			remoteInfo = TVTKeyboardAvoidingInputPopView;
+		};
+		BDF399C11B6249FA00D60A77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDF399941B6249FA00D60A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDF3999B1B6249FA00D60A77;
+			remoteInfo = TVTKeyboardAvoidingInputPopView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDF3999C1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVTKeyboardAvoidingInputPopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF399A01B6249FA00D60A77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDF399A21B6249FA00D60A77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BDF399A31B6249FA00D60A77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BDF399A51B6249FA00D60A77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BDF399A61B6249FA00D60A77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BDF399A91B6249FA00D60A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDF399AB1B6249FA00D60A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDF399AE1B6249FA00D60A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDF399B01B6249FA00D60A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF399B51B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTKeyboardAvoidingInputPopViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF399B91B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVTKeyboardAvoidingInputPopViewTests.m; sourceTree = "<group>"; };
+		BDF399BB1B6249FA00D60A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF399C01B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTKeyboardAvoidingInputPopViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF399C41B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVTKeyboardAvoidingInputPopViewUITests.m; sourceTree = "<group>"; };
+		BDF399C61B6249FA00D60A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDF399991B6249FA00D60A77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF399B21B6249FA00D60A77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF399BD1B6249FA00D60A77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDF399931B6249FA00D60A77 = {
+			isa = PBXGroup;
+			children = (
+				BDF3999E1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopView */,
+				BDF399B81B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests */,
+				BDF399C31B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests */,
+				BDF3999D1B6249FA00D60A77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDF3999D1B6249FA00D60A77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDF3999C1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopView.app */,
+				BDF399B51B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests.xctest */,
+				BDF399C01B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDF3999E1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopView */ = {
+			isa = PBXGroup;
+			children = (
+				BDF399A21B6249FA00D60A77 /* AppDelegate.h */,
+				BDF399A31B6249FA00D60A77 /* AppDelegate.m */,
+				BDF399A51B6249FA00D60A77 /* ViewController.h */,
+				BDF399A61B6249FA00D60A77 /* ViewController.m */,
+				BDF399A81B6249FA00D60A77 /* Main.storyboard */,
+				BDF399AB1B6249FA00D60A77 /* Assets.xcassets */,
+				BDF399AD1B6249FA00D60A77 /* LaunchScreen.storyboard */,
+				BDF399B01B6249FA00D60A77 /* Info.plist */,
+				BDF3999F1B6249FA00D60A77 /* Supporting Files */,
+			);
+			path = TVTKeyboardAvoidingInputPopView;
+			sourceTree = "<group>";
+		};
+		BDF3999F1B6249FA00D60A77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDF399A01B6249FA00D60A77 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDF399B81B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDF399B91B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests.m */,
+				BDF399BB1B6249FA00D60A77 /* Info.plist */,
+			);
+			path = TVTKeyboardAvoidingInputPopViewTests;
+			sourceTree = "<group>";
+		};
+		BDF399C31B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDF399C41B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests.m */,
+				BDF399C61B6249FA00D60A77 /* Info.plist */,
+			);
+			path = TVTKeyboardAvoidingInputPopViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDF3999B1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF399C91B6249FA00D60A77 /* Build configuration list for PBXNativeTarget "TVTKeyboardAvoidingInputPopView" */;
+			buildPhases = (
+				BDF399981B6249FA00D60A77 /* Sources */,
+				BDF399991B6249FA00D60A77 /* Frameworks */,
+				BDF3999A1B6249FA00D60A77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVTKeyboardAvoidingInputPopView;
+			productName = TVTKeyboardAvoidingInputPopView;
+			productReference = BDF3999C1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDF399B41B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF399CC1B6249FA00D60A77 /* Build configuration list for PBXNativeTarget "TVTKeyboardAvoidingInputPopViewTests" */;
+			buildPhases = (
+				BDF399B11B6249FA00D60A77 /* Sources */,
+				BDF399B21B6249FA00D60A77 /* Frameworks */,
+				BDF399B31B6249FA00D60A77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDF399B71B6249FA00D60A77 /* PBXTargetDependency */,
+			);
+			name = TVTKeyboardAvoidingInputPopViewTests;
+			productName = TVTKeyboardAvoidingInputPopViewTests;
+			productReference = BDF399B51B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDF399BF1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF399CF1B6249FA00D60A77 /* Build configuration list for PBXNativeTarget "TVTKeyboardAvoidingInputPopViewUITests" */;
+			buildPhases = (
+				BDF399BC1B6249FA00D60A77 /* Sources */,
+				BDF399BD1B6249FA00D60A77 /* Frameworks */,
+				BDF399BE1B6249FA00D60A77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDF399C21B6249FA00D60A77 /* PBXTargetDependency */,
+			);
+			name = TVTKeyboardAvoidingInputPopViewUITests;
+			productName = TVTKeyboardAvoidingInputPopViewUITests;
+			productReference = BDF399C01B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDF399941B6249FA00D60A77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = lben;
+				TargetAttributes = {
+					BDF3999B1B6249FA00D60A77 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					BDF399B41B6249FA00D60A77 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = BDF3999B1B6249FA00D60A77;
+					};
+					BDF399BF1B6249FA00D60A77 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = BDF3999B1B6249FA00D60A77;
+					};
+				};
+			};
+			buildConfigurationList = BDF399971B6249FA00D60A77 /* Build configuration list for PBXProject "TVTKeyboardAvoidingInputPopView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDF399931B6249FA00D60A77;
+			productRefGroup = BDF3999D1B6249FA00D60A77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDF3999B1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopView */,
+				BDF399B41B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests */,
+				BDF399BF1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDF3999A1B6249FA00D60A77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF399AF1B6249FA00D60A77 /* LaunchScreen.storyboard in Resources */,
+				BDF399AC1B6249FA00D60A77 /* Assets.xcassets in Resources */,
+				BDF399AA1B6249FA00D60A77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF399B31B6249FA00D60A77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF399BE1B6249FA00D60A77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDF399981B6249FA00D60A77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF399A71B6249FA00D60A77 /* ViewController.m in Sources */,
+				BDF399A41B6249FA00D60A77 /* AppDelegate.m in Sources */,
+				BDF399A11B6249FA00D60A77 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF399B11B6249FA00D60A77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF399BA1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF399BC1B6249FA00D60A77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF399C51B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDF399B71B6249FA00D60A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDF3999B1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopView */;
+			targetProxy = BDF399B61B6249FA00D60A77 /* PBXContainerItemProxy */;
+		};
+		BDF399C21B6249FA00D60A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDF3999B1B6249FA00D60A77 /* TVTKeyboardAvoidingInputPopView */;
+			targetProxy = BDF399C11B6249FA00D60A77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDF399A81B6249FA00D60A77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDF399A91B6249FA00D60A77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDF399AD1B6249FA00D60A77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDF399AE1B6249FA00D60A77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDF399C71B6249FA00D60A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDF399C81B6249FA00D60A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDF399CA1B6249FA00D60A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TVTKeyboardAvoidingInputPopView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTKeyboardAvoidingInputPopView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDF399CB1B6249FA00D60A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TVTKeyboardAvoidingInputPopView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTKeyboardAvoidingInputPopView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BDF399CD1B6249FA00D60A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TVTKeyboardAvoidingInputPopViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTKeyboardAvoidingInputPopViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVTKeyboardAvoidingInputPopView.app/TVTKeyboardAvoidingInputPopView";
+			};
+			name = Debug;
+		};
+		BDF399CE1B6249FA00D60A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TVTKeyboardAvoidingInputPopViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTKeyboardAvoidingInputPopViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVTKeyboardAvoidingInputPopView.app/TVTKeyboardAvoidingInputPopView";
+			};
+			name = Release;
+		};
+		BDF399D01B6249FA00D60A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TVTKeyboardAvoidingInputPopViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTKeyboardAvoidingInputPopViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TVTKeyboardAvoidingInputPopView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BDF399D11B6249FA00D60A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TVTKeyboardAvoidingInputPopViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTKeyboardAvoidingInputPopViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TVTKeyboardAvoidingInputPopView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDF399971B6249FA00D60A77 /* Build configuration list for PBXProject "TVTKeyboardAvoidingInputPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF399C71B6249FA00D60A77 /* Debug */,
+				BDF399C81B6249FA00D60A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF399C91B6249FA00D60A77 /* Build configuration list for PBXNativeTarget "TVTKeyboardAvoidingInputPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF399CA1B6249FA00D60A77 /* Debug */,
+				BDF399CB1B6249FA00D60A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDF399CC1B6249FA00D60A77 /* Build configuration list for PBXNativeTarget "TVTKeyboardAvoidingInputPopViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF399CD1B6249FA00D60A77 /* Debug */,
+				BDF399CE1B6249FA00D60A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDF399CF1B6249FA00D60A77 /* Build configuration list for PBXNativeTarget "TVTKeyboardAvoidingInputPopViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF399D01B6249FA00D60A77 /* Debug */,
+				BDF399D11B6249FA00D60A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDF399941B6249FA00D60A77 /* Project object */;
+}
