@@ -21,22 +21,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="o8L-u2-IFo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="o8L-u2-IFo">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TVTSwitCell" rowHeight="60" id="vWV-Kb-PzH" customClass="TVTSwitCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TVTSwitCell" rowHeight="60" id="vWV-Kb-PzH" customClass="TVTSwitCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vWV-Kb-PzH" id="RqE-uF-aDs">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSh-qg-TEJ" customClass="TVTSwitView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                                    <rect key="frame" x="10" y="5" width="300" height="50"/>
                                                     <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <outlet property="delegate" destination="vWV-Kb-PzH" id="zK1-k8-fC5"/>
                                                     </connections>
@@ -44,13 +49,14 @@
                                             </subviews>
                                             <animations/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="lSh-qg-TEJ" secondAttribute="trailing" id="czs-9E-QtY"/>
-                                                <constraint firstItem="lSh-qg-TEJ" firstAttribute="leading" secondItem="RqE-uF-aDs" secondAttribute="leading" id="joq-ac-2Km"/>
-                                                <constraint firstAttribute="bottom" secondItem="lSh-qg-TEJ" secondAttribute="bottom" id="lrN-Rr-jlv"/>
-                                                <constraint firstItem="lSh-qg-TEJ" firstAttribute="top" secondItem="RqE-uF-aDs" secondAttribute="top" id="mxl-Pf-hbA"/>
+                                                <constraint firstAttribute="trailing" secondItem="lSh-qg-TEJ" secondAttribute="trailing" constant="10" id="czs-9E-QtY"/>
+                                                <constraint firstItem="lSh-qg-TEJ" firstAttribute="leading" secondItem="RqE-uF-aDs" secondAttribute="leading" constant="10" id="joq-ac-2Km"/>
+                                                <constraint firstAttribute="bottom" secondItem="lSh-qg-TEJ" secondAttribute="bottom" constant="5" id="lrN-Rr-jlv"/>
+                                                <constraint firstItem="lSh-qg-TEJ" firstAttribute="top" secondItem="RqE-uF-aDs" secondAttribute="top" constant="5" id="mxl-Pf-hbA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="switView" destination="lSh-qg-TEJ" id="ckR-2I-K01"/>
                                         </connections>
@@ -76,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="845" y="-368"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">

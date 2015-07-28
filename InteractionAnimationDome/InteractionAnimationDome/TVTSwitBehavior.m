@@ -38,8 +38,9 @@
     itemBehavior.density = 100;
     itemBehavior.resistance = 10;
     [self addChildBehavior:itemBehavior];
-    self.itemBehavior = itemBehavior;
+//    self.itemBehavior = itemBehavior;
 }
+
 
 - (void)setTargetPoint:(CGPoint)targetPoint
 {

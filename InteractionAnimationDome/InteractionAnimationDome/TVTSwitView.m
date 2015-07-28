@@ -8,6 +8,10 @@
 
 #import "TVTSwitView.h"
 
+@interface TVTSwitView ()<UIGestureRecognizerDelegate>
+
+@end
+
 @implementation TVTSwitView
 
 - (instancetype)init{
@@ -37,8 +41,13 @@
 }
 
 - (void)makeUp{
-    UIPanGestureRecognizer * panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
-    [self addGestureRecognizer:panGestureRecognizer];
+    
+//    UISwipeGestureRecognizer * swipGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
+//    [self addGestureRecognizer:swipGestureRecognizer];
+//    UIPanGestureRecognizer * panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
+//    panGestureRecognizer.delegate = self;
+//    panGestureRecognizer.delaysTouchesBegan = YES;
+//    [self addGestureRecognizer:panGestureRecognizer];
 }
 
 - (void)panGestureRecognizer:(UIPanGestureRecognizer *)recognizer{
@@ -54,11 +63,23 @@
     }
 }
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
+
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+//    return YES;
+//}
+//
+//- (BOOL)gestureRecognizerShouldBegin:(nonnull UIGestureRecognizer *)gestureRecognizer{
+//    
+//    UITableView * tableView = (UITableView *)[[[self superview] superview] superview];
+//    NSLog(@"%@",NSStringFromSelector(_cmd));
+//    if (tableView.isDecelerating) {
+//        NSLog(@"-------> isDecelerating");
+//    }
+//    if (tableView.isDragging) {
+//        NSLog(@"-------> isDragging");
+//    }
+//    return  (!tableView.isDragging && !tableView.isDecelerating);
+//}
 
 
 @end

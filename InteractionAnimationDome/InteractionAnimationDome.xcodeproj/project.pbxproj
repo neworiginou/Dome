@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55B40CD31B5FF509005FA62F /* TVTTTableViewPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B40CD21B5FF509005FA62F /* TVTTTableViewPanGestureRecognizer.m */; };
 		55B7DD3B1B5E710F00D451D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B7DD3A1B5E710F00D451D3 /* main.m */; };
 		55B7DD3E1B5E710F00D451D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B7DD3D1B5E710F00D451D3 /* AppDelegate.m */; };
 		55B7DD411B5E710F00D451D3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B7DD401B5E710F00D451D3 /* FirstViewController.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55B40CD11B5FF509005FA62F /* TVTTTableViewPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTTableViewPanGestureRecognizer.h; sourceTree = "<group>"; };
+		55B40CD21B5FF509005FA62F /* TVTTTableViewPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTTableViewPanGestureRecognizer.m; sourceTree = "<group>"; };
 		55B7DD361B5E710F00D451D3 /* InteractionAnimationDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractionAnimationDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B7DD3A1B5E710F00D451D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		55B7DD3C1B5E710F00D451D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				55B7DD761B5E8B0D00D451D3 /* TVTSwitView.m */,
 				55B7DD781B5E8E2600D451D3 /* TVTSwitCell.h */,
 				55B7DD791B5E8E2600D451D3 /* TVTSwitCell.m */,
+				55B40CD11B5FF509005FA62F /* TVTTTableViewPanGestureRecognizer.h */,
+				55B40CD21B5FF509005FA62F /* TVTTTableViewPanGestureRecognizer.m */,
 			);
 			path = InteractionAnimationDome;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				TargetAttributes = {
 					55B7DD351B5E710F00D451D3 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8J45U9R8VX;
 					};
 					55B7DD511B5E710F00D451D3 = {
 						CreatedOnToolsVersion = 7.0;
@@ -303,6 +309,7 @@
 				55B7DD7A1B5E8E2600D451D3 /* TVTSwitCell.m in Sources */,
 				55B7DD3B1B5E710F00D451D3 /* main.m in Sources */,
 				55B7DD741B5E792500D451D3 /* TVTSwitBehavior.m in Sources */,
+				55B40CD31B5FF509005FA62F /* TVTTTableViewPanGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = InteractionAnimationDome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.InteractionAnimationDome;
@@ -454,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = InteractionAnimationDome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.InteractionAnimationDome;
@@ -528,6 +537,7 @@
 				55B7DD681B5E710F00D451D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55B7DD691B5E710F00D451D3 /* Build configuration list for PBXNativeTarget "InteractionAnimationDomeTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +546,7 @@
 				55B7DD6B1B5E710F00D451D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55B7DD6C1B5E710F00D451D3 /* Build configuration list for PBXNativeTarget "InteractionAnimationDomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +555,7 @@
 				55B7DD6E1B5E710F00D451D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -44,7 +44,7 @@
 - (CGPoint)targetPoint
 {
     CGSize size = self.bounds.size;
-    return self.cellState == TVTSwitCellStateRemove > 0 ? CGPointMake(size.width/2, size.height * 1.25) : CGPointMake(size.width/2, size.height/2);
+    return self.cellState == TVTSwitCellStateRemove > 0 ? CGPointMake(size.width/2.0, size.height/2) : CGPointMake(size.width/2.0, size.height/2);
 }
 
 #pragma mark - TVTSwitViewDelegate
@@ -56,7 +56,6 @@
 
 - (void)switView:(TVTSwitView *)view switEndedWithVelocity:(CGPoint)velocity{
     NSLog(@"%@",NSStringFromSelector(_cmd));
-    
     TVTSwitCellState targetState = velocity.x >= CGRectGetWidth(view.frame)/5 ? TVTSwitCellStateRemove : TVTSwitCellStateRecover;
     self.cellState = targetState;
     [self animatePaneWithInitialVelocity:velocity];

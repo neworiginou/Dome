@@ -10,7 +10,7 @@
 #import "TVTSwitView.h"
 #import "TVTSwitCell.h"
 
-@interface FirstViewController ()<UITableViewDataSource,UITableViewDelegate,TVTSwitViewDelegate>
+@interface FirstViewController ()<UITableViewDataSource,UITableViewDelegate,TVTSwitViewDelegate,UIGestureRecognizerDelegate>
 @property (strong, nonatomic) NSArray * items;
 @end
 
@@ -18,7 +18,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _items = @[@"1",@"2",@"3",@"1",@"2",@"3",@"1",@"2",@"3",@"1",@"2",@"3"];
+    _items = @[@"1",@"2",@"3",@"1",@"2",@"3",@"1",@"2",@"3",@"1",@"2",@"3",@"2",@"3",@"1",@"2",@"3",@"2",@"3",@"1",@"2",@"3",@"2",@"3",@"1",@"2",@"3"];
+    
+    UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
+    pan.delegate = self;
+    [self.view addGestureRecognizer:pan];
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(nonnull UIGestureRecognizer *)gestureRecognizer{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+    return YES;
+}
+
+- (void)panGestureRecognizer:(UIPanGestureRecognizer *)panGestureRecognizer{
+    NSLog(@"--------->");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,7 +44,6 @@
 }
 - (UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
     TVTSwitCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TVTSwitCell"];
-    cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 @end
