@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55BC421F1B62908E00236A5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BC421E1B62908E00236A5C /* main.m */; };
+		55BC42221B62908E00236A5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BC42211B62908E00236A5C /* AppDelegate.m */; };
+		55BC42251B62908E00236A5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BC42241B62908E00236A5C /* ViewController.m */; };
+		55BC42281B62908E00236A5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BC42261B62908E00236A5C /* Main.storyboard */; };
+		55BC422A1B62908E00236A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55BC42291B62908E00236A5C /* Assets.xcassets */; };
+		55BC422D1B62908E00236A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BC422B1B62908E00236A5C /* LaunchScreen.storyboard */; };
+		55BC42381B62908E00236A5C /* TVTPopUpWindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BC42371B62908E00236A5C /* TVTPopUpWindowTests.m */; };
+		55BC42431B62908F00236A5C /* TVTPopUpWindowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BC42421B62908F00236A5C /* TVTPopUpWindowUITests.m */; };
+		55BC42521B6290B500236A5C /* TVTPopUpWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BC42511B6290B500236A5C /* TVTPopUpWindowViewController.m */; };
+		55DF15D71B6661AB005DBC5D /* UIViewController+AvoidKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DF15D61B6661AB005DBC5D /* UIViewController+AvoidKeyboard.m */; };
+		55DF15DB1B668ACA005DBC5D /* TVTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DF15D91B668ACA005DBC5D /* TVTTViewController.m */; };
+		55DF15DC1B668ACA005DBC5D /* TVTTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DF15DA1B668ACA005DBC5D /* TVTTViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55BC42341B62908E00236A5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55BC42121B62908E00236A5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55BC42191B62908E00236A5C;
+			remoteInfo = TVTPopUpWindow;
+		};
+		55BC423F1B62908F00236A5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55BC42121B62908E00236A5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55BC42191B62908E00236A5C;
+			remoteInfo = TVTPopUpWindow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55BC421A1B62908E00236A5C /* TVTPopUpWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVTPopUpWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55BC421E1B62908E00236A5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55BC42201B62908E00236A5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		55BC42211B62908E00236A5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		55BC42231B62908E00236A5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		55BC42241B62908E00236A5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		55BC42271B62908E00236A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55BC42291B62908E00236A5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55BC422C1B62908E00236A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55BC422E1B62908E00236A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BC42331B62908E00236A5C /* TVTPopUpWindowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTPopUpWindowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55BC42371B62908E00236A5C /* TVTPopUpWindowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVTPopUpWindowTests.m; sourceTree = "<group>"; };
+		55BC42391B62908E00236A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BC423E1B62908F00236A5C /* TVTPopUpWindowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTPopUpWindowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55BC42421B62908F00236A5C /* TVTPopUpWindowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVTPopUpWindowUITests.m; sourceTree = "<group>"; };
+		55BC42441B62908F00236A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BC42501B6290B500236A5C /* TVTPopUpWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTPopUpWindowViewController.h; sourceTree = "<group>"; };
+		55BC42511B6290B500236A5C /* TVTPopUpWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTPopUpWindowViewController.m; sourceTree = "<group>"; };
+		55DF15D51B6661AB005DBC5D /* UIViewController+AvoidKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AvoidKeyboard.h"; sourceTree = "<group>"; };
+		55DF15D61B6661AB005DBC5D /* UIViewController+AvoidKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AvoidKeyboard.m"; sourceTree = "<group>"; };
+		55DF15D81B668ACA005DBC5D /* TVTTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVTTViewController.h; sourceTree = "<group>"; };
+		55DF15D91B668ACA005DBC5D /* TVTTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVTTViewController.m; sourceTree = "<group>"; };
+		55DF15DA1B668ACA005DBC5D /* TVTTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVTTViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55BC42171B62908E00236A5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BC42301B62908E00236A5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BC423B1B62908F00236A5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55BC42111B62908E00236A5C = {
+			isa = PBXGroup;
+			children = (
+				55BC421C1B62908E00236A5C /* TVTPopUpWindow */,
+				55BC42361B62908E00236A5C /* TVTPopUpWindowTests */,
+				55BC42411B62908F00236A5C /* TVTPopUpWindowUITests */,
+				55BC421B1B62908E00236A5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55BC421B1B62908E00236A5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55BC421A1B62908E00236A5C /* TVTPopUpWindow.app */,
+				55BC42331B62908E00236A5C /* TVTPopUpWindowTests.xctest */,
+				55BC423E1B62908F00236A5C /* TVTPopUpWindowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55BC421C1B62908E00236A5C /* TVTPopUpWindow */ = {
+			isa = PBXGroup;
+			children = (
+				55BC42201B62908E00236A5C /* AppDelegate.h */,
+				55BC42211B62908E00236A5C /* AppDelegate.m */,
+				55BC42231B62908E00236A5C /* ViewController.h */,
+				55BC42241B62908E00236A5C /* ViewController.m */,
+				55BC42261B62908E00236A5C /* Main.storyboard */,
+				55DF15D81B668ACA005DBC5D /* TVTTViewController.h */,
+				55DF15D91B668ACA005DBC5D /* TVTTViewController.m */,
+				55DF15DA1B668ACA005DBC5D /* TVTTViewController.xib */,
+				55BC42291B62908E00236A5C /* Assets.xcassets */,
+				55BC422B1B62908E00236A5C /* LaunchScreen.storyboard */,
+				55BC422E1B62908E00236A5C /* Info.plist */,
+				55BC421D1B62908E00236A5C /* Supporting Files */,
+				55BC42501B6290B500236A5C /* TVTPopUpWindowViewController.h */,
+				55BC42511B6290B500236A5C /* TVTPopUpWindowViewController.m */,
+				55DF15D51B6661AB005DBC5D /* UIViewController+AvoidKeyboard.h */,
+				55DF15D61B6661AB005DBC5D /* UIViewController+AvoidKeyboard.m */,
+			);
+			path = TVTPopUpWindow;
+			sourceTree = "<group>";
+		};
+		55BC421D1B62908E00236A5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55BC421E1B62908E00236A5C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55BC42361B62908E00236A5C /* TVTPopUpWindowTests */ = {
+			isa = PBXGroup;
+			children = (
+				55BC42371B62908E00236A5C /* TVTPopUpWindowTests.m */,
+				55BC42391B62908E00236A5C /* Info.plist */,
+			);
+			path = TVTPopUpWindowTests;
+			sourceTree = "<group>";
+		};
+		55BC42411B62908F00236A5C /* TVTPopUpWindowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55BC42421B62908F00236A5C /* TVTPopUpWindowUITests.m */,
+				55BC42441B62908F00236A5C /* Info.plist */,
+			);
+			path = TVTPopUpWindowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55BC42191B62908E00236A5C /* TVTPopUpWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55BC42471B62908F00236A5C /* Build configuration list for PBXNativeTarget "TVTPopUpWindow" */;
+			buildPhases = (
+				55BC42161B62908E00236A5C /* Sources */,
+				55BC42171B62908E00236A5C /* Frameworks */,
+				55BC42181B62908E00236A5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVTPopUpWindow;
+			productName = TVTPopUpWindow;
+			productReference = 55BC421A1B62908E00236A5C /* TVTPopUpWindow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55BC42321B62908E00236A5C /* TVTPopUpWindowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55BC424A1B62908F00236A5C /* Build configuration list for PBXNativeTarget "TVTPopUpWindowTests" */;
+			buildPhases = (
+				55BC422F1B62908E00236A5C /* Sources */,
+				55BC42301B62908E00236A5C /* Frameworks */,
+				55BC42311B62908E00236A5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55BC42351B62908E00236A5C /* PBXTargetDependency */,
+			);
+			name = TVTPopUpWindowTests;
+			productName = TVTPopUpWindowTests;
+			productReference = 55BC42331B62908E00236A5C /* TVTPopUpWindowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55BC423D1B62908F00236A5C /* TVTPopUpWindowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55BC424D1B62908F00236A5C /* Build configuration list for PBXNativeTarget "TVTPopUpWindowUITests" */;
+			buildPhases = (
+				55BC423A1B62908F00236A5C /* Sources */,
+				55BC423B1B62908F00236A5C /* Frameworks */,
+				55BC423C1B62908F00236A5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55BC42401B62908F00236A5C /* PBXTargetDependency */,
+			);
+			name = TVTPopUpWindowUITests;
+			productName = TVTPopUpWindowUITests;
+			productReference = 55BC423E1B62908F00236A5C /* TVTPopUpWindowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55BC42121B62908E00236A5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = lbencs;
+				TargetAttributes = {
+					55BC42191B62908E00236A5C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					55BC42321B62908E00236A5C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 55BC42191B62908E00236A5C;
+					};
+					55BC423D1B62908F00236A5C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 55BC42191B62908E00236A5C;
+					};
+				};
+			};
+			buildConfigurationList = 55BC42151B62908E00236A5C /* Build configuration list for PBXProject "TVTPopUpWindow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55BC42111B62908E00236A5C;
+			productRefGroup = 55BC421B1B62908E00236A5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55BC42191B62908E00236A5C /* TVTPopUpWindow */,
+				55BC42321B62908E00236A5C /* TVTPopUpWindowTests */,
+				55BC423D1B62908F00236A5C /* TVTPopUpWindowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55BC42181B62908E00236A5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55DF15DC1B668ACA005DBC5D /* TVTTViewController.xib in Resources */,
+				55BC422D1B62908E00236A5C /* LaunchScreen.storyboard in Resources */,
+				55BC422A1B62908E00236A5C /* Assets.xcassets in Resources */,
+				55BC42281B62908E00236A5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BC42311B62908E00236A5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BC423C1B62908F00236A5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55BC42161B62908E00236A5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55DF15DB1B668ACA005DBC5D /* TVTTViewController.m in Sources */,
+				55BC42251B62908E00236A5C /* ViewController.m in Sources */,
+				55BC42221B62908E00236A5C /* AppDelegate.m in Sources */,
+				55BC42521B6290B500236A5C /* TVTPopUpWindowViewController.m in Sources */,
+				55DF15D71B6661AB005DBC5D /* UIViewController+AvoidKeyboard.m in Sources */,
+				55BC421F1B62908E00236A5C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BC422F1B62908E00236A5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55BC42381B62908E00236A5C /* TVTPopUpWindowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BC423A1B62908F00236A5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55BC42431B62908F00236A5C /* TVTPopUpWindowUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55BC42351B62908E00236A5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55BC42191B62908E00236A5C /* TVTPopUpWindow */;
+			targetProxy = 55BC42341B62908E00236A5C /* PBXContainerItemProxy */;
+		};
+		55BC42401B62908F00236A5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55BC42191B62908E00236A5C /* TVTPopUpWindow */;
+			targetProxy = 55BC423F1B62908F00236A5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55BC42261B62908E00236A5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55BC42271B62908E00236A5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55BC422B1B62908E00236A5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55BC422C1B62908E00236A5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55BC42451B62908F00236A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55BC42461B62908F00236A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55BC42481B62908F00236A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TVTPopUpWindow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTPopUpWindow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55BC42491B62908F00236A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TVTPopUpWindow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTPopUpWindow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55BC424B1B62908F00236A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TVTPopUpWindowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTPopUpWindowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVTPopUpWindow.app/TVTPopUpWindow";
+			};
+			name = Debug;
+		};
+		55BC424C1B62908F00236A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TVTPopUpWindowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTPopUpWindowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVTPopUpWindow.app/TVTPopUpWindow";
+			};
+			name = Release;
+		};
+		55BC424E1B62908F00236A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TVTPopUpWindowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTPopUpWindowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TVTPopUpWindow;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		55BC424F1B62908F00236A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TVTPopUpWindowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acctrsf.TVTPopUpWindowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TVTPopUpWindow;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55BC42151B62908E00236A5C /* Build configuration list for PBXProject "TVTPopUpWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55BC42451B62908F00236A5C /* Debug */,
+				55BC42461B62908F00236A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55BC42471B62908F00236A5C /* Build configuration list for PBXNativeTarget "TVTPopUpWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55BC42481B62908F00236A5C /* Debug */,
+				55BC42491B62908F00236A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55BC424A1B62908F00236A5C /* Build configuration list for PBXNativeTarget "TVTPopUpWindowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55BC424B1B62908F00236A5C /* Debug */,
+				55BC424C1B62908F00236A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55BC424D1B62908F00236A5C /* Build configuration list for PBXNativeTarget "TVTPopUpWindowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55BC424E1B62908F00236A5C /* Debug */,
+				55BC424F1B62908F00236A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55BC42121B62908E00236A5C /* Project object */;
+}

@@ -65,7 +65,7 @@
     }
     
     CAKeyframeAnimation *iMG0002TranslationXAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
-    iMG0002TranslationXAnimation.duration = 0.200;
+    iMG0002TranslationXAnimation.duration = 0.400;
     iMG0002TranslationXAnimation.values = @[@(0.000), @(-xPosition)];
     iMG0002TranslationXAnimation.keyTimes = @[@(0.000), @(1.000)];
     iMG0002TranslationXAnimation.timingFunctions = @[easeOutTiming];
@@ -75,7 +75,7 @@
     [[_imageView layer] addAnimation:iMG0002TranslationXAnimation forKey:@"path_TranslationX"];
     
     CAKeyframeAnimation *iMG0002TranslationYAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.y"];
-    iMG0002TranslationYAnimation.duration = 0.200;
+    iMG0002TranslationYAnimation.duration = 0.400;
     iMG0002TranslationYAnimation.values = @[@(0.000), @(-yPosition)];
     iMG0002TranslationYAnimation.keyTimes = @[@(0.000), @(1.000)];
     iMG0002TranslationYAnimation.timingFunctions = @[easeOutTiming];
