@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  OOOTabSliderViewController
+//  OOOBouncePageView
 //
-//  Created by lben on 15/7/29.
+//  Created by lben on 15/7/30.
 //  Copyright (c) 2015年 lben. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "OOOTabSliderViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,12 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UIWindow * window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [window makeKeyAndVisible];
-    self.window = window;
-    OOOTabSliderViewController * tabSlider = [[OOOTabSliderViewController alloc] init];
-    UINavigationController * navic = [[UINavigationController alloc] initWithRootViewController:tabSlider];
-    self.window.rootViewController = navic;
+    // Override point for customization after application launch.
     return YES;
 }
 

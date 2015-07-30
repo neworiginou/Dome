@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OOOTabSliderViewController : NSObject
+@class OOOTabSliderViewController;
+
+@protocol OOOTabSliderViewControllerDataSource <NSObject>
+@required
+- (NSArray *)sliderViewControllerSubViewControllers:(OOOTabSliderViewController *)viewController;
+@end
+
+@interface OOOTabSliderViewController : UIViewController <OOOTabSliderViewControllerDataSource>
 @property (nonatomic, strong) NSArray *subViewController; /**> tab的Viewcontrollers */
 
-- (void)addParentController:(UIViewController *)viewController;
+@property (nonatomic, strong) id <OOOTabSliderViewControllerDataSource>dataSource;
 @end

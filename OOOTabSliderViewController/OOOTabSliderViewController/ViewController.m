@@ -39,7 +39,6 @@
 
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
-    [self.sliderViewController addParentController:self];
 }
 
 - (void)didReceiveMemoryWarning {

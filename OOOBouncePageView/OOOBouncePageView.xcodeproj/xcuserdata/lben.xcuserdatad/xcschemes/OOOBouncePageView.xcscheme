@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDFD58941B68689500670E0A"
-               BuildableName = "OOOTabSliderViewController.app"
-               BlueprintName = "OOOTabSliderViewController"
-               ReferencedContainer = "container:OOOTabSliderViewController.xcodeproj">
+               BlueprintIdentifier = "BD4605051B69CD03009A43AB"
+               BuildableName = "OOOBouncePageView.app"
+               BlueprintName = "OOOBouncePageView"
+               ReferencedContainer = "container:OOOBouncePageView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDFD58AD1B68689600670E0A"
-               BuildableName = "OOOTabSliderViewControllerTests.xctest"
-               BlueprintName = "OOOTabSliderViewControllerTests"
-               ReferencedContainer = "container:OOOTabSliderViewController.xcodeproj">
+               BlueprintIdentifier = "BD46051E1B69CD04009A43AB"
+               BuildableName = "OOOBouncePageViewTests.xctest"
+               BlueprintName = "OOOBouncePageViewTests"
+               ReferencedContainer = "container:OOOBouncePageView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDFD58AD1B68689600670E0A"
-               BuildableName = "OOOTabSliderViewControllerTests.xctest"
-               BlueprintName = "OOOTabSliderViewControllerTests"
-               ReferencedContainer = "container:OOOTabSliderViewController.xcodeproj">
+               BlueprintIdentifier = "BD46051E1B69CD04009A43AB"
+               BuildableName = "OOOBouncePageViewTests.xctest"
+               BlueprintName = "OOOBouncePageViewTests"
+               ReferencedContainer = "container:OOOBouncePageView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BDFD58941B68689500670E0A"
-            BuildableName = "OOOTabSliderViewController.app"
-            BlueprintName = "OOOTabSliderViewController"
-            ReferencedContainer = "container:OOOTabSliderViewController.xcodeproj">
+            BlueprintIdentifier = "BD4605051B69CD03009A43AB"
+            BuildableName = "OOOBouncePageView.app"
+            BlueprintName = "OOOBouncePageView"
+            ReferencedContainer = "container:OOOBouncePageView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,18 +76,13 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BDFD58941B68689500670E0A"
-            BuildableName = "OOOTabSliderViewController.app"
-            BlueprintName = "OOOTabSliderViewController"
-            ReferencedContainer = "container:OOOTabSliderViewController.xcodeproj">
+            BlueprintIdentifier = "BD4605051B69CD03009A43AB"
+            BuildableName = "OOOBouncePageView.app"
+            BlueprintName = "OOOBouncePageView"
+            ReferencedContainer = "container:OOOBouncePageView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
-         <AdditionalOption
-            key = "NSZombieEnabled"
-            value = "YES"
-            isEnabled = "YES">
-         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
@@ -100,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BDFD58941B68689500670E0A"
-            BuildableName = "OOOTabSliderViewController.app"
-            BlueprintName = "OOOTabSliderViewController"
-            ReferencedContainer = "container:OOOTabSliderViewController.xcodeproj">
+            BlueprintIdentifier = "BD4605051B69CD03009A43AB"
+            BuildableName = "OOOBouncePageView.app"
+            BlueprintName = "OOOBouncePageView"
+            ReferencedContainer = "container:OOOBouncePageView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
